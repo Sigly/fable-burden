@@ -57,6 +57,7 @@ export function renderTraceHtml(actor) {
     <button type="button" data-trace-action="add"><i class="fa-solid fa-plus"></i> Add to this character</button>
     <button type="button" data-trace-action="library"><i class="fa-solid fa-book-open"></i> Trace Library</button>
     <button type="button" data-trace-action="sync"><i class="fa-solid fa-rotate"></i> Recalculate</button>
+    ${game.user.isGM ? `<button type="button" data-trace-action="reveal"><i class="fa-solid ${actor.getFlag(FLAG, "traceShown") ? "fa-eye-slash" : "fa-eye"}"></i> ${actor.getFlag(FLAG, "traceShown") ? "Hide from player" : "Show to player"}</button>` : ""}
   </div>
   ${burden}
   <div class="trace-card"><h3>Renown and Megin</h3>
@@ -109,6 +110,11 @@ export function activateTrace(app, element, actor) {
     switch ( btn.dataset.traceAction ) {
       case "add": return openAddDialog(actor);
       case "library": return openLibrary(actor);
+      case "reveal": {
+        const shown = !actor.getFlag(FLAG, "traceShown");
+        await actor.setFlag(FLAG, "traceShown", shown);
+        return ui.notifications.info(shown ? `Trace is now visible to ${actor.name}'s owners.` : `Trace is hidden from ${actor.name}'s owners.`);
+      }
       case "sync": await syncActor(actor); return ui.notifications.info("Trace values recalculated.");
       case "laststand": return lastStand(actor);
       case "endidol": return endIdolization(actor);

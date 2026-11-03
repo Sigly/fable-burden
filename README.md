@@ -18,7 +18,7 @@ Everything for the Trace campaign in one Foundry VTT module for D&D 5e (dnd5e 5.
 - Console API: `game.modules.get("trace-5e").api`.
 
 ## Visibility
-By default Trace is GM only: the Trace tab, library button, compendium and macros are hidden from players (setting "Hide Trace from players"). Items you add to a player keep working for them.
+By default Trace is GM only: the Trace tab, its abilities, the library button, compendium and macros are hidden from players (setting "Hide Trace from players"). On each character the GM presses "Show to player" in the Trace tab to reveal the tab and its abilities to that character's owners, and can hide it again.
 
 ## Notes
 - Þrek Dice and Seiðr Points are feature items whose uses recalculate from character level. Use the Recalculate button after a level change if a number looks stale.

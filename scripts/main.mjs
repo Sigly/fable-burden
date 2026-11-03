@@ -7,8 +7,10 @@ import {
   openLibrary, openAddDialog, buildCompendium, createMacros, linkNewItem, addKit, addCategory, addByName, catalog, loadFables
 } from "./library.mjs";
 
-export const traceVisible = () => game.user.isGM || !game.settings.get(MODULE_ID, "gmOnly");
-const TAB = { tab: "trace", label: "Trace", icon: "fa-solid fa-eye", condition: () => traceVisible() };
+/** GMs always see Trace. Players see it on a character only when the GM has revealed it (or the setting is off). */
+export const traceVisible = actor => game.user.isGM || !game.settings.get(MODULE_ID, "gmOnly")
+  || !!actor?.getFlag(MODULE_ID, "traceShown");
+const TAB = { tab: "trace", label: "Trace", icon: "fa-solid fa-eye", condition: actor => traceVisible(actor) };
 const PART = {
   container: { classes: ["tab-body"], id: "tabs" },
   template: `modules/${MODULE_ID}/templates/trace-tab.hbs`,
@@ -19,7 +21,7 @@ Hooks.once("init", () => {
   game.settings.register(MODULE_ID, "libraryVersion", { scope: "world", config: false, type: String, default: "" });
   game.settings.register(MODULE_ID, "gmOnly", {
     name: "Hide Trace from players",
-    hint: "Only GMs see the Trace tab, the Trace library button, the Trace 5.5e compendium and the Trace macros. Players can still use items you add to their characters.",
+    hint: "Only GMs see the Trace tab, its abilities, the library button, the Trace 5.5e compendium and the Trace macros. On each character the GM can reveal the Trace tab and its abilities with the Show to player button.",
     scope: "world", config: true, type: Boolean, default: true, requiresReload: true
   });
   game.settings.register(MODULE_ID, "autoBuild", {
@@ -46,13 +48,21 @@ Hooks.once("setup", () => {
 });
 
 Hooks.on("dnd5e.prepareSheetContext", (sheet, partId, context) => {
-  if ( partId !== "trace" || !context.tab || !traceVisible() ) return;
+  if ( partId !== "trace" || !context.tab || !traceVisible(sheet.document) ) return;
   context.traceHtml = renderTraceHtml(sheet.document);
 });
 
 Hooks.on("renderApplicationV2", (app, element) => {
   if ( game.system.id !== "dnd5e" ) return;
-  if ( app.document?.documentName === "Actor" ) activateTrace(app, element, app.document);
+  const actor = app.document;
+  if ( actor?.documentName !== "Actor" ) return;
+  activateTrace(app, element, actor);
+  // While Trace is hidden on this character, its abilities are hidden from the normal lists too.
+  if ( !traceVisible(actor) ) {
+    for ( const row of element.querySelectorAll("[data-item-id]") ) {
+      if ( actor.items.get(row.dataset.itemId)?.getFlag(MODULE_ID, "key") ) row.remove();
+    }
+  }
 });
 
 Hooks.on("dnd5e.restCompleted", onRestCompleted);
