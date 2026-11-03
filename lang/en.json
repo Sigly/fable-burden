@@ -1,0 +1,47 @@
+{
+  "FABLE_BURDEN": {
+    "Burden": "Burden",
+    "BurdenHint": "Leave blank to use the default for this item.",
+    "BurdenDefault": "Default: {value}",
+    "Capacity": "Burden capacity",
+    "Carrying": "Burden carried",
+    "NothingCarried": "Nothing carried",
+    "AttunementDisabled": "Attunement is disabled. This world uses Burden instead.",
+    "OverCapacityWarn": "{actor} is over Burden capacity ({used} of {capacity}) after equipping {item}.",
+    "OverCapacityBlock": "{actor} cannot equip {item}. It costs {burden} Burden and only {free} is free.",
+    "Rarity": {
+      "Epic": "Epic",
+      "Unique": "Unique",
+      "Mythical": "Mythical"
+    },
+    "Settings": {
+      "Enforcement": {
+        "Name": "Burden limit",
+        "Hint": "What happens when equipping an item would put a character over capacity. Blocking does not apply to GMs, who get a warning instead.",
+        "Off": "Do nothing",
+        "Warn": "Warn",
+        "Block": "Block players"
+      },
+      "CapacityBonus": {
+        "Name": "Capacity bonus",
+        "Hint": "Burden capacity is proficiency bonus plus this number. The default of 1 gives 3 at level 1 and 7 at level 17."
+      },
+      "RarityTable": {
+        "Name": "Burden by rarity",
+        "Hint": "JSON. Default Burden for items that used to need attunement. Keys are dnd5e rarity keys (veryRare is shown as Epic). Edit a number or add a rarity key."
+      },
+      "OptionalCounts": {
+        "Name": "Optional attunement costs Burden",
+        "Hint": "Items with optional attunement are free by default. Turn this on to charge them Burden too."
+      },
+      "RemoveAttunement": {
+        "Name": "Remove attunement",
+        "Hint": "Items that needed attunement work whenever they are equipped, and the attunement controls are hidden. Requires a reload."
+      },
+      "FableRarities": {
+        "Name": "Use the Fable rarity ladder",
+        "Hint": "Shows Very Rare as Epic and adds Unique and Mythical. Common, Uncommon, Rare, Epic, Unique, Legendary, Mythical, Artifact. Requires a reload."
+      }
+    }
+  }
+}
