@@ -202,7 +202,15 @@ export async function syncActor(actor) {
   const threkAbility = actor.getFlag(FLAG, "threkAbility") ?? "str";
   const seidrAbility = actor.getFlag(FLAG, "seidrAbility") ?? "int";
 
-  const threkPool = itemByKey(actor, "threk-dice");
+  let threkPool = itemByKey(actor, "threk-dice");
+  // Arts need the Þrek Dice pool. Create it if the actor has Arts but no pool.
+  if ( !threkPool && actor.items.some(i => (i.getFlag(FLAG, "category") === "threk") && (i.getFlag(FLAG, "key") !== "threk-dice")) ) {
+    const def = POWERS.find(p => p.key === "threk-dice");
+    if ( def ) {
+      const [created] = await actor.createEmbeddedDocuments("Item", [buildPower(def)], { traceInternal: true });
+      threkPool = created;
+    }
+  }
   if ( threkPool ) {
     const t = threkFor(level);
     if ( String(threkPool.system.uses.max) !== String(t.dice) ) updates.push({ _id: threkPool.id, "system.uses.max": String(t.dice) });
@@ -240,10 +248,12 @@ export async function syncActor(actor) {
             patch[`${path}.damage.parts`] = parts; changed = true;
           }
         }
-        if ( meta.spend === "threk" && threkPool ) {
+        if ( meta.spend === "threk" ) {
           const have = act.consumption?.targets?.[0]?.target;
-          if ( have !== threkPool.id ) {
+          if ( threkPool && (have !== threkPool.id) ) {
             patch[`${path}.consumption.targets`] = [{ type: "itemUses", target: threkPool.id, value: "1" }]; changed = true;
+          } else if ( !threkPool && have ) {
+            patch[`${path}.consumption.targets`] = []; changed = true;   // never leave a link to a missing pool
           }
         }
       }
@@ -258,6 +268,12 @@ export async function syncActor(actor) {
             patch[`system.activities.${act.id}.save.dc.calculation`] = ""; changed = true;
           }
         }
+      }
+      if ( changed ) updates.push(patch);
+    } else if ( item.getFlag(FLAG, "seidrSpell") && !seidrPool ) {
+      const patch = { _id: item.id }; let changed = false;
+      for ( const act of item.system.activities ) {
+        if ( act.consumption?.targets?.[0]?.target ) { patch[`system.activities.${act.id}.consumption.targets`] = []; changed = true; }
       }
       if ( changed ) updates.push(patch);
     } else if ( item.getFlag(FLAG, "seidrSpell") && seidrPool ) {

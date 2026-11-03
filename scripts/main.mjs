@@ -57,6 +57,12 @@ Hooks.on("renderApplicationV2", (app, element) => {
   const actor = app.document;
   if ( actor?.documentName !== "Actor" ) return;
   activateTrace(app, element, actor);
+  // Self-heal: if a Trace activity points at a pool that no longer exists, relink it.
+  if ( actor.isOwner && !app._traceHealing && actor.items.some(i => i.getFlag(MODULE_ID, "key")
+    && Array.from(i.system.activities ?? []).some(a => (a.consumption?.targets ?? []).some(t => t.type === "itemUses" && t.target && !t.target.includes(".") && !actor.items.get(t.target)))) ) {
+    app._traceHealing = true;
+    syncActor(actor).finally(() => { app._traceHealing = false; });
+  }
   // Trace abilities live only in the Trace tab, so they are taken out of the normal lists.
   // Fables stay in the inventory (to equip them) unless Trace is hidden on this character.
   for ( const row of element.querySelectorAll("[data-item-id]") ) {
@@ -75,6 +81,12 @@ Hooks.on("dnd5e.restCompleted", onRestCompleted);
 Hooks.on("createItem", (item, options, userId) => {
   if ( userId !== game.user.id ) return;
   if ( item.parent?.documentName === "Actor" && item.getFlag(MODULE_ID, "key") && !options.traceInternal ) linkNewItem(item);
+});
+// If a pool is deleted, repoint or clear the activities that pointed at it so no "could not be found" warnings appear.
+Hooks.on("deleteItem", (item, options, userId) => {
+  if ( userId !== game.user.id ) return;
+  const key = item.getFlag(MODULE_ID, "key");
+  if ( item.parent?.documentName === "Actor" && ["threk-dice", "seidr-points"].includes(key) ) syncActor(item.parent);
 });
 Hooks.on("updateItem", (item, changes, options, userId) => {
   if ( userId !== game.user.id ) return;
