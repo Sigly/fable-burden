@@ -1,7 +1,7 @@
 import "./burden.mjs";
 import { MODULE_ID } from "./burden-core.mjs";
 import { renderTraceHtml, activateTrace } from "./tab.mjs";
-import { syncActor, addToActor } from "./build.mjs";
+import { syncActor, addToActor, addDroppedSpell } from "./build.mjs";
 import { onRestCompleted, idolize, endIdolization, lastStand, setRenown, getRenown, getMegin } from "./idolize.mjs";
 import {
   openLibrary, openAddDialog, buildCompendium, createMacros, linkNewItem, addKit, addCategory, addByName, catalog, loadFables
@@ -95,7 +95,7 @@ Hooks.on("renderItemDirectory", (app, element) => {
 Hooks.once("ready", async () => {
   if ( game.system.id !== "dnd5e" ) return;
   game.modules.get(MODULE_ID).api = {
-    openLibrary, openAddDialog, addToActor, addKit, addCategory, addByName, syncActor, catalog, loadFables,
+    openLibrary, openAddDialog, addToActor, addDroppedSpell, addKit, addCategory, addByName, syncActor, catalog, loadFables,
     idolize, endIdolization, lastStand, setRenown, getRenown, getMegin
   };
   if ( game.user.isGM ) {

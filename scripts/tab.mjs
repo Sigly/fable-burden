@@ -1,7 +1,7 @@
 /** The Trace tab on character and NPC sheets. */
 import { MODULE_ID as FLAG } from "./burden-core.mjs";
 import { ABILITIES, threkFor, seidrFor, saveDC, meginRating, epithetSlots, IDOLIZATION_FORMS } from "./core.mjs";
-import { itemByKey, actorLevel, syncActor } from "./build.mjs";
+import { itemByKey, actorLevel, syncActor, addDroppedSpell } from "./build.mjs";
 import { actorBurden } from "./burden.mjs";
 import { getRenown, setRenown, activeIdolization, idolize, endIdolization, lastStand } from "./idolize.mjs";
 import { openAddDialog, openLibrary } from "./library.mjs";
@@ -122,6 +122,7 @@ export function renderTraceHtml(actor) {
     <div class="trace-row"><label>Seiðr ability</label>${abilitySelect("seidrAbility", seidrAbility, ["int", "wis", "cha"])}</div>
     <p>Seiðr level ${seidr.seidrLevel}, up to spell level ${seidr.maxSpellLevel}, ${seidr.cantrips} cantrips, ${seidr.spellsKnown} spells. Save DC <strong>${saveDC(prof, mod(seidrAbility))}</strong>, attack <strong>+${prof + mod(seidrAbility)}</strong>.</p>
     ${abilityList([seidrPoolItem, seidrListItem].filter(Boolean), canEdit, "")}
+    ${canEdit ? `<div class="trace-drop" data-trace-drop="seidr"><i class="fa-solid fa-arrow-down"></i> Drag a spell here to make it a Seiðr spell</div>` : ""}
     ${abilityList([...seidrSpells].sort((a, b) => (a.getFlag(FLAG, "spellLevel") ?? 0) - (b.getFlag(FLAG, "spellLevel") ?? 0)), canEdit, "No Seiðr spells yet.")}
   </div>
   <div class="trace-card"><h3>Idolization ${idol ? `<span class="trace-pill">${esc(idol.name)}</span>` : ""}</h3>
@@ -177,6 +178,22 @@ export function activateTrace(app, element, actor) {
       case "endidol": return endIdolization(actor);
     }
   });
+
+  // Drag and drop: any spell dropped on the Seiðr box becomes a Seiðr spell paid for with Seiðr Points.
+  const zone = root.querySelector("[data-trace-drop=seidr]");
+  if ( zone && editable ) {
+    zone.addEventListener("dragover", e => { e.preventDefault(); zone.classList.add("over"); });
+    zone.addEventListener("dragleave", () => zone.classList.remove("over"));
+    zone.addEventListener("drop", async e => {
+      e.preventDefault(); e.stopPropagation(); zone.classList.remove("over");
+      const reader = foundry.applications?.ux?.TextEditor?.implementation ?? globalThis.TextEditor?.implementation ?? globalThis.TextEditor;
+      const data = reader.getDragEventData(e);
+      if ( data?.type !== "Item" ) return ui.notifications.warn("Drop a spell here.");
+      const doc = data.uuid ? await fromUuid(data.uuid) : null;
+      const created = await addDroppedSpell(actor, doc);
+      if ( created ) ui.notifications.info(`${created.name} is now a Seiðr spell for ${actor.name}.`);
+    });
+  }
 
   root.addEventListener("change", async event => {
     const field = event.target.closest("[data-trace-field]");

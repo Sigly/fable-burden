@@ -47,38 +47,36 @@ const activationOf = text => {
 
 /* ---------------- activities ---------------- */
 
-function activityData(def, itemFlags = {}) {
+function activityData(def) {
   const id = rid();
   const base = {
     _id: id, name: def.name, sort: 0,
     activation: { type: def.activation || "", override: true, value: null },
     consumption: { scaling: { allowed: false }, spellSlot: false, targets: [] },
     description: { chatFlavor: "" }, effects: [],
-    flags: { [FLAG]: { spend: def.spend ?? null, dieFormula: def.roll?.formula ?? null, saveAbility: def.save ?? null } }
+    flags: { [FLAG]: { spend: def.spend ?? null, template: def.template ?? "", temp: !!def.temp } }
   };
+  const part = formula => ({ number: null, denomination: null, bonus: "", types: [], custom: { enabled: true, formula }, scaling: { mode: "", number: null, formula: "" } });
   if ( def.kind === "save" ) {
     return { ...base, type: "save",
       save: { ability: [def.save ?? "con"], dc: { calculation: "", formula: "8 + @prof" } },
-      damage: { onSave: "half", parts: def.roll ? [{ custom: { enabled: true, formula: def.roll.formula }, types: [] }] : [] }
-    };
+      damage: { onSave: "none", parts: def.template ? [part(def.template.replace("{die}", "d6"))] : [] } };
   }
+  if ( def.kind === "heal" ) {
+    return { ...base, type: "heal",
+      healing: { ...part((def.template ?? "1{die}").replace("{die}", "d6").replace("{mod}", "0")), types: [def.temp ? "temphp" : "healing"] } };
+  }
+  const rolls = (def.kind === "die") || (def.kind === "diemod") || !!def.roll;
   return { ...base, type: "utility",
-    roll: { formula: def.roll ? def.roll.formula.replace("{die}", "1d6") : "", name: def.roll?.name ?? "", prompt: false, visible: !!def.roll } };
+    roll: { formula: rolls ? (def.template ?? "").replace("{die}", "d6").replace("{mod}", "0") : "", name: def.roll?.name ?? def.roll ?? "", prompt: false, visible: rolls } };
 }
 
 /** Item data for one POWERS entry. */
 export function buildPower(def) {
   const activities = {};
   for ( const a of def.activities ?? [] ) {
-    if ( a.kind === "save" && a.spend ) {
-      // Save Arts get a roll activity and a save activity so the die can be spent and the DC is shown.
-      const roll = activityData({ ...a, kind: "utility", save: null });
-      const save = activityData({ ...a, name: `${a.name} (save)`, spend: null, roll: null });
-      activities[roll._id] = roll; activities[save._id] = save;
-    } else {
-      const act = activityData(a);
-      activities[act._id] = act;
-    }
+    const act = activityData(a);
+    activities[act._id] = act;
   }
   const system = { description: { value: def.desc }, type: { value: "", subtype: "" }, activities, uses: { max: "", spent: 0, recovery: [] } };
   if ( def.uses ) {
@@ -121,20 +119,16 @@ export function buildFable(f) {
   };
 }
 
-/** Item data for a Seiðr spell copied from a system compendium. */
-export async function buildSeidrSpell(name, level, seidrItemId, abilityKey) {
-  const pack = ["dnd5e.spells24", "dnd5e.spells"].map(id => game.packs.get(id)).filter(Boolean);
-  let source = null;
-  for ( const p of pack ) {
-    const entry = (await p.getIndex()).find(e => e.name === name);
-    if ( entry ) { source = await p.getDocument(entry._id); break; }
-  }
-  if ( !source ) return null;
-  const data = source.toObject();
+/** Turn spell item data into a Seiðr spell: innate, no slot, paid for with Seiðr Points. */
+export function seidrizeSpellData(data, seidrItemId, abilityKey) {
+  data = foundry.utils.deepClone(data);
   delete data._id;
+  const level = Number(data.system?.level ?? 0);
   data.system.method = level === 0 ? "atwill" : "innate";
   data.system.prepared = 1;
   if ( abilityKey ) data.system.ability = abilityKey;
+  // Seiðr needs no material components.
+  if ( data.system.properties ) data.system.properties = Array.from(data.system.properties).filter(p => p !== "material");
   const cost = seidrCost(level);
   for ( const act of Object.values(data.system.activities ?? {}) ) {
     act.consumption ??= {};
@@ -146,8 +140,44 @@ export async function buildSeidrSpell(name, level, seidrItemId, abilityKey) {
     }
   }
   data.flags ??= {};
-  data.flags[FLAG] = { key: `seidr-${name.toLowerCase().replace(/\W+/g, "-")}`, category: "seidr", seidrSpell: true, spellLevel: level };
+  data.flags[FLAG] = { key: `seidr-${slugKey(data.name)}`, category: "seidr", seidrSpell: true, spellLevel: level };
   return data;
+}
+
+const slugKey = n => String(n).normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/\W+/g, "-");
+
+/** Item data for a Seiðr spell copied from a system compendium. */
+export async function buildSeidrSpell(name, level, seidrItemId, abilityKey) {
+  const pack = ["dnd5e.spells24", "dnd5e.spells"].map(id => game.packs.get(id)).filter(Boolean);
+  let source = null;
+  for ( const p of pack ) {
+    const entry = (await p.getIndex()).find(e => e.name === name);
+    if ( entry ) { source = await p.getDocument(entry._id); break; }
+  }
+  if ( !source ) return null;
+  return seidrizeSpellData(source.toObject(), seidrItemId, abilityKey);
+}
+
+/**
+ * Convert a dropped spell (a spell Item document) into a Seiðr spell on the actor.
+ * @returns {Promise<Item|null>}
+ */
+export async function addDroppedSpell(actor, doc) {
+  if ( doc?.type !== "spell" ) { ui.notifications.warn("Drop a spell here."); return null; }
+  const level = Number(doc.system.level ?? 0);
+  if ( level > 9 || !seidrCost(level) && level > 0 ) { ui.notifications.warn("That spell level has no Seiðr cost."); return null; }
+  const key = `seidr-${slugKey(doc.name)}`;
+  if ( actor.items.some(i => i.getFlag(FLAG, "key") === key) ) { ui.notifications.info(`${actor.name} already has ${doc.name} as a Seiðr spell.`); return null; }
+  let pool = itemByKey(actor, "seidr-points");
+  if ( !pool ) { await addToActor(actor, ["seidr-points"]); pool = itemByKey(actor, "seidr-points"); }
+  const s = seidrFor(actorLevel(actor));
+  if ( level > s.maxSpellLevel ) ui.notifications.warn(`${doc.name} is level ${level}. ${actor.name} can only cast Seiðr spells up to level ${s.maxSpellLevel}.`);
+  const known = actor.items.filter(i => i.getFlag(FLAG, "seidrSpell") && (i.getFlag(FLAG, "spellLevel") > 0)).length;
+  if ( level > 0 && known >= s.spellsKnown ) ui.notifications.warn(`${actor.name} already knows ${known} Seiðr spells (limit ${s.spellsKnown}).`);
+  const data = seidrizeSpellData(doc.toObject(), pool?.id, actor.getFlag(FLAG, "seidrAbility") ?? "int");
+  const [created] = await actor.createEmbeddedDocuments("Item", [data], { traceInternal: true });
+  await syncActor(actor);
+  return created;
 }
 
 /* ---------------- actor wiring ---------------- */
@@ -190,20 +220,27 @@ export async function syncActor(actor) {
       const patch = { _id: item.id };
       let changed = false;
       for ( const act of item.system.activities ) {
-        const f = act.getFlag?.(FLAG, "dieFormula") ?? act.flags?.[FLAG]?.dieFormula;
-        const spend = act.flags?.[FLAG]?.spend;
+        const meta = act.flags?.[FLAG] ?? {};
         const path = `system.activities.${act.id}`;
-        if ( act.type === "utility" && f ) {
-          const formula = f.replace("{die}", `1d${die}`);
+        const formula = (meta.template ?? "").replace("{die}", `d${die}`).replace("{mod}", `@abilities.${threkAbility}.mod`);
+        if ( act.type === "utility" && meta.template ) {
           if ( act.roll?.formula !== formula ) { patch[`${path}.roll.formula`] = formula; changed = true; }
         }
+        if ( act.type === "heal" && meta.template ) {
+          if ( act.healing?.custom?.formula !== formula ) { patch[`${path}.healing.custom.formula`] = formula; patch[`${path}.healing.custom.enabled`] = true; changed = true; }
+        }
         if ( act.type === "save" ) {
-          const formula = `8 + @prof + @abilities.${threkAbility}.mod`;
-          if ( act.save?.dc?.formula !== formula || act.save?.dc?.calculation !== "" ) {
-            patch[`${path}.save.dc.formula`] = formula; patch[`${path}.save.dc.calculation`] = ""; changed = true;
+          const dc = `8 + @prof + @abilities.${threkAbility}.mod`;
+          if ( act.save?.dc?.formula !== dc || act.save?.dc?.calculation !== "" ) {
+            patch[`${path}.save.dc.formula`] = dc; patch[`${path}.save.dc.calculation`] = ""; changed = true;
+          }
+          if ( meta.template && (act.damage?.parts?.[0]?.custom?.formula !== formula) ) {
+            const parts = foundry.utils.deepClone(act.toObject?.().damage?.parts ?? [{}]);
+            parts[0] = { ...(parts[0] ?? {}), custom: { enabled: true, formula } };
+            patch[`${path}.damage.parts`] = parts; changed = true;
           }
         }
-        if ( spend === "threk" && threkPool ) {
+        if ( meta.spend === "threk" && threkPool ) {
           const have = act.consumption?.targets?.[0]?.target;
           if ( have !== threkPool.id ) {
             patch[`${path}.consumption.targets`] = [{ type: "itemUses", target: threkPool.id, value: "1" }]; changed = true;

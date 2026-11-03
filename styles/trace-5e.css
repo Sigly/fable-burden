@@ -52,3 +52,6 @@
 .trace-ability .trace-ability-buttons a { margin-inline-start: 0.35rem; }
 .trace-ability .trace-desc { padding: 0.25rem 0.5rem 0.5rem 1.6rem; font-size: var(--font-size-13, 13px); }
 .trace-ability { border-bottom: 1px solid var(--color-border-light-tertiary, #ddd); }
+
+.trace-drop { border: 2px dashed var(--color-border-light-tertiary, #999); border-radius: 6px; text-align: center; padding: 0.6rem; margin-top: 0.4rem; opacity: 0.8; }
+.trace-drop.over { border-color: var(--color-border-highlight, #c60); opacity: 1; background: rgba(255,160,0,0.08); }

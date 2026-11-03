@@ -20,33 +20,51 @@ export const CATEGORIES = [
 const p = text => `<p>${text}</p>`;
 const ul = items => `<ul>${items.map(i => `<li>${i}</li>`).join("")}</ul>`;
 
+const ICON_THREK = "icons/magic/symbols/rune-sigil-black-pink.webp";
+export const ICON_SEIDR = "icons/magic/symbols/arrowhead-green.webp";
+
+/**
+ * The 13 Þrek Arts. kind: die (rolls the die), save (optional damage dice), heal, diemod (die plus Þrek modifier), none.
+ * template uses {die} for the actor's Þrek die, for example "2{die}" becomes 2d8, and {mod} for the Þrek modifier.
+ */
 export const THREK_ARTS = [
-  { name: "Surge Strike", when: "You hit with a weapon attack or unarmed strike", effect: "Add the die to the damage.", activation: "special" },
-  { name: "Reaching Wave", when: "You make a melee weapon attack", effect: "Your reach is 10 feet greater for that attack. On a hit, add the die as force damage.", activation: "special" },
-  { name: "Low Sweep", when: "You hit with a melee weapon attack", effect: "Add the die to the damage. A Large or smaller target makes a Strength save or is knocked prone.", activation: "special", save: "str" },
-  { name: "Hammer Blow", when: "You hit with a weapon attack", effect: "Add the die to the damage. A Large or smaller target makes a Strength save or is pushed up to 15 feet away.", activation: "special", save: "str" },
-  { name: "Stagger", when: "You hit with a weapon attack", effect: "Add the die to the damage. The target makes a Constitution save or can't take reactions until the start of your next turn.", activation: "special", save: "con" },
-  { name: "Goad", when: "You hit with a weapon attack", effect: "Add the die to the damage. The target makes a Wisdom save or has disadvantage on attacks against anyone but you until the end of your next turn.", activation: "special", save: "wis" },
-  { name: "Sweeping Arc", when: "You hit with a melee weapon attack", effect: "Choose a second creature within 5 feet of the target and within your reach. If the attack roll would hit it, it takes damage equal to the die roll, of the weapon's damage type.", activation: "special" },
-  { name: "Steady Sight", when: "You make a weapon attack roll", effect: "Add the die to the roll. You can wait until after you see the roll, but before you know whether it hits.", activation: "special" },
-  { name: "Echoing Reply", when: "A creature misses you with a melee attack", effect: "Use your reaction to make one melee weapon attack against it. On a hit, add the die to the damage.", activation: "reaction" },
-  { name: "Stone Skin", when: "A creature hits you with an attack", effect: "Use your reaction. Reduce the damage by the die roll plus your Constitution modifier.", activation: "reaction", formula: "{die} + @abilities.con.mod" },
-  { name: "Gale Step", when: "You move on your turn", effect: "Add the die roll to your AC until you stop moving, and ignore difficult terrain during that movement.", activation: "special" },
-  { name: "Rallying Chant", when: "As a bonus action", effect: "A friendly creature within 30 feet that can see or hear you gains temporary hit points equal to the die roll plus your proficiency bonus.", activation: "bonus", formula: "{die} + @prof" }
+  { name: "Prologue", act: "special", kind: "die", roll: "Initiative bonus", template: "1{die}",
+    text: "When you roll initiative, spend one Þrek die and roll it. Add the number to your initiative roll and to the initiative roll of one ally within 30 feet that can see or hear you. You can't be surprised." },
+  { name: "Act I: Exposé", act: "special", kind: "die", roll: "Attack roll bonus", template: "1{die}",
+    text: "When you hit a creature with a weapon attack, spend one Þrek die and roll it. The target is exposed until the start of your next turn. Choose yourself or one ally within 30 feet that can see you. The next attack roll that creature makes against the target adds the number rolled." },
+  { name: "Act II: Rise", act: "special", kind: "die", roll: "Bonus damage", template: "1{die}",
+    text: "When you hit a creature with a weapon attack on your turn, spend one Þrek die and add it to the damage. The number carries over: the next weapon attack you hit with before the end of your turn adds the same number to its damage, against any creature." },
+  { name: "Act III: Climax", act: "reaction", kind: "die", roll: "Bonus damage", template: "1{die}",
+    text: "<strong>Trigger:</strong> A creature within your reach misses you with an attack. Spend one Þrek die. As a reaction, make one weapon attack against that creature with advantage and add the die to the damage." },
+  { name: "Act IV: Fall", act: "special", kind: "save", save: "str", template: "2{die}",
+    text: "When you hit a creature with a weapon attack, spend one Þrek die and roll it twice. Add both numbers to the damage. If the target is Huge or smaller, it makes a Strength saving throw. On a failure, it is knocked prone." },
+  { name: "Act V: Resolute", act: "reaction", kind: "none",
+    text: "<strong>Trigger:</strong> Damage would reduce you to 0 hit points but not kill you outright. Spend one Þrek die. As a reaction, you drop to 1 hit point instead, and until the end of your next turn, damage can't reduce you below 1 hit point." },
+  { name: "Epilogue", act: "special", kind: "heal", template: "1{die}", temp: false,
+    text: "When you reduce a creature to 0 hit points with a weapon attack, spend one Þrek die and roll it. You and each ally of your choice within 30 feet that can see you regain hit points equal to the number rolled." },
+  { name: "Enhance Step", act: "bonus", kind: "none",
+    text: "As a bonus action, spend one Þrek die. In a blur, you teleport up to 30 feet to an unoccupied space you can see. You can bring one willing Medium or smaller creature within 5 feet of you. It appears in an unoccupied space within 5 feet of your destination." },
+  { name: "Enhance Armament", act: "bonus", kind: "save", save: "con", template: "",
+    text: "As a bonus action, spend one Þrek die. Until the end of your turn, one weapon you are holding counts as magical. The first creature you hit with it this turn makes a Constitution saving throw. On a failure, it is blinded until the end of its next turn." },
+  { name: "Enhance Sight", act: "bonus", kind: "none",
+    text: "As a bonus action, spend one Þrek die. For 1 minute, you have darkvision out to 60 feet, you can see invisible creatures within 30 feet, and your weapon attacks ignore half cover and three-quarters cover." },
+  { name: "Enhance Skin", act: "reaction", kind: "diemod", roll: "Damage reduction", template: "1{die} + {mod}",
+    text: "<strong>Trigger:</strong> You take bludgeoning, piercing, or slashing damage. As a reaction, spend one Þrek die and roll it. Reduce the damage by the number rolled plus your Þrek ability modifier." },
+  { name: "Willful Punish", act: "special", kind: "save", save: "wis", template: "1{die}",
+    text: "When you hit a creature with a weapon attack, spend one Þrek die and add it to the damage. The target makes a Wisdom saving throw. On a failure, it has disadvantage on attack rolls against targets other than you until the end of your next turn." },
+  { name: "Willful Praise", act: "bonus", kind: "heal", template: "1{die} + {mod}", temp: true,
+    text: "As a bonus action, choose another creature within 60 feet that can see or hear you and spend one Þrek die. It gains temporary hit points equal to the die roll plus your Þrek ability modifier, and it can end one charmed or frightened effect on itself." }
 ];
 
+const slug = n => n.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/\W+/g, "-").replace(/^-|-$/g, "");
+
 const artItems = THREK_ARTS.map(a => ({
-  key: `threk-${a.name.toLowerCase().replace(/\W+/g, "-")}`,
+  key: `threk-${slug(a.name)}`,
   category: "threk",
   name: a.name,
-  img: "icons/svg/combat.svg",
-  desc: p(`<strong>Use it when:</strong> ${a.when}.`) + p(`<strong>Effect:</strong> ${a.effect}`)
-    + p("Spend one Þrek die. At most one Art per attack or trigger. Needs a short chant and a trained movement. Damage and effects count as Megin.")
-    + (a.save ? p(`The save DC is 8 + proficiency bonus + your Þrek modifier. Trace fills this in.`) : ""),
-  activities: [{
-    name: a.name, kind: a.save ? "save" : "utility", activation: a.activation, save: a.save ?? null,
-    roll: { name: "Þrek die", formula: a.formula ?? "{die}" }, spend: "threk"
-  }]
+  img: ICON_THREK,
+  desc: p(a.text) + p("Spend one Þrek die. At most one Art per attack or trigger. Needs a short chant and a trained movement. Damage and effects count as Megin."),
+  activities: [{ name: a.name, kind: a.kind, activation: a.act, save: a.save ?? null, roll: a.roll ? { name: a.roll } : null, template: a.template ?? "", temp: !!a.temp, spend: "threk" }]
 }));
 
 export const POWERS = [
@@ -89,7 +107,7 @@ export const POWERS = [
 
   /* ---------- Þrek ---------- */
   {
-    key: "threk-dice", category: "threk", name: "Þrek Dice", img: "icons/svg/d20-grey.svg", pool: "threk",
+    key: "threk-dice", category: "threk", name: "Þrek Dice", img: ICON_THREK, pool: "threk",
     desc: p("Þrek is Megin pushed past the human limit through a chant and a trained movement. It plays like superiority dice: a small pool of dice spent on Arts.")
       + ul([
         "Spend one die per Art, and use at most one Art per attack or trigger.",
@@ -108,7 +126,7 @@ export const POWERS = [
 
   /* ---------- Seiðr ---------- */
   {
-    key: "seidr-points", category: "seidr", name: "Seiðr Points", img: "icons/svg/lightning.svg", pool: "seidr",
+    key: "seidr-points", category: "seidr", name: "Seiðr Points", img: ICON_SEIDR, pool: "seidr",
     desc: p("Seiðr is Megin pushed out through a chant and a pose as an elemental or physical spell. It is a small, separate pool of spellcasting, built on the DMG spell points variant and paced like an Eldritch Knight.")
       + ul([
         "Your Seiðr level is one third of your character level, rounded up. The points come from the table in this feature's sheet.",
@@ -122,14 +140,14 @@ export const POWERS = [
     activities: []
   },
   {
-    key: "seidr-list", category: "seidr", name: "Seiðr Spell List", img: "icons/svg/fire.svg",
+    key: "seidr-list", category: "seidr", name: "Seiðr Spell List", img: ICON_SEIDR,
     desc: ul([
       "Cantrips: Fire Bolt, Frostbite, Ray of Frost, Shocking Grasp, Thunderclap.",
       "1st: Absorb Elements, Burning Hands, Ice Knife, Shield, Thunderwave.",
       "2nd: Flame Blade, Gust of Wind, Levitate, Scorching Ray, Shatter.",
       "3rd: Fireball, Lightning Bolt, Sleet Storm, Wind Wall.",
       "4th: Fire Shield, Ice Storm, Stoneskin, Wall of Fire."
-    ]) + p("Use the Seiðr spells button on the Trace tab to add the spells you choose. They are paid for with Seiðr Points."),
+    ]) + p("Drag any spell onto the Seiðr box on the Trace tab, or use the add buttons, and it becomes a Seiðr spell paid for with Seiðr Points."),
     activities: []
   },
 

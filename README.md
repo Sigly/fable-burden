@@ -4,7 +4,7 @@ Everything for the Trace campaign in one Foundry VTT module for D&D 5e (dnd5e 5.
 
 ## What is inside
 - **Fable Burden.** Attunement is replaced by Burden (capacity = proficiency bonus + 1), with the Fable rarity ladder. If the separate Fable Burden module is active, Trace 5.5e steps aside and warns you.
-- **Megin, Regin, Þrek, Seiðr.** Feature items, the 12 Þrek Arts (with dice, DCs and consumption wired up), and the Seiðr spell list with point costs.
+- **Megin, Regin, Þrek, Seiðr.** Feature items, the 13 Þrek Arts (Prologue, Acts I to V, Epilogue, Enhance x4, Willful x2) (with dice, DCs and consumption wired up), and the Seiðr spell list with point costs.
 - **100 Fables** with Blueprint, Maxim and Burden. Each is an equipment item with its Burden flag set.
 - **Idolization.** Renown (0 to 100), Megin rating, Epithet, and the three forms Maxim, Partial Idolization and Ascension, plus Last Stand and the 3 levels of exhaustion afterwards.
 - **Níð and Æði.** Rati, Orkan Rati, Orkan Puris, Klofna, Staðna, Spjölling, Haugr, Getnaðr and the party ability Leiftr (drafts).
@@ -22,5 +22,5 @@ By default Trace is GM only: the Trace tab, its abilities, the library button, c
 
 ## Notes
 - Þrek Dice and Seiðr Points are feature items whose uses recalculate from character level. Use the Recalculate button after a level change if a number looks stale.
-- Seiðr spells are copied from the dnd5e spell compendium and wired to Seiðr Points. Upcasting is not automated.
+- Seiðr spells: drag any spell onto the Seiðr box on the Trace tab (from the compendium, the Items sidebar or another sheet) and it becomes a Seiðr spell paid for with Seiðr Points. The add dropdown and library also work. Upcasting is not automated.
 - Níð powers and the Idolization active/passive choices are free text and drafts. Adjust to your table.
