@@ -1,36 +1,23 @@
-# Fable Burden
+# Trace 5.5e
 
-Removes attunement from D&D 5e and replaces it with Burden. For Foundry v13 and v14 with the dnd5e system 5.2 or newer (written against 5.3.3).
+Everything for the Trace campaign in one Foundry VTT module for D&D 5e (dnd5e 5.2+, Foundry v13+).
 
-## Install
+## What is inside
+- **Fable Burden.** Attunement is replaced by Burden (capacity = proficiency bonus + 1), with the Fable rarity ladder. If the separate Fable Burden module is active, Trace 5.5e steps aside and warns you.
+- **Megin, Regin, Þrek, Seiðr.** Feature items, the 12 Þrek Arts (with dice, DCs and consumption wired up), and the Seiðr spell list with point costs.
+- **100 Fables** with Blueprint, Maxim and Burden. Each is an equipment item with its Burden flag set.
+- **Idolization.** Renown (0 to 100), Megin rating, Epithet, and the three forms Maxim, Partial Idolization and Ascension, plus Last Stand and the 3 levels of exhaustion afterwards.
+- **Níð and Æði.** Rati, Orkan Rati, Orkan Puris, Klofna, Staðna, Spjölling, Haugr, Getnaðr and the party ability Leiftr (drafts).
 
-Unzip the `fable-burden` folder into `Data/modules/` (so you end up with `Data/modules/fable-burden/module.json`), restart Foundry, and enable it in your world under Manage Modules. Two settings need a reload after you change them.
+## How to use it
+- Every character and NPC sheet gets a **Trace** tab (Burden, Renown, Þrek, Seiðr, Idolization, Fables, Níð).
+- **Dropdown:** the Trace tab's "Add to this character" button, the Items directory "Trace 5.5e" button, or the macro "Trace: Add to character".
+- **Drag and drop:** a world compendium named Trace 5.5e is built for you (GM, on first load). Drag any entry onto a sheet. Trace links Þrek Arts to the Þrek Dice pool automatically.
+- **Macros:** a "Trace 5.5e" macro folder is created with the Library, Add, Trace kit, Add every Art, and Add a Fable macros.
+- The **Trace Library** window lists everything by section with search, drag handles and + buttons.
+- Console API: `game.modules.get("trace-5e").api`.
 
-## What it does
-
-**Attunement is gone.**
-- Items that needed attunement work whenever they are equipped. Their effects and activities are no longer hidden for being unattuned.
-- The attune button on inventory rows is hidden, and the attunement tracker on the inventory tab is replaced by the Burden tracker. The attune entry in the right-click menu does nothing.
-- Nothing is deleted. The attunement field on items is left alone, because it now means "this item costs Burden".
-
-**Burden is added.**
-- Each character can carry **proficiency bonus + 1** Burden (3 at level 1, 7 at level 17). Change the bonus in settings, or type a different number into the tracker to override one character.
-- An item costs Burden while it is equipped. Items inside a container never count.
-- Items that used to require attunement cost Burden by rarity: Common 1, Uncommon 2, Rare 3, Epic 4, Unique 4, Legendary 5, Mythical 6, Artifact 7. Edit the numbers in the "Burden by rarity" setting.
-- Any item can carry its own Burden. Open the item, go to its Details tab, and fill in the Burden field. A number there always wins, including 0. Leave it blank to use the rarity default.
-- Items with optional attunement are free unless you turn on "Optional attunement costs Burden".
-- Feats and other items that cannot be equipped count whenever they have a Burden number typed in. That is how a Fable stored as a feature can cost Burden.
-
-**Burden limit.** When someone equips an item that would put them over capacity, the setting decides: do nothing, warn, or block players. GMs only ever get a warning. The tracker turns red when a character is over.
-
-**Fable rarity ladder.** Turn on "Use the Fable rarity ladder" to get Common, Uncommon, Rare, Epic, Unique, Legendary, Mythical, Artifact in the rarity dropdown. Epic is the existing Very Rare (the key is unchanged, so old items still work). Unique and Mythical are new.
-
-## For macros
-
-`game.modules.get("fable-burden").api` has:
-- `actorBurden(actor)` returns `{ used, capacity, entries }`.
-- `burdenOf(item)` returns the Burden cost of one item.
-
-## Not tested live
-
-The Burden rules, settings, tracker and item field were run against a mocked Foundry, but this has not been run inside a live Foundry world. If a sheet looks off or the Burden field on an item will not save, that is the first place to look.
+## Notes
+- Þrek Dice and Seiðr Points are feature items whose uses recalculate from character level. Use the Recalculate button after a level change if a number looks stale.
+- Seiðr spells are copied from the dnd5e spell compendium and wired to Seiðr Points. Upcasting is not automated.
+- Níð powers and the Idolization active/passive choices are free text and drafts. Adjust to your table.

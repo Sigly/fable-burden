@@ -2,7 +2,7 @@
  * Pure Burden logic. Nothing here touches Foundry globals, so it can be unit tested outside of Foundry.
  */
 
-export const MODULE_ID = "fable-burden";
+export const MODULE_ID = "trace-5e";
 
 /**
  * Default Burden for an item that used to need attunement, keyed by dnd5e item rarity.

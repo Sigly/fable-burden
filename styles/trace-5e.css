@@ -1,0 +1,46 @@
+/* Attunement is replaced by Burden, so the attune buttons go away. */
+.fable-burden-no-attunement [data-action="attune"] {
+  display: none !important;
+}
+
+/* The tracker reuses dnd5e's attunement tracker markup; only the over-capacity state is ours. */
+.fable-burden.over .value {
+  color: var(--dnd5e-color-red, #b3261e);
+  font-weight: bold;
+}
+
+.fable-burden .max[type="number"] {
+  min-width: 2ch;
+}
+
+/* Burden field on item sheets. */
+.fable-burden-field {
+  margin-block-end: 0.5rem;
+}
+
+.fable-burden-field .hint {
+  margin: 0;
+}
+
+/* Trace tab and library */
+.trace-tab { display: flex; flex-direction: column; gap: 0.5rem; padding: 0.5rem; }
+.trace-card { border: 1px solid var(--color-border-light-tertiary, #bbb); border-radius: 6px; padding: 0.5rem 0.75rem; }
+.trace-card h3 { margin: 0 0 0.25rem; display: flex; align-items: center; gap: 0.5rem; }
+.trace-pill { font-size: var(--font-size-12, 12px); font-weight: normal; border-radius: 10px; padding: 0 0.5rem; border: 1px solid currentColor; }
+.trace-pill.over { color: var(--dnd5e-color-red, #b3261e); font-weight: bold; }
+.trace-row { display: flex; align-items: center; gap: 0.5rem; margin-block: 0.25rem; }
+.trace-row label { flex: 0 0 9rem; }
+.trace-muted { opacity: 0.7; }
+.trace-warn { color: var(--dnd5e-color-red, #b3261e); }
+.trace-toolbar { display: flex; flex-wrap: wrap; gap: 0.35rem; align-items: center; }
+.trace-list .trace-item { cursor: pointer; margin-inline-end: 0.5rem; white-space: nowrap; }
+.trace-list .trace-item img { vertical-align: middle; border: none; }
+.trace-library-body { display: flex; flex-direction: column; gap: 0.4rem; height: 100%; }
+.trace-library-body .trace-cats { display: flex; flex-wrap: wrap; gap: 0.5rem; border-bottom: 1px solid var(--color-border-light-tertiary, #bbb); padding-bottom: 0.25rem; }
+.trace-library-body .trace-cats a.active { font-weight: bold; text-decoration: underline; }
+.trace-list-items { list-style: none; margin: 0; padding: 0; overflow-y: auto; flex: 1; }
+.trace-row-item { display: flex; align-items: center; gap: 0.5rem; padding: 0.15rem 0.25rem; border-bottom: 1px solid var(--color-border-light-tertiary, #ddd); cursor: grab; }
+.trace-row-item .name { flex: 1; }
+.trace-row-item .sub { opacity: 0.7; font-size: var(--font-size-12, 12px); }
+.trace-row-item button { flex: 0 0 auto; width: 2rem; }
+.trace-open { margin-inline-start: 0.25rem; }

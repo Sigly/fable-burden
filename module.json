@@ -1,7 +1,7 @@
 {
-  "id": "fable-burden",
-  "title": "Fable Burden",
-  "description": "Removes attunement from D&D 5e and replaces it with Burden: every item has a Burden cost, and each character can carry up to proficiency bonus + 1.",
+  "id": "trace-5e",
+  "title": "Trace 5.5e",
+  "description": "Everything for the Trace campaign on D&D 5e: Fable Burden, Megin, Regin, Seiðr, Þrek, the 100 Fables, Idolization and Níð powers, with a Trace tab on character sheets, an add-to-character dropdown, drag and drop, and macros.",
   "version": "1.0.0",
   "compatibility": {
     "minimum": "13",
@@ -12,9 +12,6 @@
       "name": "Built with Claude for the Trace campaign"
     }
   ],
-  "url": "https://github.com/Sigly/fable-burden",
-  "manifest": "https://github.com/Sigly/fable-burden/releases/latest/download/module.json",
-  "download": "https://github.com/Sigly/fable-burden/releases/download/v1.0.0/module.zip",
   "relationships": {
     "systems": [
       {
@@ -31,7 +28,7 @@
     "scripts/main.mjs"
   ],
   "styles": [
-    "styles/fable-burden.css"
+    "styles/trace-5e.css"
   ],
   "languages": [
     {
@@ -39,5 +36,8 @@
       "name": "English",
       "path": "lang/en.json"
     }
-  ]
+  ],
+  "url": "https://github.com/Sigly/fable-burden",
+  "manifest": "https://raw.githubusercontent.com/Sigly/fable-burden/main/module.json",
+  "download": "https://github.com/Sigly/fable-burden/archive/refs/heads/main.zip"
 }
