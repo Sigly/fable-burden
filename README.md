@@ -10,7 +10,7 @@ Everything for the Trace campaign in one Foundry VTT module for D&D 5e (dnd5e 5.
 - **Níð and Æði.** Rati, Orkan Rati, Orkan Puris, Klofna, Staðna, Spjölling, Haugr, Getnaðr and the party ability Leiftr (drafts).
 
 ## How to use it
-- Every character and NPC sheet gets a **Trace** tab (Burden, Renown, Þrek, Seiðr, Idolization, Fables, Níð).
+- Every character and NPC sheet gets a **Trace** tab that holds all the abilities: Megin and Regin, Þrek (dice and Arts), Seiðr (points and spells), Idolization, Níð and Fables. Each ability row can be used, expanded to read it, opened or removed. Trace abilities are taken out of the normal Features and Spells lists, so they live only in this tab (Fables stay in the inventory so they can be equipped).
 - **Dropdown:** the Trace tab's "Add to this character" button, the Items directory "Trace 5.5e" button, or the macro "Trace: Add to character".
 - **Drag and drop:** a world compendium named Trace 5.5e is built for you (GM, on first load). Drag any entry onto a sheet. Trace links Þrek Arts to the Þrek Dice pool automatically.
 - **Macros:** a "Trace 5.5e" macro folder is created with the Library, Add, Trace kit, Add every Art, and Add a Fable macros.

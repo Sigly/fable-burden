@@ -57,11 +57,15 @@ Hooks.on("renderApplicationV2", (app, element) => {
   const actor = app.document;
   if ( actor?.documentName !== "Actor" ) return;
   activateTrace(app, element, actor);
-  // While Trace is hidden on this character, its abilities are hidden from the normal lists too.
-  if ( !traceVisible(actor) ) {
-    for ( const row of element.querySelectorAll("[data-item-id]") ) {
-      if ( actor.items.get(row.dataset.itemId)?.getFlag(MODULE_ID, "key") ) row.remove();
-    }
+  // Trace abilities live only in the Trace tab, so they are taken out of the normal lists.
+  // Fables stay in the inventory (to equip them) unless Trace is hidden on this character.
+  const visible = traceVisible(actor);
+  for ( const row of element.querySelectorAll("[data-item-id]") ) {
+    if ( row.closest(".trace-tab") ) continue;
+    const item = actor.items.get(row.dataset.itemId);
+    const key = item?.getFlag(MODULE_ID, "key");
+    if ( !key ) continue;
+    if ( (item.getFlag(MODULE_ID, "category") !== "fable") || !visible ) row.remove();
   }
 });
 

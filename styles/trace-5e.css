@@ -44,3 +44,11 @@
 .trace-row-item .sub { opacity: 0.7; font-size: var(--font-size-12, 12px); }
 .trace-row-item button { flex: 0 0 auto; width: 2rem; }
 .trace-open { margin-inline-start: 0.25rem; }
+
+.trace-abilities { list-style: none; margin: 0.25rem 0; padding: 0; }
+.trace-ability summary { display: flex; align-items: center; gap: 0.4rem; cursor: pointer; padding: 0.15rem 0; }
+.trace-ability .trace-item { flex: 1; }
+.trace-ability .trace-meta { opacity: 0.7; font-size: var(--font-size-12, 12px); }
+.trace-ability .trace-ability-buttons a { margin-inline-start: 0.35rem; }
+.trace-ability .trace-desc { padding: 0.25rem 0.5rem 0.5rem 1.6rem; font-size: var(--font-size-13, 13px); }
+.trace-ability { border-bottom: 1px solid var(--color-border-light-tertiary, #ddd); }
