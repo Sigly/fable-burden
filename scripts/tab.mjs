@@ -1,5 +1,6 @@
 /** The Trace tab on character and NPC sheets. */
 import { MODULE_ID as FLAG } from "./burden-core.mjs";
+import { SECTIONS, sectionShown, toggleSection } from "./reveal.mjs";
 import { ABILITIES, threkFor, seidrFor, saveDC, meginRating, epithetSlots, IDOLIZATION_FORMS } from "./core.mjs";
 import { itemByKey, actorLevel, syncActor, addDroppedSpell } from "./build.mjs";
 import { actorBurden } from "./burden.mjs";
@@ -99,63 +100,64 @@ export function renderTraceHtml(actor) {
   const idolItems = byCat("idolization");
   const itemLink = i => `<a data-trace-use="${i.id}" class="trace-item"><img src="${i.img}" width="18" height="18"> ${esc(i.name)}</a>`;
 
-  let burden = "";
+  let burden = null;
   try {
     const b = actorBurden(actor);
-    burden = `<div class="trace-card"><h3>Burden <span class="trace-pill ${b.used > b.capacity ? "over" : ""}">${b.used} / ${b.capacity}</span></h3>
-      <p class="trace-muted">${b.entries.length ? b.entries.map(e => `${esc(e.name)} (${e.burden})`).join(", ") : "Nothing carried."}</p></div>`;
-  } catch(err) { burden = ""; }
+    burden = { title: `Burden <span class="trace-pill ${b.used > b.capacity ? "over" : ""}">${b.used} / ${b.capacity}</span>`,
+      body: `<p class="trace-muted">${b.entries.length ? b.entries.map(e => `${esc(e.name)} (${e.burden})`).join(", ") : "Nothing carried."}</p>` };
+  } catch(err) { burden = null; }
 
   const idol = activeIdolization(actor);
   const idolButtons = Object.entries(IDOLIZATION_FORMS).map(([key, f]) =>
     `<button type="button" data-trace-idolize="${key}" ${megin < f.minMegin ? "disabled" : ""}>${f.label} <small>(Megin ${f.minMegin}+)</small></button>`).join("");
 
-  return `<div class="trace-tab">
-  <div class="trace-toolbar">
-    <button type="button" data-trace-action="add"><i class="fa-solid fa-plus"></i> Add to this character</button>
-    <button type="button" data-trace-action="library"><i class="fa-solid fa-book-open"></i> Trace Library</button>
-    <button type="button" data-trace-action="sync"><i class="fa-solid fa-rotate"></i> Recalculate</button>
-    ${game.user.isGM ? `<button type="button" data-trace-action="reveal"><i class="fa-solid ${actor.getFlag(FLAG, "traceShown") ? "fa-eye-slash" : "fa-eye"}"></i> ${actor.getFlag(FLAG, "traceShown") ? "Hide from player" : "Show to player"}</button>` : ""}
-  </div>
-  ${burden}
-  <div class="trace-card"><h3>Renown and Megin</h3>
-    ${renownBar(renown)}
+  const gm = game.user.isGM;
+  const shownMap = actor.getFlag(FLAG, "sections") ?? {};
+  const card = (sec, titleHtml, body) => {
+    if ( !sectionShown(actor, sec) ) return "";
+    const on = !!shownMap[sec];
+    const eye = gm && game.settings.get(FLAG, "gmOnly")
+      ? `<button type="button" class="trace-eye ${on ? "on" : ""}" data-trace-action="reveal-section" data-section="${sec}" data-tooltip="${on ? "Shown to players. Click to hide." : "Hidden from players. Click to show."}"><i class="fa-solid ${on ? "fa-eye" : "fa-eye-slash"}"></i> ${on ? "Shown" : "Show to player"}</button>` : "";
+    return `<div class="trace-card" data-section="${sec}"><h3>${titleHtml}${eye}</h3>${body}</div>`;
+  };
+  const tools = gm || !game.settings.get(FLAG, "gmOnly");
+  const cards = [
+    burden ? card("burden", burden.title, burden.body) : "",
+    card("renown", "Renown and Megin", `${renownBar(renown)}
     <div class="trace-row"><label>Renown (0 to 100)</label><input type="number" min="0" max="100" step="1" value="${renown}" data-trace-field="renown"></div>
     <p>Megin rating <strong>${megin}</strong> (Renown ÷ 10, max 10).
     Epithet: ${slots ? `<em>${slots} passive${slots > 1 ? "s" : ""} allowed</em>` : "<em>locked until 20 Renown</em>"}</p>
-    ${slots ? `<div class="trace-row"><label>Epithet</label><input type="text" data-trace-field="epithet" value="${esc(actor.getFlag(FLAG, "epithet") ?? "")}"></div>` : ""}
-  </div>
-  <div class="trace-card"><h3>Megin and Regin</h3>
-    ${abilityList(megin_items, canEdit, "None yet.")}
-  </div>
-  <div class="trace-card"><h3>Þrek <span class="trace-pill">${threkPool ? `${threkPool.left} / ${threkPool.max} dice` : "not added"}</span></h3>
+    ${slots ? `<div class="trace-row"><label>Epithet</label><input type="text" data-trace-field="epithet" value="${esc(actor.getFlag(FLAG, "epithet") ?? "")}"></div>` : ""}`),
+    card("megin", "Megin and Regin", abilityList(megin_items, canEdit, "None yet.")),
+    card("threk", `Þrek <span class="trace-pill">${threkPool ? `${threkPool.left} / ${threkPool.max} dice` : "not added"}</span>`, `
     <div class="trace-row"><label>Þrek modifier</label>${abilitySelect("threkAbility", threkAbility, ["str", "dex", "con"])}</div>
     <p>Level ${level}: ${threk.dice}d${threk.die}, ${threk.arts} Arts known. Art save DC <strong>${saveDC(prof, mod(threkAbility))}</strong>.
     ${arts.length > threk.arts ? `<span class="trace-warn">You have ${arts.length} Arts but know ${threk.arts}.</span>` : ""}</p>
     ${threkPoolItem ? abilityList([threkPoolItem], canEdit, "") : ""}
-    ${abilityList(arts, canEdit, "No Arts yet.")}
-  </div>
-  <div class="trace-card"><h3>Seiðr <span class="trace-pill">${seidrPool ? `${seidrPool.left} / ${seidrPool.max} points` : "not added"}</span></h3>
+    ${abilityList(arts, canEdit, "No Arts yet.")}`),
+    card("seidr", `Seiðr <span class="trace-pill">${seidrPool ? `${seidrPool.left} / ${seidrPool.max} points` : "not added"}</span>`, `
     <div class="trace-row"><label>Seiðr ability</label>${abilitySelect("seidrAbility", seidrAbility, ["int", "wis", "cha"])}</div>
     <p>Seiðr level ${seidr.seidrLevel}, up to spell level ${seidr.maxSpellLevel}, ${seidr.cantrips} cantrips, ${seidr.spellsKnown} spells. Save DC <strong>${saveDC(prof, mod(seidrAbility))}</strong>, attack <strong>+${prof + mod(seidrAbility)}</strong>.</p>
     ${abilityList([seidrPoolItem, seidrListItem].filter(Boolean), canEdit, "")}
     ${canEdit ? `<div class="trace-drop" data-trace-drop="seidr"><i class="fa-solid fa-arrow-down"></i> Drag a spell here to make it a Seiðr spell</div>` : ""}
-    ${abilityList([...seidrSpells].sort((a, b) => (a.getFlag(FLAG, "spellLevel") ?? 0) - (b.getFlag(FLAG, "spellLevel") ?? 0)), canEdit, "No Seiðr spells yet.")}
-  </div>
-  <div class="trace-card"><h3>Idolization ${idol ? `<span class="trace-pill">${esc(idol.name)}</span>` : ""}</h3>
+    ${abilityList([...seidrSpells].sort((a, b) => (a.getFlag(FLAG, "spellLevel") ?? 0) - (b.getFlag(FLAG, "spellLevel") ?? 0)), canEdit, "No Seiðr spells yet.")}`),
+    card("idolization", `Idolization ${idol ? `<span class="trace-pill">${esc(idol.name)}</span>` : ""}`, `
     ${idol ? `<p>${idol.description ?? ""}</p>
       <div class="trace-toolbar"><button type="button" data-trace-action="laststand" ${idol.getFlag(FLAG, "lastStandUsed") ? "disabled" : ""}>Last Stand</button>
       <button type="button" data-trace-action="endidol">End Idolization (3 exhaustion)</button></div>`
     : `<p class="trace-muted">${actor.getFlag(FLAG, "idolizedSinceRest") ? "Already Idolized since the last long rest." : "Once per long rest. Needs a Tie to the Idol."}</p>
       <div class="trace-toolbar">${idolButtons}</div>`}
-    ${abilityList(idolItems, canEdit, "")}
-  </div>
-  <div class="trace-card"><h3>Fables</h3>
-    <p class="trace-list">${fables.map(i => `${itemLink(i)} <small>(${esc(i.getFlag(FLAG, "tier"))}, Burden ${i.getFlag(FLAG, "burden")})</small>`).join("<br>") || '<span class="trace-muted">No Fables.</span>'}</p>
-  </div>
-  <div class="trace-card"><h3>Níð and Æði</h3>
-    ${abilityList(nid, canEdit, "None.")}
-  </div>
+    ${abilityList(idolItems, canEdit, "")}`),
+    card("fables", "Fables", `<p class="trace-list">${fables.map(i => `${itemLink(i)} <small>(${esc(i.getFlag(FLAG, "tier"))}, Burden ${i.getFlag(FLAG, "burden")})</small>`).join("<br>") || '<span class="trace-muted">No Fables.</span>'}</p>`),
+    card("nid", "Níð and Æði", abilityList(nid, canEdit, "None."))
+  ].join("");
+  return `<div class="trace-tab">
+  ${tools ? `<div class="trace-toolbar">
+    <button type="button" data-trace-action="add"><i class="fa-solid fa-plus"></i> Add to this character</button>
+    <button type="button" data-trace-action="library"><i class="fa-solid fa-book-open"></i> Trace Library</button>
+    <button type="button" data-trace-action="sync"><i class="fa-solid fa-rotate"></i> Recalculate</button>
+  </div>` : ""}
+  ${cards}
 </div>`;
 }
 
@@ -185,10 +187,11 @@ export function activateTrace(app, element, actor) {
     switch ( btn.dataset.traceAction ) {
       case "add": return openAddDialog(actor);
       case "library": return openLibrary(actor);
-      case "reveal": {
-        const shown = !actor.getFlag(FLAG, "traceShown");
-        await actor.setFlag(FLAG, "traceShown", shown);
-        return ui.notifications.info(shown ? `Trace is now visible to ${actor.name}'s owners.` : `Trace is hidden from ${actor.name}'s owners.`);
+      case "reveal-section": {
+        if ( !game.user.isGM ) return;
+        const sec = btn.dataset.section;
+        const shown = await toggleSection(actor, sec);
+        return ui.notifications.info(`${SECTIONS[sec]} is ${shown ? "now visible to" : "hidden from"} ${actor.name}'s owners.`);
       }
       case "sync": await syncActor(actor); return ui.notifications.info("Trace values recalculated.");
       case "laststand": return lastStand(actor);

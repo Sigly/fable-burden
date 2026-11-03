@@ -1,5 +1,6 @@
 import "./burden.mjs";
 import { MODULE_ID } from "./burden-core.mjs";
+import { sectionOf, sectionShown, anySectionShown } from "./reveal.mjs";
 import { renderTraceHtml, activateTrace } from "./tab.mjs";
 import { syncActor, addToActor, addDroppedSpell } from "./build.mjs";
 import { onRestCompleted, idolize, endIdolization, lastStand, setRenown, getRenown, getMegin } from "./idolize.mjs";
@@ -7,9 +8,8 @@ import {
   openLibrary, openAddDialog, buildCompendium, createMacros, linkNewItem, addKit, addCategory, addByName, catalog, loadFables
 } from "./library.mjs";
 
-/** GMs always see Trace. Players see it on a character only when the GM has revealed it (or the setting is off). */
-export const traceVisible = actor => game.user.isGM || !game.settings.get(MODULE_ID, "gmOnly")
-  || !!actor?.getFlag(MODULE_ID, "traceShown");
+/** GMs always see Trace. Players see the tab on a character once the GM has revealed at least one section (or the setting is off). */
+export const traceVisible = actor => (actor ? anySectionShown(actor) : (game.user.isGM || !game.settings.get(MODULE_ID, "gmOnly")));
 const TAB = { tab: "trace", label: "Trace", icon: "fa-solid fa-eye", condition: actor => traceVisible(actor) };
 const PART = {
   container: { classes: ["tab-body"], id: "tabs" },
@@ -21,7 +21,7 @@ Hooks.once("init", () => {
   game.settings.register(MODULE_ID, "libraryVersion", { scope: "world", config: false, type: String, default: "" });
   game.settings.register(MODULE_ID, "gmOnly", {
     name: "Hide Trace from players",
-    hint: "Only GMs see the Trace tab, its abilities, the library button, the Trace 5.5e compendium and the Trace macros. On each character the GM can reveal the Trace tab and its abilities with the Show to player button.",
+    hint: "Only GMs see the Trace tab, its abilities, the library button, the Trace 5.5e compendium and the Trace macros. On each character the GM reveals the Trace sections one at a time with the eye button on each section.",
     scope: "world", config: true, type: Boolean, default: true, requiresReload: true
   });
   game.settings.register(MODULE_ID, "autoBuild", {
@@ -59,13 +59,13 @@ Hooks.on("renderApplicationV2", (app, element) => {
   activateTrace(app, element, actor);
   // Trace abilities live only in the Trace tab, so they are taken out of the normal lists.
   // Fables stay in the inventory (to equip them) unless Trace is hidden on this character.
-  const visible = traceVisible(actor);
   for ( const row of element.querySelectorAll("[data-item-id]") ) {
     if ( row.closest(".trace-tab") ) continue;
     const item = actor.items.get(row.dataset.itemId);
     const key = item?.getFlag(MODULE_ID, "key");
     if ( !key ) continue;
-    if ( (item.getFlag(MODULE_ID, "category") !== "fable") || !visible ) row.remove();
+    const section = sectionOf(item);
+    if ( (section !== "fables") || !sectionShown(actor, "fables") ) row.remove();
   }
 });
 

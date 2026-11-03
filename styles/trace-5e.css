@@ -63,3 +63,7 @@
 .trace-bar .tick { position: absolute; top: 0; bottom: 0; width: 1px; background: rgba(255,255,255,0.45); }
 .trace-bar .tick.epithet { width: 2px; background: rgba(255,255,255,0.9); }
 .trace-bar-label { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: var(--font-size-12, 12px); color: #fff; text-shadow: 0 0 3px #000; pointer-events: none; }
+
+.trace-tab .trace-card h3 { display: flex; align-items: center; gap: 6px; }
+.trace-tab .trace-eye { margin-left: auto; width: auto; flex: 0 0 auto; padding: 0 8px; height: 22px; line-height: 20px; font-size: 11px; opacity: .7; }
+.trace-tab .trace-eye.on { opacity: 1; color: var(--color-text-hyperlink, #2a7); }
