@@ -55,6 +55,22 @@ function abilityList(items, canEdit, empty) {
   return items.length ? `<ul class="trace-abilities">${items.map(i => abilityRow(i, canEdit)).join("")}</ul>` : `<p class="trace-muted">${empty}</p>`;
 }
 
+/** Progress bar for Renown. Ticks mark each Megin rating (every 10) and the Epithet thresholds (20, 50, 80). */
+function renownBar(renown) {
+  const megin = meginRating(renown);
+  const toNext = megin >= 10 ? 0 : (megin + 1) * 10 - renown;
+  const within = megin >= 10 ? 100 : (renown - megin * 10) * 10;   // percent of the way to the next Megin rating
+  const ticks = [10, 20, 30, 40, 50, 60, 70, 80, 90].map(n => `<i class="tick ${[20, 50, 80].includes(n) ? "epithet" : ""}" style="left:${n}%"></i>`).join("");
+  return `<div class="trace-bar" title="Renown ${renown} / 100">
+      <div class="trace-bar-fill" style="width:${renown}%"></div>${ticks}
+      <span class="trace-bar-label">Renown ${renown} / 100</span>
+    </div>
+    <div class="trace-bar trace-bar-small" title="Progress to the next Megin rating">
+      <div class="trace-bar-fill megin" style="width:${within}%"></div>
+      <span class="trace-bar-label">${megin >= 10 ? "Megin rating 10 (maximum)" : `Megin ${megin}, ${toNext} Renown to Megin ${megin + 1}`}</span>
+    </div>`;
+}
+
 /** Build the HTML for the Trace tab of an actor. */
 export function renderTraceHtml(actor) {
   const level = actorLevel(actor);
@@ -103,6 +119,7 @@ export function renderTraceHtml(actor) {
   </div>
   ${burden}
   <div class="trace-card"><h3>Renown and Megin</h3>
+    ${renownBar(renown)}
     <div class="trace-row"><label>Renown (0 to 100)</label><input type="number" min="0" max="100" step="1" value="${renown}" data-trace-field="renown"></div>
     <p>Megin rating <strong>${megin}</strong> (Renown ÷ 10, max 10).
     Epithet: ${slots ? `<em>${slots} passive${slots > 1 ? "s" : ""} allowed</em>` : "<em>locked until 20 Renown</em>"}</p>

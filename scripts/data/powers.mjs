@@ -93,16 +93,15 @@ export const POWERS = [
 
   /* ---------- Regin ---------- */
   {
-    key: "regin-infusion", category: "regin", name: "Regin: Infusion", img: "icons/svg/sword.svg",
-    desc: p("Regin is Megin held in your gear. It removes the Lost's resistance to normal weapons and adds no damage of its own.")
-      + p("<strong>Infusion.</strong> As a bonus action, infuse one weapon or object you are holding or wearing, or your fists. For 1 minute, attacks made with it count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage. Any object works as an improvised weapon, and ammunition fired from an infused ranged weapon counts as infused.")
+    key: "regin", category: "regin", name: "Regin", img: "icons/svg/sword.svg",
+    desc: p("<em>Passive.</em> Regin is Megin held in your gear. It is always on, takes no action, and has no uses to track.")
       + ul([
-        "You can keep two things infused at once, and your fists count as one. Infusing a third ends the oldest infusion.",
-        "An infusion ends when the item leaves your hands or body. A thrown object stays infused until the end of that turn.",
-        "It doesn't scale with level and adds no bonus to attack or damage."
-      ]),
-    activities: [{ name: "Infuse", kind: "utility", activation: "bonus" }],
-    duration: { value: "1", units: "minute" }
+        "Attacks you make with a weapon or object you are holding or wearing, or with your fists, count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage. Any object works as an improvised weapon, and ammunition fired from such a ranged weapon counts too.",
+        "It removes the Lost's resistance to normal weapons and adds no damage or attack bonus of its own, so it restores a normal hit instead of making you stronger.",
+        "It doesn't scale with level."
+      ])
+      + p("Against the Hverfa Swarm and Horde, which resist nonmagical bludgeoning, piercing and slashing damage, Regin always has a job."),
+    activities: []
   },
 
   /* ---------- Þrek ---------- */

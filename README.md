@@ -4,7 +4,7 @@ Everything for the Trace campaign in one Foundry VTT module for D&D 5e (dnd5e 5.
 
 ## What is inside
 - **Fable Burden.** Attunement is replaced by Burden (capacity = proficiency bonus + 1), with the Fable rarity ladder. If the separate Fable Burden module is active, Trace 5.5e steps aside and warns you.
-- **Megin, Regin, Þrek, Seiðr.** Feature items, the 13 Þrek Arts (Prologue, Acts I to V, Epilogue, Enhance x4, Willful x2) (with dice, DCs and consumption wired up), and the Seiðr spell list with point costs.
+- **Megin, Regin (passive), Þrek, Seiðr.** Feature items, the 13 Þrek Arts (Prologue, Acts I to V, Epilogue, Enhance x4, Willful x2) (with dice, DCs and consumption wired up), and the Seiðr spell list with point costs.
 - **100 Fables** with Blueprint, Maxim and Burden. Each is an equipment item with its Burden flag set.
 - **Idolization.** Renown (0 to 100), Megin rating, Epithet, and the three forms Maxim, Partial Idolization and Ascension, plus Last Stand and the 3 levels of exhaustion afterwards.
 - **Níð and Æði.** Rati, Orkan Rati, Orkan Puris, Klofna, Staðna, Spjölling, Haugr, Getnaðr and the party ability Leiftr (drafts).
