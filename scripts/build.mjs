@@ -248,7 +248,7 @@ export async function syncActor(actor) {
             patch[`${path}.damage.parts`] = parts; changed = true;
           }
         }
-        if ( meta.spend === "threk" ) {
+        {   // every activity on an Art spends one Þrek die
           const have = act.consumption?.targets?.[0]?.target;
           if ( threkPool && (have !== threkPool.id) ) {
             patch[`${path}.consumption.targets`] = [{ type: "itemUses", target: threkPool.id, value: "1" }]; changed = true;
