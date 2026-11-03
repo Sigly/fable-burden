@@ -7,7 +7,8 @@ import {
   openLibrary, openAddDialog, buildCompendium, createMacros, linkNewItem, addKit, addCategory, addByName, catalog, loadFables
 } from "./library.mjs";
 
-const TAB = { tab: "trace", label: "Trace", icon: "fa-solid fa-eye" };
+export const traceVisible = () => game.user.isGM || !game.settings.get(MODULE_ID, "gmOnly");
+const TAB = { tab: "trace", label: "Trace", icon: "fa-solid fa-eye", condition: () => traceVisible() };
 const PART = {
   container: { classes: ["tab-body"], id: "tabs" },
   template: `modules/${MODULE_ID}/templates/trace-tab.hbs`,
@@ -16,6 +17,11 @@ const PART = {
 
 Hooks.once("init", () => {
   game.settings.register(MODULE_ID, "libraryVersion", { scope: "world", config: false, type: String, default: "" });
+  game.settings.register(MODULE_ID, "gmOnly", {
+    name: "Hide Trace from players",
+    hint: "Only GMs see the Trace tab, the Trace library button, the Trace 5.5e compendium and the Trace macros. Players can still use items you add to their characters.",
+    scope: "world", config: true, type: Boolean, default: true, requiresReload: true
+  });
   game.settings.register(MODULE_ID, "autoBuild", {
     name: "Build the Trace compendium automatically",
     hint: "GMs only. Creates and refreshes the world compendium Trace 5.5e so items can be dragged onto sheets.",
@@ -40,7 +46,7 @@ Hooks.once("setup", () => {
 });
 
 Hooks.on("dnd5e.prepareSheetContext", (sheet, partId, context) => {
-  if ( partId !== "trace" ) return;
+  if ( partId !== "trace" || !context.tab || !traceVisible() ) return;
   context.traceHtml = renderTraceHtml(sheet.document);
 });
 
@@ -63,7 +69,7 @@ Hooks.on("updateItem", (item, changes, options, userId) => {
 
 // Add a Trace button to the Items directory.
 Hooks.on("renderItemDirectory", (app, element) => {
-  if ( element.querySelector(".trace-open") ) return;
+  if ( element.querySelector(".trace-open") || !traceVisible() ) return;
   const button = document.createElement("button");
   button.type = "button";
   button.classList.add("trace-open");

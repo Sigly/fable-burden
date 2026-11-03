@@ -36,12 +36,13 @@ export async function buildCompendium({ force = false } = {}) {
   if ( !game.user.isGM ) return null;
   const version = game.modules.get(FLAG).version;
   let pack = game.packs.get(packId());
-  if ( pack && !force && game.settings.get(FLAG, "libraryVersion") === version ) return pack;
+  if ( pack && !force && game.settings.get(FLAG, "libraryVersion") === version ) { await applyPackOwnership(pack); return pack; }
   if ( !pack ) {
     pack = await foundry.documents.collections.CompendiumCollection.createCompendium({
       label: "Trace 5.5e", name: PACK_NAME, type: "Item", packageType: "world"
     });
   }
+  await applyPackOwnership(pack);
   const existing = await pack.getDocuments();
   if ( existing.length ) await Item.deleteDocuments(existing.map(d => d.id), { pack: pack.collection });
   const fables = await loadFables();
@@ -51,6 +52,13 @@ export async function buildCompendium({ force = false } = {}) {
   await game.settings.set(FLAG, "libraryVersion", version);
   ui.notifications.info("Trace 5.5e compendium built. Drag items from it onto any character sheet.");
   return pack;
+}
+
+/** Players get no access to the compendium while Trace is GM only. */
+async function applyPackOwnership(pack) {
+  const gmOnly = game.settings.get(FLAG, "gmOnly");
+  const wanted = gmOnly ? { PLAYER: "NONE", TRUSTED: "NONE", ASSISTANT: "OWNER" } : { PLAYER: "OBSERVER", TRUSTED: "OBSERVER", ASSISTANT: "OWNER" };
+  try { await pack.configure({ ownership: wanted }); } catch(err) { console.warn("Trace 5.5e | could not set pack ownership", err); }
 }
 
 async function uuidIndex() {
@@ -88,7 +96,10 @@ function actorOptions(selected) {
 
 /* ---------------- Add dialog (dropdown) ---------------- */
 
+const allowed = () => game.user.isGM || !game.settings.get(FLAG, "gmOnly");
+
 export async function openAddDialog(actor = null) {
+  if ( !allowed() ) return ui.notifications.warn("Trace is GM only.");
   const entries = await catalog();
   const cats = CATEGORIES.filter(c => c.id !== "burden");
   const selected = actor ?? defaultActor();
@@ -207,6 +218,7 @@ export class TraceLibrary extends foundry.applications.api.ApplicationV2 {
 
 let library = null;
 export function openLibrary(actor = null) {
+  if ( !allowed() ) return ui.notifications.warn("Trace is GM only.");
   library ??= new TraceLibrary();
   if ( actor ) library.actorId = actor.id;
   return library.render({ force: true });
@@ -240,10 +252,12 @@ export async function createMacros() {
   if ( !game.user.isGM ) return;
   let folder = game.folders.find(f => f.type === "Macro" && f.getFlag(FLAG, "folder"));
   if ( !folder ) folder = await Folder.create({ name: "Trace 5.5e", type: "Macro", flags: { [FLAG]: { folder: true } } });
+  if ( folder.ownership?.default !== undefined ) await folder.update({ "ownership.default": game.settings.get(FLAG, "gmOnly") ? 0 : 2 }).catch(() => {});
   for ( const m of MACROS ) {
     const have = game.macros.find(x => x.getFlag(FLAG, "macro") === m.name);
-    if ( have ) { if ( have.command !== m.command ) await have.update({ command: m.command }); continue; }
-    await Macro.create({ name: m.name, type: "script", img: "icons/svg/book.svg", command: m.command, folder: folder.id, flags: { [FLAG]: { macro: m.name } } });
+    const level = game.settings.get(FLAG, "gmOnly") ? 0 : 2;
+    if ( have ) { await have.update({ command: m.command, "ownership.default": level }); continue; }
+    await Macro.create({ name: m.name, type: "script", img: "icons/svg/book.svg", command: m.command, folder: folder.id, ownership: { default: level }, flags: { [FLAG]: { macro: m.name } } });
   }
 }
 

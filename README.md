@@ -17,6 +17,9 @@ Everything for the Trace campaign in one Foundry VTT module for D&D 5e (dnd5e 5.
 - The **Trace Library** window lists everything by section with search, drag handles and + buttons.
 - Console API: `game.modules.get("trace-5e").api`.
 
+## Visibility
+By default Trace is GM only: the Trace tab, library button, compendium and macros are hidden from players (setting "Hide Trace from players"). Items you add to a player keep working for them.
+
 ## Notes
 - Þrek Dice and Seiðr Points are feature items whose uses recalculate from character level. Use the Recalculate button after a level change if a number looks stale.
 - Seiðr spells are copied from the dnd5e spell compendium and wired to Seiðr Points. Upcasting is not automated.
