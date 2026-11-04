@@ -7,7 +7,6 @@ import { onRestCompleted, idolize, endIdolization, lastStand, setRenown, getReno
 import {
   openLibrary, openAddDialog, buildCompendium, createMacros, linkNewItem, addKit, addCategory, addByName, catalog, loadFables
 } from "./library.mjs";
-import { openSeidrForge, seidrNameFor } from "./forge.mjs";
 
 /** GMs always see Trace. Players see the tab on a character once the GM has revealed at least one section (or the setting is off). */
 export const traceVisible = actor => (actor ? anySectionShown(actor) : (game.user.isGM || !game.settings.get(MODULE_ID, "gmOnly")));
@@ -109,7 +108,7 @@ Hooks.once("ready", async () => {
   if ( game.system.id !== "dnd5e" ) return;
   game.modules.get(MODULE_ID).api = {
     openLibrary, openAddDialog, addToActor, addDroppedSpell, addKit, addCategory, addByName, syncActor, catalog, loadFables,
-    idolize, endIdolization, lastStand, setRenown, getRenown, getMegin, openSeidrForge, seidrNameFor
+    idolize, endIdolization, lastStand, setRenown, getRenown, getMegin
   };
   if ( game.user.isGM ) {
     try {

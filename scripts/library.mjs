@@ -182,7 +182,7 @@ export class TraceLibrary extends foundry.applications.api.ApplicationV2 {
       <div class="trace-toolbar">
         <select name="actor">${actorOptions(this.actorId ? game.actors.get(this.actorId) : defaultActor())}</select>
         <input type="search" name="q" placeholder="Search" value="${esc(this.query)}">
-        ${gm ? `<button type="button" data-rebuild title="Rebuild the Trace 5.5e compendium"><i class="fa-solid fa-hammer"></i></button><button type="button" data-forge title="Seiðr Spell Forge: rename spells, add chants"><i class="fa-solid fa-wand-sparkles"></i></button>` : ""}
+        ${gm ? `<button type="button" data-rebuild title="Rebuild the Trace 5.5e compendium"><i class="fa-solid fa-hammer"></i></button>` : ""}
       </div>
       <nav class="trace-cats">${tabs}</nav>
       <p class="trace-muted">Drag a row onto a character sheet, or press + to add it to the character above.${uuids.fable ? "" : ""}</p>
@@ -212,7 +212,6 @@ export class TraceLibrary extends foundry.applications.api.ApplicationV2 {
       const added = await addToActor(actor, keys, { fables: await loadFables() });
       ui.notifications.info(`Added ${added.length} items to ${actor.name}.`);
     });
-    body.querySelector("[data-forge]")?.addEventListener("click", async () => { const { openSeidrForge } = await import("./forge.mjs"); openSeidrForge(); });
     body.querySelector("[data-rebuild]")?.addEventListener("click", async () => { await buildCompendium({ force: true }); this.render(); });
   }
 }
@@ -229,7 +228,6 @@ export function openLibrary(actor = null) {
 
 const MACROS = [
   { name: "Trace: Library", command: `game.modules.get("trace-5e").api.openLibrary();` },
-  { name: "Trace: Seiðr Spell Forge", command: `game.modules.get("trace-5e").api.openSeidrForge();` },
   { name: "Trace: Add to character", command: `game.modules.get("trace-5e").api.openAddDialog();` },
   { name: "Trace: Add the Trace kit to selected token", command:
 `const api = game.modules.get("trace-5e").api;
