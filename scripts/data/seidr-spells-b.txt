@@ -1,0 +1,139 @@
+@ icylord | The Icy Lord of Fire | the Icy Lord of Fire | Icy Lord of Fire, I beckon thee ; Icy Lord of Fire, hear me
+Fire Bolt | Firebolt | burn my enemies with a single ember | Icy Lord of Fire, I beckon thee, burn my enemies with a single ember, Firebolt.
+Ray of Frost | Hoarfrost Ray | let the cold of the fire's heart reach out and bite
+Frostbite | Brittle Fingers | let the frost climb their fingers until the steel falls
+Create Bonfire | Cold Bonfire | raise a bonfire that warms nothing and burns everything
+Control Flames | Bend the Ember | bid the little flame go where I point
+
+@ empedocles | The Man Who Leapt Into Etna | Empedocles | Etna's Leaper, I beckon thee ; Etna's Leaper, hear me ; Etna's Leaper, feed my flame
+Fireball | Etna's Breath | open the crater and let the mountain exhale
+Burning Hands | Scorch Palms | let the fire climb from my wrists to my fingers
+Scorching Ray | Three Embers | loose three embers and let each find its mark
+Produce Flame | Held Ember | let a flame sit in my open palm
+Fire Shield | Coat of Embers | clothe me in the fire that did not consume you
+Wall of Fire | Rim of the Crater | raise the crater's rim around them
+Delayed Blast Fireball | Slow Eruption | let the mountain hold its breath and then let it go
+Fire Storm | Rain of Cinders | let the sky pour what the mountain keeps
+Meteor Swarm | Falling Mountain | cast down the mountain in four pieces
+Incendiary Cloud | Smoke of the Crater | fill the air with the cloud that follows the fire
+Flaming Sphere | Rolling Ember | send a ball of fire rolling where I command
+Heat Metal | Forge Touch | make the iron glow beneath their grip
+Flame Blade | Crater Blade | draw a blade of fire from the mountain's heart
+Pyrotechnics | Etna's Sparks | strike the flame and scatter its sparks across the sky
+Investiture of Flame | Mantle of Etna | wrap me in the mountain that took me
+Elemental Bane | Fire Bane | let one element turn on the creature that wields it
+Immolation | Burning Skin | let the fire climb out of their own bones
+Continual Flame | Undying Hearth | light a flame that will not go out
+Hellish Rebuke | Etna's Answer | answer every blow with a little of the mountain's heat
+
+@ shackleton | The Frozen Wayfarer | Ernest Shackleton | Frozen Wayfarer, I beckon thee ; Frozen Wayfarer, hear me ; Frozen Wayfarer, lead us through the ice
+Cone of Cold | Polar Gale | send the south wind out in a cone and stop their hearts
+Ice Storm | Pack Ice | let the ice fall from the sky and shut the sea
+Sleet Storm | Whiteout | blind them in the white where no path remains
+Ice Knife | Splinter of Ice | break a shard from the floe and throw it true
+Wall of Ice | Frozen Wall | raise the pack ice between us and them
+Freezing Sphere;Otiluke's Freezing Sphere | Frozen Ball | hurl a ball of the cold that stopped the ship
+Snowball Swarm;Snilloc's Snowball Swarm | Flurry of Snow | cast a flurry of snowballs hard as stone
+Armor of Agathys | Ice Coat | wrap me in rime that bites whoever strikes me
+Rime's Binding Ice;Rime's Binding Ice | Ice Binding | freeze the floor and bind the feet that stand on it
+Investiture of Ice | Mantle of the Floe | clothe me in the ice that carried us home
+Tenser's Transformation | Endurance Trial | give me the strength to walk the whole way home
+
+@ cousteau | The Captain of the Deep | Jacques Cousteau | Captain of the Deep, I beckon thee ; Captain of the Deep, hear me ; Captain of the Deep, take me below
+Water Breathing | Breathe the Deep | let the sea be as air in my lungs
+Water Walk | Walk the Waves | let the surface hold me like a deck
+Create or Destroy Water | Draw the Tide | gather the water or send it away
+Control Water | Part the Sea | command the sea to rise, to part, to turn
+Tidal Wave | Breaking Wave | raise a wave and let it fall upon them
+Tsunami | Great Wave | let the whole sea stand up and walk
+Wall of Water | Wall of Sea | raise the sea as a wall between us and them
+Watery Sphere | Bubble of the Deep | enclose them in a sphere of the deep
+Shape Water | Mould the Water | bid the water take whatever shape I need
+Maelstrom | Whirlpool | open the sea into a mouth
+Vitriolic Sphere | Brine Sphere | hurl a sphere of the sea's worst
+Acid Splash | Salt Spray | fling the salt spray at their eyes
+
+@ imhotep | The Builder of the First Stair | Imhotep | Builder of the First Stair, I beckon thee ; Builder of the First Stair, hear me ; Builder of the First Stair, lay the stone for me
+Stone Shape | Shape the Block | bid the stone take the shape I need
+Wall of Stone | Great Wall | stack the blocks into a wall
+Transmute Rock | Stone to Mud | change the rock and let it be what I ask
+Move Earth | Quarry | move the earth as though it were a quarry
+Earthquake | Shaking Pyramid | let the ground shake as the stone shifts
+Meld into Stone | Sealed in Stone | seal me in the wall as in a tomb
+Stoneskin | Skin of Granite | make my skin as hard as the block
+Mold Earth | Quarry Hands | mould the ground with my hands
+Erupting Earth | Rising Stone | send the stone up beneath their feet
+Earth Tremor | Dull Shake | let the ground shudder and throw them down
+Wall of Sand | Dune Wall | raise the dune as a wall around them
+Investiture of Stone | Mantle of the Pyramid | wrap me in stone as in a tomb
+Passwall | Tomb Door | open a door in the stone and let me through
+Bones of the Earth | Rising Pillars | let the pillars rise from the ground
+Fabricate | Mason's Work | make from the raw material the thing I need
+Earthen Grasp;Maximilian's Earthen Grasp | Hand of Stone | raise a hand of stone from the ground and hold them
+Maximilian's Earthen Grasp | Hand of Stone | raise a hand of stone from the ground and hold them
+Primordial Ward | Hold the Elements | ward me against all that moves the world
+
+@ linnaeus | The Namer of Green Things | Carl Linnaeus | Namer of Green Things, I beckon thee ; Namer of Green Things, hear me ; Namer of Green Things, name this garden for me
+Entangle | Grasping Grass | let the grass remember its name and grip them
+Plant Growth | Green Surge | let every green thing rise tenfold
+Barkskin | Bark Coat | let the bark of the oak be my skin
+Goodberry | Gift Berries | bless these berries and let them feed
+Speak with Plants | Name the Weeds | let the green things answer when I name them
+Wall of Thorns | Bramble Wall | raise a wall of thorns around them
+Awaken | Wake the Tree | wake this thing and give it a name
+Tree Stride | Walk the Grove | step into one tree and out of another
+Spike Growth | Briar Floor | let the ground bristle with thorns
+Thorn Whip | Bramble Lash | lash them with a thorned vine and draw them in
+Druidcraft | Small Garden | bid the small things of the garden obey
+Shillelagh | Oak Club | make my staff as hard as the heart of the oak
+Grasping Vine | Choking Vine | send a vine to seize them and drag them in
+Hail of Thorns | Thorn Shower | let my arrow burst into a hail of thorns
+Transport via Plants | Garden Door | let this garden be a door to another
+Commune with Nature | Ask the Grove | let the wood tell me what it knows
+Wrath of Nature | Garden Rises | let the whole wood rise against them
+Locate Animals or Plants | Find the Species | tell me where the green and the living are hiding
+Plant Growth | Green Surge | let every green thing rise tenfold
+Conjure Woodland Beings | Wood Folk | call the wood folk to my side
+Wither and Bloom | Wither and Flower | let one thing wither and another bloom
+Infestation | Pest Swarm | send the small pests to their meal
+Cordon of Arrows | Arrow Fence | plant these arrows in the ground and let them guard it
+Swift Quiver | Endless Quiver | let my quiver refill as I draw
+Conjure Volley | Rain of Arrows | split my arrow into a hundred and let them fall
+Conjure Barrage | Splintered Barrage | split my missile into a storm
+
+@ francis | The Brother of Birds | Francis of Assisi | Brother of Birds, I beckon thee ; Brother of Birds, hear me ; Brother of Birds, speak for me
+Animal Friendship | Gentle Word | calm this beast and let it hear me
+Speak with Animals | Talk to the Beasts | let the beasts answer in their own tongue
+Beast Sense | Borrowed Eyes | let me see through the eyes of the small
+Animal Messenger | Sparrow Post | send a sparrow with my word
+Conjure Animals | Call the Flock | call the flock and the herd to my side
+Summon Beast | Beast Come | call a beast to stand beside me
+Dominate Beast | Beast Bound | bind the beast to my voice
+Giant Insect | Great Swarm | let the small things grow and serve
+Find Familiar | Companion Spirit | call a small spirit to walk beside me
+Find Steed | Faithful Mount | call a steed that will not tire
+Beast Bond | Heart of the Beast | let my heart and the beast's beat as one
+Friends | Warm Welcome | let their hearts open to me
+Insect Plague | Plague of Locusts | send the plague of the field upon them
+Druid Grove | Sacred Grove | make this grove a place the beasts guard
+Phantom Steed | Ghost Mount | call a spirit horse to carry us
+Summon Draconic Spirit | Dragon Spirit | call a dragon's spirit and let it fight beside me
+Animal Shapes | Brother Beasts | let my people take the shape of the beasts
+
+@ beaufort | The Measurer of Winds | Francis Beaufort | Measurer of Winds, I beckon thee ; Measurer of Winds, hear me ; Measurer of Winds, set the scale for me
+Gust of Wind | Force Two | send a stiff breeze to scatter them
+Fog Cloud | Sea Fret | roll in the fog and hide the fleet
+Wind Wall | Gale Wall | raise a gale as a wall against the arrows
+Control Weather | Weather Chart | set the sky to the number I choose
+Control Winds | Weighing the Wind | take the measure of the wind and bid it change
+Storm of Vengeance | Force Twelve | let the storm reach its greatest number
+Whirlwind | Hurricane Funnel | let the wind stand up and spin
+Wind Walk | Ride the Gale | let me and my companions ride the wind
+Gust | Light Air | let a breath stir the small things
+Zephyr Strike | Fair Wind | let a fair wind carry my blow
+Warding Wind | Shield of the Wind | let the wind keep the arrows from us
+Dust Devil | Dust Funnel | raise a spinning column of dust
+Sleet Storm | Squall | let the squall fall where I point
+Thunder Step | Storm Step | step through the thunder and land far off
+Flock of Familiars | Flock of Gulls | gather the small birds to watch
+Skywrite | Cloud Writing | write across the sky in smoke

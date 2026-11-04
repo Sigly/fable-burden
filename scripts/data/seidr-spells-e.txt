@@ -1,0 +1,104 @@
+@ dante | The Pilgrim of the Nine Circles | Dante Alighieri | Pilgrim of the Nine Circles, I beckon thee ; Pilgrim of the Nine Circles, hear me ; Pilgrim of the Nine Circles, guide me down
+Animate Dead | Rise from the Circle | let the dead rise from their circle
+Speak with Dead | Ask the Shade | let the shade answer what I ask
+Gentle Repose | Rest in Peace | let this body lie undisturbed
+Raise Dead | Return from the Dark | call this soul back from its circle
+Resurrection | Climb from Hell | let this soul climb out of the pit
+True Resurrection | Rebirth from the Pit | bring this soul back from the deepest circle
+Create Undead | Gather the Damned | gather the damned and bind them to me
+Summon Undead | Summon the Shade | call a shade from the circles
+Circle of Death | Ninth Circle | open the ninth circle and let it fall on them
+Finger of Death | Hand of the Pit | point the finger of the pit
+Soul Cage | Soul in the Jar | hold this soul in a cage
+Feign Death | Play the Shade | let me lie as dead that none may touch me
+Hellish Rebuke | Hell's Answer | let hell answer every blow I take
+Summon Greater Demon | Call the Demon | summon a demon from the ninth circle
+Summon Fiend | Call the Fiend | summon a fiend and bind it
+Danse Macabre | Dance of Shades | let the shades dance at my command
+Negative Energy Flood | Flood of the Pit | flood them with the pit's cold
+Enervation | Draining Dark | drain what warmth they have
+Ray of Sickness | Plague Ray | sicken them with the pit's breath
+Inflict Wounds | Deal Wounds | let the pain of the pit fall on them
+Harm | Wound of Hell | wound them as hell wounds the damned
+Planar Binding | Binding Oath | bind the fiend to my word
+Planar Ally | Ally from Beyond | ask a being of another plane to help me
+
+@ wells | The Time Voyager | H. G. Wells | Time Voyager, I beckon thee ; Time Voyager, hear me ; Time Voyager, set the dial for me
+Time Stop | Stopped Hour | stop the world for one breath more than it can bear
+Haste;Haste (Wells) | Quickened Hour | speed the dial and let my hours run faster
+Teleport | Time Jump | set the dial and let me arrive
+Teleportation Circle | Time Ring | draw a ring and let it open to another
+Word of Recall | Return Dial | set the dial back to my home
+Plane Shift | Dial the Plane | turn the dial to another plane
+Gate | Time Gate | open a gate between two worlds
+Astral Projection | Voyager's Shell | let the body rest while the voyager roams
+Far Step | Skipping Dial | skip across the dial in a step
+Blink | Flicker Dial | flicker between the dials
+Demiplane | Pocket Hour | fold an hour into a room
+Sequester | Frozen Hour | freeze this thing so that time will not touch it
+Contingency | Waiting Hour | set a spell to wait for its hour
+Arcane Gate | Twin Door | open two doors that open onto each other
+Thunder Step;Thunder Step (Wells) | Rift Step | step through the rift and be gone
+Vortex Warp | Warp Step | warp the dial and send them away
+Kinetic Jaunt | Swift Dial | skip along the dial of my own momentum
+
+@ hadrian | The Builder of the Wall | Hadrian | Builder of the Wall, I beckon thee ; Builder of the Wall, hear me ; Builder of the Wall, set the stone for me
+Shield | Shield Wall | raise the shield and let the blow fall on it
+Protection from Evil and Good | Wall Against the Dark | let the wall turn aside the creatures of the dark
+Magic Circle | Ring of Stones | ring us with stone that none may cross
+Sanctuary | Sacred Border | let none who see me strike me
+Alarm;Alarm (Hadrian) | Watch Bell | set the bell and ring when they cross
+Private Sanctum;Mordenkainen's Private Sanctum | Closed Garrison | close the garrison to every eye and ear
+Faithful Hound;Mordenkainen's Faithful Hound | Wall Hound | set a hound to guard the post
+Glyph of Warding | Boundary Stone | set a stone that strikes when crossed
+Forbiddance | Closed Border | close the border to all who are not mine
+Guards and Wards | Fortress Wards | ward every inch of this fortress
+Antilife Shell | Wall of the Living | raise a wall that no dead thing can cross
+Globe of Invulnerability;Globe of Invulnerability (Hadrian) | Walled Sphere | raise a wall around me on all sides
+Blade Barrier | Wall of Blades | raise a wall of spinning blades
+Tiny Hut;Leomund's Tiny Hut | Sentry Hut | raise a hut that is a wall to all who would enter
+Circle of Power | Ring of the Legion | ring us with the legion's power
+Aura of Purity | Clean Border | let no taint cross the border
+Aura of Life | Living Border | let the living ring hold back death
+Aura of Vitality | Healing Border | let those within the ring heal as they stand
+Holy Aura | Shining Wall | let a holy wall shine around us
+Magnificent Mansion;Mordenkainen's Magnificent Mansion | Hidden Fort | raise a fort that no one finds but those I let
+Temple of the Gods | Stone Temple | raise a temple where my people may rest
+Wall of Force;Wall of Force (Hadrian) | Invisible Wall | raise a wall that cannot be seen or crossed
+Prismatic Wall | Wall of Colors | raise a wall of seven colors
+Prismatic Spray | Colors Loosed | loose the colors of the wall in a spray
+Imprisonment | Walled Away | wall them away where nothing reaches them
+Maze | Labyrinth Wall | send them into the labyrinth of my walls
+Resilient Sphere;Resilient Sphere (Hadrian) | Walled Ball | wall them in a ball
+
+@ roland | The Horn of Roncevaux | Roland | Horn of Roncevaux, I beckon thee ; Horn of Roncevaux, hear me ; Horn of Roncevaux, sound for me
+Wrathful Smite | Terror Strike | let my blow fill them with terror
+Branding Smite | Mark of the Blade | let my blow mark them so none may hide
+Blinding Smite | Flash Strike | let my blow flash and blind them
+Staggering Smite | Sunder Strike | let my blow shake their minds
+Ensnaring Strike | Snaring Blow | let my blow bring the vines up around them
+Divine Favor;Divine Favor (Roland) | Horn Blessing | let the horn sound and my blows be blessed
+Spiritual Weapon | Ghost Blade | raise a blade of spirit to fight for me
+Elemental Weapon | Blade of the Elements | let my blade carry one of the elements
+Zephyr Strike;Zephyr Strike (Roland) | Charging Wind | let the wind carry me into the blow
+Swift Quiver;Swift Quiver (Roland) | Hail of Shafts | let the horn sound and the arrows fly
+Hail of Thorns;Hail of Thorns (Roland) | Thorned Volley | let the shaft burst into a hail
+Crusader's Mantle;Crusader's Mantle (Roland) | Horn Mantle | let the horn's sound be armor and weapon
+Steel Wind Strike | Rush of Blades | let my blades rush through five foes
+Compelled Duel;Compelled Duel (Roland) | Last Stand | hold them to the duel while the others escape
+Find Steed;Find Steed (Roland) | Warhorse | call the warhorse of my youth
+
+@ musashi | The Sword Saint | Miyamoto Musashi | Sword Saint, I beckon thee ; Sword Saint, hear me ; Sword Saint, guide my blade
+Booming Blade | Ringing Edge | let the blade ring and punish the step
+Green-Flame Blade | Green Edge | let the flame leap from blade to blade
+Blade Ward | Parry the Blow | let my guard turn the blow
+Shadow Blade;Shadow Blade (Musashi) | Twin Edge | draw the second blade from the dark
+Magic Weapon;Magic Weapon (Musashi) | Honed Edge | hone this blade until it cuts like magic
+Flame Blade;Flame Blade (Musashi) | Fire Edge | let the edge burn
+Holy Weapon;Holy Weapon (Musashi) | Blessed Edge | bless this edge and let it burn
+Steel Wind Strike;Steel Wind Strike (Musashi) | Five Strokes | cut five times and be gone
+Swords Dance | Two Swords | let both swords sing
+Enhance Ability;Enhance Ability (Musashi) | Perfect Form | perfect my form for this fight
+Shillelagh;Shillelagh (Musashi) | Wooden Sword | make this wooden sword cut like steel
+Sword Burst;Sword Burst (Musashi) | Whirling Cuts | let the whirl of cuts surround me
+Booming Blade;Booming Blade (Musashi) | Ringing Cut | let the cut ring true

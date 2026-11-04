@@ -5,6 +5,7 @@
 import { MODULE_ID } from "./burden-core.mjs";
 import { threkFor, seidrFor, seidrCost } from "./core.mjs";
 import { POWERS, THREK_ARTS } from "./data/powers.mjs";
+import { seidrNameFor } from "./forge.mjs";
 
 export const FLAG = MODULE_ID;
 const rid = () => foundry.utils.randomID();
@@ -155,7 +156,9 @@ export async function buildSeidrSpell(name, level, seidrItemId, abilityKey) {
     if ( entry ) { source = await p.getDocument(entry._id); break; }
   }
   if ( !source ) return null;
-  return seidrizeSpellData(source.toObject(), seidrItemId, abilityKey);
+  const data = source.toObject();
+  data.name = (await seidrNameFor(data.name)) ?? data.name;
+  return seidrizeSpellData(data, seidrItemId, abilityKey);
 }
 
 /**
@@ -174,7 +177,9 @@ export async function addDroppedSpell(actor, doc) {
   if ( level > s.maxSpellLevel ) ui.notifications.warn(`${doc.name} is level ${level}. ${actor.name} can only cast Seiðr spells up to level ${s.maxSpellLevel}.`);
   const known = actor.items.filter(i => i.getFlag(FLAG, "seidrSpell") && (i.getFlag(FLAG, "spellLevel") > 0)).length;
   if ( level > 0 && known >= s.spellsKnown ) ui.notifications.warn(`${actor.name} already knows ${known} Seiðr spells (limit ${s.spellsKnown}).`);
-  const data = seidrizeSpellData(doc.toObject(), pool?.id, actor.getFlag(FLAG, "seidrAbility") ?? "int");
+  const raw = doc.toObject();
+  raw.name = (await seidrNameFor(raw.name)) ?? raw.name;
+  const data = seidrizeSpellData(raw, pool?.id, actor.getFlag(FLAG, "seidrAbility") ?? "int");
   const [created] = await actor.createEmbeddedDocuments("Item", [data], { traceInternal: true });
   await syncActor(actor);
   return created;

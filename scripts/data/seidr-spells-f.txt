@@ -1,0 +1,135 @@
+@ champollion | The Decipherer | Jean-François Champollion | Decipherer, I beckon thee ; Decipherer, hear me ; Decipherer, read it for me
+Comprehend Languages | Read the Stone | let me read what is written here
+Tongues | Many Tongues | let me speak and be understood by all
+Arcane Gate Script | Hidden Writing | reveal the writing hidden here
+Encode Thoughts | Cipher Thought | write my thought as a cipher in their mind
+Ceremony | Rite of Passage | let this rite be done as it was written
+Borrowed Knowledge | Borrowed Letters | lend me the learning of another trade
+Skill Empowerment | Master's Hand | lend my companion the hand of a master
+Enhance Ability | Gift of Skill | give them the skill they need
+
+@ dee | The Queen's Conjurer | John Dee | Queen's Conjurer, I beckon thee ; Queen's Conjurer, hear me ; Queen's Conjurer, open the crystal
+Conjure Elemental | Call the Elemental | call the element and let it stand
+Conjure Minor Elementals | Call the Lesser Elements | call the lesser elements to my side
+Summon Elemental | Bind the Element | bind the element to my will
+Conjure Fey | Call the Court | call a lord of the fey court
+Summon Fey | Fey Guest | invite a fey guest to my table
+Summon Aberration | Call the Deep Thing | call a thing from beyond the stars
+Summon Celestial | Call the Angel | ask an angel to stand beside me
+Conjure Celestial | Call the Host | call a celestial to stand beside me
+Find Familiar;Find Familiar (Dee) | Crystal Familiar | call a spirit into the crystal
+Planar Ally;Planar Ally (Dee) | Angelic Ally | ask the angel to be my ally
+Magic Jar | Crystal Jar | let my soul rest in the crystal while my body waits
+Unseen Servant;Unseen Servant (Dee) | Spirit Servant | summon a spirit to serve
+Tiny Servant;Tiny Servant (Dee) | Small Spirit | summon a small spirit to serve
+
+@ hildegard | The Sibyl of the Rhine | Hildegard of Bingen | Sibyl of the Rhine, I beckon thee ; Sibyl of the Rhine, hear me ; Sibyl of the Rhine, sing through me
+Dispel Evil and Good | Cast Out | cast out what does not belong
+Calm Emotions;Calm Emotions (Hildegard) | Quiet Heart | let the heart grow quiet
+Remove Curse | Lift the Curse | lift the weight laid on this one
+Banishment | Send Away | send this one from my sight
+Death Ward | Ward Against Death | let death not touch this one
+Heroes' Feast | Table of Plenty | spread the table and let all who eat be filled
+Create Food and Water | Daily Bread | let the bread and water be enough
+Purify Food and Drink | Clean Cup | let every cup be clean
+Divine Word | Voice of Heaven | speak the word that carries heaven's weight
+Bless;Bless (Hildegard) | Gentle Blessing | let a gentle blessing fall
+Sanctuary;Sanctuary (Hildegard) | Cloister | let none who see me harm me
+Detect Poison and Disease;Detect Poison and Disease (Hildegard) | Herb Reading | let me read the sickness in the herb
+
+@ socrates | The Gadfly of Athens | Socrates | Gadfly of Athens, I beckon thee ; Gadfly of Athens, hear me ; Gadfly of Athens, ask the question for me
+Counterspell;Counterspell (Socrates) | Question Unanswered | ask the question their spell cannot answer
+Dispel Magic;Dispel Magic (Socrates) | Undo the Premise | undo the premise and let the argument fall
+Zone of Truth;Zone of Truth (Socrates) | Dialogue Ground | let none who speak here tell a lie
+Detect Magic;Detect Magic (Socrates) | Ask the Aura | ask the aura what it is
+Identify;Identify (Socrates) | Define the Thing | define the thing and let it be known
+Command;Command (Socrates) | Hemlock Word | speak and let the order be obeyed
+
+@ tubman | The Conductor of the Hidden Road | Harriet Tubman | Conductor of the Hidden Road, I beckon thee ; Conductor of the Hidden Road, hear me ; Conductor of the Hidden Road, lead us out
+Pass without Trace | Hidden Road | let no one follow where we pass
+Freedom of Movement;Freedom of Movement (Tubman) | Break the Chains | let no chain or hand hold us
+Knock;Knock (Tubman) | Open the Door | let every door open for us
+Sanctuary;Sanctuary (Tubman) | Safe House | let none who see us harm us
+Find the Path | Follow the Star | show me the way through the dark
+Longstrider;Longstrider (Tubman) | Long Walk | let the road be shorter beneath me
+Darkvision;Darkvision (Tubman) | Night Walk | let me see the road at night
+Silence;Silence (Tubman) | Quiet Road | let no sound carry from us
+
+@ marcopolo | The Wanderer of Cathay | Marco Polo | Wanderer of Cathay, I beckon thee ; Wanderer of Cathay, hear me ; Wanderer of Cathay, show me the road
+Locate Object;Locate Object (Polo) | Trade Route | show me the road to the thing I seek
+Find Traps;Find Traps (Polo) | Hidden Hazard | show me what waits on the road
+Locate Creature;Locate Creature (Polo) | Find the Traveler | show me where the one I seek has gone
+Leomund's Tiny Hut;Tiny Hut (Polo) | Caravan Tent | raise a tent for the night
+Phantom Steed;Phantom Steed (Polo) | Silk Road Steed | call the steed that crosses the dunes
+Water Walk;Water Walk (Polo) | Cross the Water | let me cross the river on foot
+Create Food and Water;Create Food and Water (Polo) | Trade Rations | let the caravan be fed
+
+@ lovelace | The Enchantress of Number | Ada Lovelace | Enchantress of Number, I beckon thee ; Enchantress of Number, hear me ; Enchantress of Number, calculate for me
+Arcane Lock;Arcane Lock (Lovelace) | Locked Engine | lock this door with a number only I know
+Symbol | Written Sign | write the sign that strikes when it is read
+Glyph of Warding;Glyph of Warding (Lovelace) | Written Ward | write the ward and let it strike
+Programmed Illusion;Programmed Illusion (Lovelace) | Punched Vision | let the card be read and the vision be shown
+Contingency;Contingency (Lovelace) | Stored Program | set the program to run when the condition is met
+Simulacrum;Simulacrum (Lovelace) | Engine Double | build a double that runs as I do
+Mage Armor;Mage Armor (Lovelace) | Number Shield | let numbers be my armor
+Telekinesis;Telekinesis (Lovelace) | Engine Pull | let the engine pull what I need
+
+@ milo | The Calf-Bearer | Milo of Croton | Calf-Bearer, I beckon thee ; Calf-Bearer, hear me ; Calf-Bearer, lend me thy strength
+Enlarge/Reduce | Grow and Shrink | let me grow with the calf
+Enhance Ability;Enhance Ability (Milo) | Bull's Strength | give me the strength of the bull
+Magic Weapon;Magic Weapon (Milo) | Heavy Hand | make my fist hit as hard as the bull
+Shillelagh;Shillelagh (Milo) | Heavy Staff | make my staff as heavy as the bull
+Draconic Transformation | Dragon Form | take the strength of the dragon
+Tenser's Transformation;Tenser's Transformation (Milo) | Champion's Form | give me the strength of a champion
+Giant Insect;Giant Insect (Milo) | Strong Ant | let the ant carry a hundred times its weight
+Stoneskin;Stoneskin (Milo) | Iron Skin | let my skin turn aside the blow
+
+@ bathory | The Blood Countess | Elizabeth Báthory | Blood Countess, I beckon thee ; Blood Countess, hear me ; Blood Countess, wake the blood in me
+Vampiric Touch;Vampiric Touch (Bathory) | Blood Feeding | feed my hand on their blood
+False Life | Borrowed Blood | borrow a little blood and keep me standing
+Life Transference | Blood Transfer | move my wounds to another's blood
+Blight;Blight (Bathory) | Blood Rot | rot the blood in their veins
+Contagion;Contagion (Bathory) | Blood Plague | give them the sickness of the blood
+Armor of Agathys;Armor of Agathys (Bathory) | Frozen Blood | let my blood freeze and bite
+Reincarnate | New Blood | give this soul new blood and a new body
+Regenerate | Blood Renewed | let the blood heal what was lost
+
+@ escoffier | The King of Chefs | Auguste Escoffier | King of Chefs, I beckon thee ; King of Chefs, hear me ; King of Chefs, set the table for me
+Goodberry;Goodberry (Escoffier) | Berry Course | let each berry be a whole meal
+Create Food and Water;Create Food and Water (Escoffier) | Bread and Water | let the table be set
+Heroes' Feast;Heroes' Feast (Escoffier) | Grand Banquet | spread the grand banquet
+Purify Food and Drink;Purify Food and Drink (Escoffier) | Cleaned Kitchen | let nothing foul reach the plate
+Create or Destroy Water;Create or Destroy Water (Escoffier) | Pour the Water | pour or drain as the pot needs
+
+@ edison | The Wizard of Menlo Park | Thomas Edison | Wizard of Menlo Park, I beckon thee ; Wizard of Menlo Park, hear me ; Wizard of Menlo Park, light the filament
+Continual Flame;Continual Flame (Edison) | Filament Glow | let the filament glow and never fail
+Dancing Lights;Dancing Lights (Edison) | Bulb Chorus | let a row of bulbs follow me
+Flaming Sphere;Flaming Sphere (Edison) | Arc Lamp | send a bright arc rolling
+Daylight;Daylight (Edison) | Electric Dawn | turn the whole room to day
+Produce Flame;Produce Flame (Edison) | Bright Spark | hold a spark in my hand
+Light;Light (Edison) | Small Bulb | give this thing a small light
+
+@ darwin | The Voyager of the Beagle | Charles Darwin | Voyager of the Beagle, I beckon thee ; Voyager of the Beagle, hear me ; Voyager of the Beagle, show me what I may become
+Polymorph | Change the Form | change this one into another form
+True Polymorph | True Change | change this one so that it stays changed
+Mass Polymorph | Many Changes | change a company at once
+Shapechange | My Own Change | take the shape of any I have seen
+Alter Self | Alter Shape | change my own shape to suit the place
+Animal Shapes;Animal Shapes (Darwin) | Many Beasts | let my company take the forms of beasts
+Wild Shape | Take the Form | take the form of the creature I have studied
+Awaken;Awaken (Darwin) | Wake the Mind | wake this beast to thought
+Reincarnate;Reincarnate (Darwin) | Next Form | let this soul return in the next form
+Clone | Copied Form | grow a copy from a single scrap
+Blink;Blink (Darwin) | Flicker Form | flicker between forms
+
+@ pasteur | The Slayer of Unseen Things | Louis Pasteur | Slayer of Unseen Things, I beckon thee ; Slayer of Unseen Things, hear me ; Slayer of Unseen Things, boil the flask
+Stinking Cloud | Foul Vapor | let the foul vapor fall on them
+Cloudkill | Deadly Vapor | let the deadly vapor settle on them
+Caustic Brew;Tasha's Caustic Brew | Flask of Acid | pour the flask and let the acid run
+Acid Arrow;Melf's Acid Arrow | Etched Arrow | etch their armor with acid
+Infestation;Infestation (Pasteur) | Small Pests | let the small pests spread
+Contagion;Contagion (Pasteur) | Spread the Sickness | let the sickness spread
+Ray of Enfeeblement | Sapping Ray | sap their strength with a ray
+Ray of Sickness;Ray of Sickness (Pasteur) | Sick Ray | sicken them with a ray
+Protection from Poison;Protection from Poison (Pasteur) | Boiled Water | let no poison reach me
+Detect Poison and Disease;Detect Poison and Disease (Pasteur) | See the Germ | let me see the sickness in the flask
