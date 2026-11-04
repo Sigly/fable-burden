@@ -34,12 +34,15 @@ for ( const s of spells ) {
   const c = creators[s.creator];
   const idx = (perCreator[s.creator] = (perCreator[s.creator] ?? -1) + 1);
   const stem = c.stems[idx % c.stems.length];
+  // Spells keep their normal name unless they already had an established Seiðr name (a fixed chant).
+  // The renamed suggestion stays in "alt" in case a name ever does not fit.
+  if ( !s.fixed ) { s.alt = s.name; s.name = s.original; }
   s.chant = s.fixed ?? `${stem}, ${s.request}, ${s.name}.`;
   delete s.fixed; s.epithet = c.epithet;
   const k = s.name.toLowerCase();
   if ( used.has(k) ) problems.push(`Seidr name "${s.name}" used for both ${used.get(k)} and ${s.original}`);
   used.set(k, s.original);
-  if ( k === s.original.toLowerCase() && !["firebolt"].includes(k) ) problems.push(`Name unchanged: ${s.name}`);
+  
 }
 fs.writeFileSync(path.join(dir, "seidr-spells.json"), JSON.stringify({ creators: Object.values(creators), spells }, null, 1));
 console.log(`creators ${Object.keys(creators).length}, spells ${spells.length}`);

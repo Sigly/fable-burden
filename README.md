@@ -32,9 +32,9 @@ Open it from the "Trace: Seiðr Spell Forge" macro or the wand button in the Tra
 
 - Keeps one copy of each spell, preferring the 2024 version, and removes 2014 duplicates. 2014-only spells with no 2024 version are kept and listed.
 - Sorts the spells into folders by level (Cantrips, Level 1 to Level 9).
-- Renames every spell to its Seiðr name (about 480 are mapped, in `scripts/data/seidr-spells.json`). The nine original Seiðr keep their names and chants: Lamplight, Spare the Fallen, Mend Wounds, Revive, Phantom Hand, Mirror Vanish, Sacred Pyre, Absorb the Storm, Radiant Fire, plus Firebolt.
+- Spells keep their normal names. Only the ones that already had an established Seiðr name are renamed: Lamplight, Spare the Fallen, Mend Wounds, Revive, Phantom Hand, Mirror Vanish, Sacred Pyre, Absorb the Storm, Radiant Fire and Firebolt. Chants for the rest end in the spell's normal name. The data (about 480 spells) is in `scripts/data/seidr-spells.json`, and each entry keeps an `alt` suggested rename in case a name ever does not fit.
 - Adds a copy of every spell to a "Seidr" folder (sorted by level) with the creator and chant at the top of the description. The chant follows Preamble, Request, Ability name.
 - Renames the matching spells on every character, creature and unlinked token. No chant is added there.
-- Spells added through Trace's Seiðr box use the Seiðr name too.
+- Spells added through Trace's Seiðr box use the Seiðr name when there is one.
 
 Each creator is a historical figure known by an epithet, and wrote several related spells (for example the Lady of the Lamp wrote the healing spells). Running the forge again is safe. Spells without a Seiðr name yet are listed in the preview and left alone. To change a name or chant, edit the `seidr-spells-*.txt` files and run `node tools/compile-seidr.mjs`.
