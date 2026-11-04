@@ -3,6 +3,7 @@ import fs from "node:fs";
 import path from "node:path";
 const dir = path.resolve(import.meta.dirname, "../scripts/data");
 const files = fs.readdirSync(dir).filter(f => /^seidr-spells-[a-z]\.txt$/.test(f)).sort();
+const RENAMES = new Set(fs.readFileSync(path.join(dir, "seidr-renames.txt"), "utf8").split("\n").map(l => l.trim()).filter(l => l && !l.startsWith("#")).map(l => l.toLowerCase()));
 const NOT_SPELLS = new Set(["wild shape", "swords dance", "arcane gate script"]);
 const creators = {}; const spells = []; const seen = new Map(); const dropped = [];
 for ( const f of files ) {
@@ -34,9 +35,9 @@ for ( const s of spells ) {
   const c = creators[s.creator];
   const idx = (perCreator[s.creator] = (perCreator[s.creator] ?? -1) + 1);
   const stem = c.stems[idx % c.stems.length];
-  // Spells keep their normal name unless they already had an established Seiðr name (a fixed chant).
-  // The renamed suggestion stays in "alt" in case a name ever does not fit.
-  if ( !s.fixed ) { s.alt = s.name; s.name = s.original; }
+  // Spells keep their normal name unless they had an established Seiðr name (a fixed chant)
+  // or are listed in seidr-renames.txt because the creator would plausibly name them differently.
+  if ( !s.fixed ) { s.alt = s.name; if ( !RENAMES.has(s.original.toLowerCase()) ) s.name = s.original; }
   s.chant = s.fixed ?? `${stem}, ${s.request}, ${s.name}.`;
   delete s.fixed; s.epithet = c.epithet;
   const k = s.name.toLowerCase();

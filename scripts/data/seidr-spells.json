@@ -471,31 +471,31 @@
   {
    "original": "Healing Word",
    "aka": [],
-   "name": "Healing Word",
+   "name": "Whispered Remedy",
    "creator": "lamp",
    "request": "carry one soft word to the bedside of the wounded",
    "alt": "Whispered Remedy",
-   "chant": "Lady of the Lamp, hear me, carry one soft word to the bedside of the wounded, Healing Word.",
+   "chant": "Lady of the Lamp, hear me, carry one soft word to the bedside of the wounded, Whispered Remedy.",
    "epithet": "The Lady of the Lamp"
   },
   {
    "original": "Mass Healing Word",
    "aka": [],
-   "name": "Mass Healing Word",
+   "name": "Ward Round",
    "creator": "lamp",
    "request": "carry a soft word down every bed in the ward",
    "alt": "Ward Round",
-   "chant": "Lady of the Lamp, tend to me, carry a soft word down every bed in the ward, Mass Healing Word.",
+   "chant": "Lady of the Lamp, tend to me, carry a soft word down every bed in the ward, Ward Round.",
    "epithet": "The Lady of the Lamp"
   },
   {
    "original": "Mass Cure Wounds",
    "aka": [],
-   "name": "Mass Cure Wounds",
+   "name": "Night Rounds",
    "creator": "lamp",
    "request": "walk the long ward and leave no wound untended",
    "alt": "Night Rounds",
-   "chant": "Lady of the Lamp, I beckon thee, walk the long ward and leave no wound untended, Mass Cure Wounds.",
+   "chant": "Lady of the Lamp, I beckon thee, walk the long ward and leave no wound untended, Night Rounds.",
    "epithet": "The Lady of the Lamp"
   },
   {
@@ -541,21 +541,21 @@
   {
    "original": "Healing Spirit",
    "aka": [],
-   "name": "Healing Spirit",
+   "name": "Lamp Bearer",
    "creator": "lamp",
    "request": "send a small light to hover where the hurt is",
    "alt": "Lamp Bearer",
-   "chant": "Lady of the Lamp, walk the wards beside me, send a small light to hover where the hurt is, Healing Spirit.",
+   "chant": "Lady of the Lamp, walk the wards beside me, send a small light to hover where the hurt is, Lamp Bearer.",
    "epithet": "The Lady of the Lamp"
   },
   {
    "original": "Lesser Restoration",
    "aka": [],
-   "name": "Lesser Restoration",
+   "name": "Clear the Fever",
    "creator": "lamp",
    "request": "break the fever and loose the cramped hand",
    "alt": "Clear the Fever",
-   "chant": "Lady of the Lamp, hear me, break the fever and loose the cramped hand, Lesser Restoration.",
+   "chant": "Lady of the Lamp, hear me, break the fever and loose the cramped hand, Clear the Fever.",
    "epithet": "The Lady of the Lamp"
   },
   {
@@ -589,61 +589,61 @@
   {
    "original": "Invisibility",
    "aka": [],
-   "name": "Invisibility",
+   "name": "Vanishing Act",
    "creator": "unbound",
    "request": "let the curtain fall and the man be gone",
    "alt": "Vanishing Act",
-   "chant": "Unbound King, slip the lock for me, let the curtain fall and the man be gone, Invisibility.",
+   "chant": "Unbound King, slip the lock for me, let the curtain fall and the man be gone, Vanishing Act.",
    "epithet": "The Unbound King"
   },
   {
    "original": "Greater Invisibility",
    "aka": [],
-   "name": "Greater Invisibility",
+   "name": "Grand Vanish",
    "creator": "unbound",
    "request": "let me disappear in the middle of the strike",
    "alt": "Grand Vanish",
-   "chant": "Unbound King, I call upon thee, let me disappear in the middle of the strike, Greater Invisibility.",
+   "chant": "Unbound King, I call upon thee, let me disappear in the middle of the strike, Grand Vanish.",
    "epithet": "The Unbound King"
   },
   {
    "original": "Misty Step",
    "aka": [],
-   "name": "Misty Step",
+   "name": "Slip the Cuffs",
    "creator": "unbound",
    "request": "slip free of this place and appear across the room",
    "alt": "Slip the Cuffs",
-   "chant": "Unbound King, hear me, slip free of this place and appear across the room, Misty Step.",
+   "chant": "Unbound King, hear me, slip free of this place and appear across the room, Slip the Cuffs.",
    "epithet": "The Unbound King"
   },
   {
    "original": "Dimension Door",
    "aka": [],
-   "name": "Dimension Door",
+   "name": "Stage Door",
    "creator": "unbound",
    "request": "open the door behind the curtain and step through",
    "alt": "Stage Door",
-   "chant": "Unbound King, slip the lock for me, open the door behind the curtain and step through, Dimension Door.",
+   "chant": "Unbound King, slip the lock for me, open the door behind the curtain and step through, Stage Door.",
    "epithet": "The Unbound King"
   },
   {
    "original": "Knock",
    "aka": [],
-   "name": "Knock",
+   "name": "Pick the Lock",
    "creator": "unbound",
    "request": "let every bolt and bar forget what it was holding",
    "alt": "Pick the Lock",
-   "chant": "Unbound King, I call upon thee, let every bolt and bar forget what it was holding, Knock.",
+   "chant": "Unbound King, I call upon thee, let every bolt and bar forget what it was holding, Pick the Lock.",
    "epithet": "The Unbound King"
   },
   {
    "original": "Freedom of Movement",
    "aka": [],
-   "name": "Freedom of Movement",
+   "name": "Escape Artist",
    "creator": "unbound",
    "request": "let no rope, chain or hand hold me",
    "alt": "Escape Artist",
-   "chant": "Unbound King, hear me, let no rope, chain or hand hold me, Freedom of Movement.",
+   "chant": "Unbound King, hear me, let no rope, chain or hand hold me, Escape Artist.",
    "epithet": "The Unbound King"
   },
   {
@@ -720,21 +720,21 @@
   {
    "original": "Spirit Guardians",
    "aka": [],
-   "name": "Spirit Guardians",
+   "name": "Host of Saints",
    "creator": "pyre",
    "request": "send the saints to ring us round",
    "alt": "Host of Saints",
-   "chant": "Maid of the Pyre, I kneel before thee, send the saints to ring us round, Spirit Guardians.",
+   "chant": "Maid of the Pyre, I kneel before thee, send the saints to ring us round, Host of Saints.",
    "epithet": "The Maid of the Pyre"
   },
   {
    "original": "Flame Strike",
    "aka": [],
-   "name": "Flame Strike",
+   "name": "Pillar of the Pyre",
    "creator": "pyre",
    "request": "let the stake become a column and fall upon them",
    "alt": "Pillar of the Pyre",
-   "chant": "Maid of the Pyre, hear me, let the stake become a column and fall upon them, Flame Strike.",
+   "chant": "Maid of the Pyre, hear me, let the stake become a column and fall upon them, Pillar of the Pyre.",
    "epithet": "The Maid of the Pyre"
   },
   {
@@ -750,31 +750,31 @@
   {
    "original": "Dawn",
    "aka": [],
-   "name": "Dawn",
+   "name": "Morning Over Orléans",
    "creator": "pyre",
    "request": "let the dawn break upon the besieged",
    "alt": "Morning Over Orléans",
-   "chant": "Maid of the Pyre, I kneel before thee, let the dawn break upon the besieged, Dawn.",
+   "chant": "Maid of the Pyre, I kneel before thee, let the dawn break upon the besieged, Morning Over Orléans.",
    "epithet": "The Maid of the Pyre"
   },
   {
    "original": "Banishing Smite",
    "aka": [],
-   "name": "Banishing Smite",
+   "name": "Cast Them Out",
    "creator": "pyre",
    "request": "strike and drive the enemy from this world",
    "alt": "Cast Them Out",
-   "chant": "Maid of the Pyre, hear me, strike and drive the enemy from this world, Banishing Smite.",
+   "chant": "Maid of the Pyre, hear me, strike and drive the enemy from this world, Cast Them Out.",
    "epithet": "The Maid of the Pyre"
   },
   {
    "original": "Searing Smite",
    "aka": [],
-   "name": "Searing Smite",
+   "name": "Burning Blade",
    "creator": "pyre",
    "request": "let my blade smoulder with the fire that took you",
    "alt": "Burning Blade",
-   "chant": "Maid of the Pyre, lend me thy banner, let my blade smoulder with the fire that took you, Searing Smite.",
+   "chant": "Maid of the Pyre, lend me thy banner, let my blade smoulder with the fire that took you, Burning Blade.",
    "epithet": "The Maid of the Pyre"
   },
   {
@@ -820,21 +820,21 @@
   {
    "original": "Guardian of Faith",
    "aka": [],
-   "name": "Guardian of Faith",
+   "name": "Standing Saint",
    "creator": "pyre",
    "request": "set a saint to stand guard where I cannot",
    "alt": "Standing Saint",
-   "chant": "Maid of the Pyre, hear me, set a saint to stand guard where I cannot, Guardian of Faith.",
+   "chant": "Maid of the Pyre, hear me, set a saint to stand guard where I cannot, Standing Saint.",
    "epithet": "The Maid of the Pyre"
   },
   {
    "original": "Crusader's Mantle",
    "aka": [],
-   "name": "Crusader's Mantle",
+   "name": "Mantle of the Maid",
    "creator": "pyre",
    "request": "drape thy armor over every ally who fights beside me",
    "alt": "Mantle of the Maid",
-   "chant": "Maid of the Pyre, lend me thy banner, drape thy armor over every ally who fights beside me, Crusader's Mantle.",
+   "chant": "Maid of the Pyre, lend me thy banner, drape thy armor over every ally who fights beside me, Mantle of the Maid.",
    "epithet": "The Maid of the Pyre"
   },
   {
@@ -849,41 +849,41 @@
   {
    "original": "Lightning Bolt",
    "aka": [],
-   "name": "Lightning Bolt",
+   "name": "Kite Strike",
    "creator": "lightning",
    "request": "let the key sing and the bolt run straight down the line",
    "alt": "Kite Strike",
-   "chant": "Lightning Catcher, hear me, let the key sing and the bolt run straight down the line, Lightning Bolt.",
+   "chant": "Lightning Catcher, hear me, let the key sing and the bolt run straight down the line, Kite Strike.",
    "epithet": "He Who Caught the Lightning"
   },
   {
    "original": "Call Lightning",
    "aka": [],
-   "name": "Call Lightning",
+   "name": "Storm Kite",
    "creator": "lightning",
    "request": "fly thy kite into the cloud and bring down the bolt",
    "alt": "Storm Kite",
-   "chant": "Lightning Catcher, send down thy kite, fly thy kite into the cloud and bring down the bolt, Call Lightning.",
+   "chant": "Lightning Catcher, send down thy kite, fly thy kite into the cloud and bring down the bolt, Storm Kite.",
    "epithet": "He Who Caught the Lightning"
   },
   {
    "original": "Shocking Grasp",
    "aka": [],
-   "name": "Shocking Grasp",
+   "name": "Static Touch",
    "creator": "lightning",
    "request": "let the spark leap from my hand to the metal in theirs",
    "alt": "Static Touch",
-   "chant": "Lightning Catcher, I beckon thee, let the spark leap from my hand to the metal in theirs, Shocking Grasp.",
+   "chant": "Lightning Catcher, I beckon thee, let the spark leap from my hand to the metal in theirs, Static Touch.",
    "epithet": "He Who Caught the Lightning"
   },
   {
    "original": "Witch Bolt",
    "aka": [],
-   "name": "Witch Bolt",
+   "name": "Tethered Spark",
    "creator": "lightning",
    "request": "run a wire of lightning from my hand to my foe",
    "alt": "Tethered Spark",
-   "chant": "Lightning Catcher, hear me, run a wire of lightning from my hand to my foe, Witch Bolt.",
+   "chant": "Lightning Catcher, hear me, run a wire of lightning from my hand to my foe, Tethered Spark.",
    "epithet": "He Who Caught the Lightning"
   },
   {
@@ -909,31 +909,31 @@
   {
    "original": "Lightning Lure",
    "aka": [],
-   "name": "Lightning Lure",
+   "name": "Rod Pull",
    "creator": "lightning",
    "request": "draw them in along the line of the spark",
    "alt": "Rod Pull",
-   "chant": "Lightning Catcher, hear me, draw them in along the line of the spark, Lightning Lure.",
+   "chant": "Lightning Catcher, hear me, draw them in along the line of the spark, Rod Pull.",
    "epithet": "He Who Caught the Lightning"
   },
   {
    "original": "Storm Sphere",
    "aka": [],
-   "name": "Storm Sphere",
+   "name": "Leyden Jar",
    "creator": "lightning",
    "request": "gather the storm into a jar and let it spin",
    "alt": "Leyden Jar",
-   "chant": "Lightning Catcher, send down thy kite, gather the storm into a jar and let it spin, Storm Sphere.",
+   "chant": "Lightning Catcher, send down thy kite, gather the storm into a jar and let it spin, Leyden Jar.",
    "epithet": "He Who Caught the Lightning"
   },
   {
    "original": "Protection from Energy",
    "aka": [],
-   "name": "Protection from Energy",
+   "name": "Grounding Rod",
    "creator": "lightning",
    "request": "let every blow of the elements run harmlessly to ground",
    "alt": "Grounding Rod",
-   "chant": "Lightning Catcher, I beckon thee, let every blow of the elements run harmlessly to ground, Protection from Energy.",
+   "chant": "Lightning Catcher, I beckon thee, let every blow of the elements run harmlessly to ground, Grounding Rod.",
    "epithet": "He Who Caught the Lightning"
   },
   {
@@ -958,51 +958,51 @@
   {
    "original": "Daylight",
    "aka": [],
-   "name": "Daylight",
+   "name": "Pitchblende Glow",
    "creator": "radiance",
    "request": "fill this place with the light that never dims",
    "alt": "Pitchblende Glow",
-   "chant": "Mother of Radiance, hear me, fill this place with the light that never dims, Daylight.",
+   "chant": "Mother of Radiance, hear me, fill this place with the light that never dims, Pitchblende Glow.",
    "epithet": "The Mother of Radiance"
   },
   {
    "original": "Sunbeam",
    "aka": [],
-   "name": "Sunbeam",
+   "name": "Radium Ray",
    "creator": "radiance",
    "request": "loose the ray and burn what hides from the light",
    "alt": "Radium Ray",
-   "chant": "Mother of Radiance, burn bright for me, loose the ray and burn what hides from the light, Sunbeam.",
+   "chant": "Mother of Radiance, burn bright for me, loose the ray and burn what hides from the light, Radium Ray.",
    "epithet": "The Mother of Radiance"
   },
   {
    "original": "Sunburst",
    "aka": [],
-   "name": "Sunburst",
+   "name": "Sun Unsealed",
    "creator": "radiance",
    "request": "open the sealed light and let it scour the field",
    "alt": "Sun Unsealed",
-   "chant": "Mother of Radiance, I beckon thee, open the sealed light and let it scour the field, Sunburst.",
+   "chant": "Mother of Radiance, I beckon thee, open the sealed light and let it scour the field, Sun Unsealed.",
    "epithet": "The Mother of Radiance"
   },
   {
    "original": "Word of Radiance",
    "aka": [],
-   "name": "Word of Radiance",
+   "name": "Glowing Word",
    "creator": "radiance",
    "request": "speak and let them glow with the heat of the work",
    "alt": "Glowing Word",
-   "chant": "Mother of Radiance, hear me, speak and let them glow with the heat of the work, Word of Radiance.",
+   "chant": "Mother of Radiance, hear me, speak and let them glow with the heat of the work, Glowing Word.",
    "epithet": "The Mother of Radiance"
   },
   {
    "original": "Sickening Radiance",
    "aka": [],
-   "name": "Sickening Radiance",
+   "name": "Radiation Sickness",
    "creator": "radiance",
    "request": "let the glow sicken what it does not slay",
    "alt": "Radiation Sickness",
-   "chant": "Mother of Radiance, burn bright for me, let the glow sicken what it does not slay, Sickening Radiance.",
+   "chant": "Mother of Radiance, burn bright for me, let the glow sicken what it does not slay, Radiation Sickness.",
    "epithet": "The Mother of Radiance"
   },
   {
@@ -1037,31 +1037,31 @@
   {
    "original": "Ray of Frost",
    "aka": [],
-   "name": "Ray of Frost",
+   "name": "Hoarfrost Ray",
    "creator": "icylord",
    "request": "let the cold of the fire's heart reach out and bite",
    "alt": "Hoarfrost Ray",
-   "chant": "Icy Lord of Fire, hear me, let the cold of the fire's heart reach out and bite, Ray of Frost.",
+   "chant": "Icy Lord of Fire, hear me, let the cold of the fire's heart reach out and bite, Hoarfrost Ray.",
    "epithet": "The Icy Lord of Fire"
   },
   {
    "original": "Frostbite",
    "aka": [],
-   "name": "Frostbite",
+   "name": "Brittle Fingers",
    "creator": "icylord",
    "request": "let the frost climb their fingers until the steel falls",
    "alt": "Brittle Fingers",
-   "chant": "Icy Lord of Fire, I beckon thee, let the frost climb their fingers until the steel falls, Frostbite.",
+   "chant": "Icy Lord of Fire, I beckon thee, let the frost climb their fingers until the steel falls, Brittle Fingers.",
    "epithet": "The Icy Lord of Fire"
   },
   {
    "original": "Create Bonfire",
    "aka": [],
-   "name": "Create Bonfire",
+   "name": "Cold Bonfire",
    "creator": "icylord",
    "request": "raise a bonfire that warms nothing and burns everything",
    "alt": "Cold Bonfire",
-   "chant": "Icy Lord of Fire, hear me, raise a bonfire that warms nothing and burns everything, Create Bonfire.",
+   "chant": "Icy Lord of Fire, hear me, raise a bonfire that warms nothing and burns everything, Cold Bonfire.",
    "epithet": "The Icy Lord of Fire"
   },
   {
@@ -1077,11 +1077,11 @@
   {
    "original": "Fireball",
    "aka": [],
-   "name": "Fireball",
+   "name": "Etna's Breath",
    "creator": "empedocles",
    "request": "open the crater and let the mountain exhale",
    "alt": "Etna's Breath",
-   "chant": "Etna's Leaper, I beckon thee, open the crater and let the mountain exhale, Fireball.",
+   "chant": "Etna's Leaper, I beckon thee, open the crater and let the mountain exhale, Etna's Breath.",
    "epithet": "The Man Who Leapt Into Etna"
   },
   {
@@ -1117,61 +1117,61 @@
   {
    "original": "Fire Shield",
    "aka": [],
-   "name": "Fire Shield",
+   "name": "Coat of Embers",
    "creator": "empedocles",
    "request": "clothe me in the fire that did not consume you",
    "alt": "Coat of Embers",
-   "chant": "Etna's Leaper, hear me, clothe me in the fire that did not consume you, Fire Shield.",
+   "chant": "Etna's Leaper, hear me, clothe me in the fire that did not consume you, Coat of Embers.",
    "epithet": "The Man Who Leapt Into Etna"
   },
   {
    "original": "Wall of Fire",
    "aka": [],
-   "name": "Wall of Fire",
+   "name": "Rim of the Crater",
    "creator": "empedocles",
    "request": "raise the crater's rim around them",
    "alt": "Rim of the Crater",
-   "chant": "Etna's Leaper, feed my flame, raise the crater's rim around them, Wall of Fire.",
+   "chant": "Etna's Leaper, feed my flame, raise the crater's rim around them, Rim of the Crater.",
    "epithet": "The Man Who Leapt Into Etna"
   },
   {
    "original": "Delayed Blast Fireball",
    "aka": [],
-   "name": "Delayed Blast Fireball",
+   "name": "Slow Eruption",
    "creator": "empedocles",
    "request": "let the mountain hold its breath and then let it go",
    "alt": "Slow Eruption",
-   "chant": "Etna's Leaper, I beckon thee, let the mountain hold its breath and then let it go, Delayed Blast Fireball.",
+   "chant": "Etna's Leaper, I beckon thee, let the mountain hold its breath and then let it go, Slow Eruption.",
    "epithet": "The Man Who Leapt Into Etna"
   },
   {
    "original": "Fire Storm",
    "aka": [],
-   "name": "Fire Storm",
+   "name": "Rain of Cinders",
    "creator": "empedocles",
    "request": "let the sky pour what the mountain keeps",
    "alt": "Rain of Cinders",
-   "chant": "Etna's Leaper, hear me, let the sky pour what the mountain keeps, Fire Storm.",
+   "chant": "Etna's Leaper, hear me, let the sky pour what the mountain keeps, Rain of Cinders.",
    "epithet": "The Man Who Leapt Into Etna"
   },
   {
    "original": "Meteor Swarm",
    "aka": [],
-   "name": "Meteor Swarm",
+   "name": "Falling Mountain",
    "creator": "empedocles",
    "request": "cast down the mountain in four pieces",
    "alt": "Falling Mountain",
-   "chant": "Etna's Leaper, feed my flame, cast down the mountain in four pieces, Meteor Swarm.",
+   "chant": "Etna's Leaper, feed my flame, cast down the mountain in four pieces, Falling Mountain.",
    "epithet": "The Man Who Leapt Into Etna"
   },
   {
    "original": "Incendiary Cloud",
    "aka": [],
-   "name": "Incendiary Cloud",
+   "name": "Smoke of the Crater",
    "creator": "empedocles",
    "request": "fill the air with the cloud that follows the fire",
    "alt": "Smoke of the Crater",
-   "chant": "Etna's Leaper, I beckon thee, fill the air with the cloud that follows the fire, Incendiary Cloud.",
+   "chant": "Etna's Leaper, I beckon thee, fill the air with the cloud that follows the fire, Smoke of the Crater.",
    "epithet": "The Man Who Leapt Into Etna"
   },
   {
@@ -1207,21 +1207,21 @@
   {
    "original": "Pyrotechnics",
    "aka": [],
-   "name": "Pyrotechnics",
+   "name": "Etna's Sparks",
    "creator": "empedocles",
    "request": "strike the flame and scatter its sparks across the sky",
    "alt": "Etna's Sparks",
-   "chant": "Etna's Leaper, hear me, strike the flame and scatter its sparks across the sky, Pyrotechnics.",
+   "chant": "Etna's Leaper, hear me, strike the flame and scatter its sparks across the sky, Etna's Sparks.",
    "epithet": "The Man Who Leapt Into Etna"
   },
   {
    "original": "Investiture of Flame",
    "aka": [],
-   "name": "Investiture of Flame",
+   "name": "Mantle of Etna",
    "creator": "empedocles",
    "request": "wrap me in the mountain that took me",
    "alt": "Mantle of Etna",
-   "chant": "Etna's Leaper, feed my flame, wrap me in the mountain that took me, Investiture of Flame.",
+   "chant": "Etna's Leaper, feed my flame, wrap me in the mountain that took me, Mantle of Etna.",
    "epithet": "The Man Who Leapt Into Etna"
   },
   {
@@ -1257,41 +1257,41 @@
   {
    "original": "Hellish Rebuke",
    "aka": [],
-   "name": "Hellish Rebuke",
+   "name": "Etna's Answer",
    "creator": "empedocles",
    "request": "answer every blow with a little of the mountain's heat",
    "alt": "Etna's Answer",
-   "chant": "Etna's Leaper, I beckon thee, answer every blow with a little of the mountain's heat, Hellish Rebuke.",
+   "chant": "Etna's Leaper, I beckon thee, answer every blow with a little of the mountain's heat, Etna's Answer.",
    "epithet": "The Man Who Leapt Into Etna"
   },
   {
    "original": "Cone of Cold",
    "aka": [],
-   "name": "Cone of Cold",
+   "name": "Polar Gale",
    "creator": "shackleton",
    "request": "send the south wind out in a cone and stop their hearts",
    "alt": "Polar Gale",
-   "chant": "Frozen Wayfarer, I beckon thee, send the south wind out in a cone and stop their hearts, Cone of Cold.",
+   "chant": "Frozen Wayfarer, I beckon thee, send the south wind out in a cone and stop their hearts, Polar Gale.",
    "epithet": "The Frozen Wayfarer"
   },
   {
    "original": "Ice Storm",
    "aka": [],
-   "name": "Ice Storm",
+   "name": "Pack Ice",
    "creator": "shackleton",
    "request": "let the ice fall from the sky and shut the sea",
    "alt": "Pack Ice",
-   "chant": "Frozen Wayfarer, hear me, let the ice fall from the sky and shut the sea, Ice Storm.",
+   "chant": "Frozen Wayfarer, hear me, let the ice fall from the sky and shut the sea, Pack Ice.",
    "epithet": "The Frozen Wayfarer"
   },
   {
    "original": "Sleet Storm",
    "aka": [],
-   "name": "Sleet Storm",
+   "name": "Whiteout",
    "creator": "shackleton",
    "request": "blind them in the white where no path remains",
    "alt": "Whiteout",
-   "chant": "Frozen Wayfarer, lead us through the ice, blind them in the white where no path remains, Sleet Storm.",
+   "chant": "Frozen Wayfarer, lead us through the ice, blind them in the white where no path remains, Whiteout.",
    "epithet": "The Frozen Wayfarer"
   },
   {
@@ -1341,11 +1341,11 @@
   {
    "original": "Armor of Agathys",
    "aka": [],
-   "name": "Armor of Agathys",
+   "name": "Ice Coat",
    "creator": "shackleton",
    "request": "wrap me in rime that bites whoever strikes me",
    "alt": "Ice Coat",
-   "chant": "Frozen Wayfarer, hear me, wrap me in rime that bites whoever strikes me, Armor of Agathys.",
+   "chant": "Frozen Wayfarer, hear me, wrap me in rime that bites whoever strikes me, Ice Coat.",
    "epithet": "The Frozen Wayfarer"
   },
   {
@@ -1363,41 +1363,41 @@
   {
    "original": "Investiture of Ice",
    "aka": [],
-   "name": "Investiture of Ice",
+   "name": "Mantle of the Floe",
    "creator": "shackleton",
    "request": "clothe me in the ice that carried us home",
    "alt": "Mantle of the Floe",
-   "chant": "Frozen Wayfarer, I beckon thee, clothe me in the ice that carried us home, Investiture of Ice.",
+   "chant": "Frozen Wayfarer, I beckon thee, clothe me in the ice that carried us home, Mantle of the Floe.",
    "epithet": "The Frozen Wayfarer"
   },
   {
    "original": "Tenser's Transformation",
    "aka": [],
-   "name": "Tenser's Transformation",
+   "name": "Endurance Trial",
    "creator": "shackleton",
    "request": "give me the strength to walk the whole way home",
    "alt": "Endurance Trial",
-   "chant": "Frozen Wayfarer, hear me, give me the strength to walk the whole way home, Tenser's Transformation.",
+   "chant": "Frozen Wayfarer, hear me, give me the strength to walk the whole way home, Endurance Trial.",
    "epithet": "The Frozen Wayfarer"
   },
   {
    "original": "Water Breathing",
    "aka": [],
-   "name": "Water Breathing",
+   "name": "Breathe the Deep",
    "creator": "cousteau",
    "request": "let the sea be as air in my lungs",
    "alt": "Breathe the Deep",
-   "chant": "Captain of the Deep, I beckon thee, let the sea be as air in my lungs, Water Breathing.",
+   "chant": "Captain of the Deep, I beckon thee, let the sea be as air in my lungs, Breathe the Deep.",
    "epithet": "The Captain of the Deep"
   },
   {
    "original": "Water Walk",
    "aka": [],
-   "name": "Water Walk",
+   "name": "Walk the Waves",
    "creator": "cousteau",
    "request": "let the surface hold me like a deck",
    "alt": "Walk the Waves",
-   "chant": "Captain of the Deep, hear me, let the surface hold me like a deck, Water Walk.",
+   "chant": "Captain of the Deep, hear me, let the surface hold me like a deck, Walk the Waves.",
    "epithet": "The Captain of the Deep"
   },
   {
@@ -1413,31 +1413,31 @@
   {
    "original": "Control Water",
    "aka": [],
-   "name": "Control Water",
+   "name": "Part the Sea",
    "creator": "cousteau",
    "request": "command the sea to rise, to part, to turn",
    "alt": "Part the Sea",
-   "chant": "Captain of the Deep, I beckon thee, command the sea to rise, to part, to turn, Control Water.",
+   "chant": "Captain of the Deep, I beckon thee, command the sea to rise, to part, to turn, Part the Sea.",
    "epithet": "The Captain of the Deep"
   },
   {
    "original": "Tidal Wave",
    "aka": [],
-   "name": "Tidal Wave",
+   "name": "Breaking Wave",
    "creator": "cousteau",
    "request": "raise a wave and let it fall upon them",
    "alt": "Breaking Wave",
-   "chant": "Captain of the Deep, hear me, raise a wave and let it fall upon them, Tidal Wave.",
+   "chant": "Captain of the Deep, hear me, raise a wave and let it fall upon them, Breaking Wave.",
    "epithet": "The Captain of the Deep"
   },
   {
    "original": "Tsunami",
    "aka": [],
-   "name": "Tsunami",
+   "name": "Great Wave",
    "creator": "cousteau",
    "request": "let the whole sea stand up and walk",
    "alt": "Great Wave",
-   "chant": "Captain of the Deep, take me below, let the whole sea stand up and walk, Tsunami.",
+   "chant": "Captain of the Deep, take me below, let the whole sea stand up and walk, Great Wave.",
    "epithet": "The Captain of the Deep"
   },
   {
@@ -1453,11 +1453,11 @@
   {
    "original": "Watery Sphere",
    "aka": [],
-   "name": "Watery Sphere",
+   "name": "Bubble of the Deep",
    "creator": "cousteau",
    "request": "enclose them in a sphere of the deep",
    "alt": "Bubble of the Deep",
-   "chant": "Captain of the Deep, hear me, enclose them in a sphere of the deep, Watery Sphere.",
+   "chant": "Captain of the Deep, hear me, enclose them in a sphere of the deep, Bubble of the Deep.",
    "epithet": "The Captain of the Deep"
   },
   {
@@ -1473,11 +1473,11 @@
   {
    "original": "Maelstrom",
    "aka": [],
-   "name": "Maelstrom",
+   "name": "Whirlpool",
    "creator": "cousteau",
    "request": "open the sea into a mouth",
    "alt": "Whirlpool",
-   "chant": "Captain of the Deep, I beckon thee, open the sea into a mouth, Maelstrom.",
+   "chant": "Captain of the Deep, I beckon thee, open the sea into a mouth, Whirlpool.",
    "epithet": "The Captain of the Deep"
   },
   {
@@ -1493,11 +1493,11 @@
   {
    "original": "Acid Splash",
    "aka": [],
-   "name": "Acid Splash",
+   "name": "Salt Spray",
    "creator": "cousteau",
    "request": "fling the salt spray at their eyes",
    "alt": "Salt Spray",
-   "chant": "Captain of the Deep, take me below, fling the salt spray at their eyes, Acid Splash.",
+   "chant": "Captain of the Deep, take me below, fling the salt spray at their eyes, Salt Spray.",
    "epithet": "The Captain of the Deep"
   },
   {
@@ -1513,11 +1513,11 @@
   {
    "original": "Wall of Stone",
    "aka": [],
-   "name": "Wall of Stone",
+   "name": "Great Wall",
    "creator": "imhotep",
    "request": "stack the blocks into a wall",
    "alt": "Great Wall",
-   "chant": "Builder of the First Stair, hear me, stack the blocks into a wall, Wall of Stone.",
+   "chant": "Builder of the First Stair, hear me, stack the blocks into a wall, Great Wall.",
    "epithet": "The Builder of the First Stair"
   },
   {
@@ -1533,51 +1533,51 @@
   {
    "original": "Move Earth",
    "aka": [],
-   "name": "Move Earth",
+   "name": "Quarry",
    "creator": "imhotep",
    "request": "move the earth as though it were a quarry",
    "alt": "Quarry",
-   "chant": "Builder of the First Stair, I beckon thee, move the earth as though it were a quarry, Move Earth.",
+   "chant": "Builder of the First Stair, I beckon thee, move the earth as though it were a quarry, Quarry.",
    "epithet": "The Builder of the First Stair"
   },
   {
    "original": "Earthquake",
    "aka": [],
-   "name": "Earthquake",
+   "name": "Shaking Pyramid",
    "creator": "imhotep",
    "request": "let the ground shake as the stone shifts",
    "alt": "Shaking Pyramid",
-   "chant": "Builder of the First Stair, hear me, let the ground shake as the stone shifts, Earthquake.",
+   "chant": "Builder of the First Stair, hear me, let the ground shake as the stone shifts, Shaking Pyramid.",
    "epithet": "The Builder of the First Stair"
   },
   {
    "original": "Meld into Stone",
    "aka": [],
-   "name": "Meld into Stone",
+   "name": "Sealed in Stone",
    "creator": "imhotep",
    "request": "seal me in the wall as in a tomb",
    "alt": "Sealed in Stone",
-   "chant": "Builder of the First Stair, lay the stone for me, seal me in the wall as in a tomb, Meld into Stone.",
+   "chant": "Builder of the First Stair, lay the stone for me, seal me in the wall as in a tomb, Sealed in Stone.",
    "epithet": "The Builder of the First Stair"
   },
   {
    "original": "Stoneskin",
    "aka": [],
-   "name": "Stoneskin",
+   "name": "Skin of Granite",
    "creator": "imhotep",
    "request": "make my skin as hard as the block",
    "alt": "Skin of Granite",
-   "chant": "Builder of the First Stair, I beckon thee, make my skin as hard as the block, Stoneskin.",
+   "chant": "Builder of the First Stair, I beckon thee, make my skin as hard as the block, Skin of Granite.",
    "epithet": "The Builder of the First Stair"
   },
   {
    "original": "Mold Earth",
    "aka": [],
-   "name": "Mold Earth",
+   "name": "Quarry Hands",
    "creator": "imhotep",
    "request": "mould the ground with my hands",
    "alt": "Quarry Hands",
-   "chant": "Builder of the First Stair, hear me, mould the ground with my hands, Mold Earth.",
+   "chant": "Builder of the First Stair, hear me, mould the ground with my hands, Quarry Hands.",
    "epithet": "The Builder of the First Stair"
   },
   {
@@ -1613,21 +1613,21 @@
   {
    "original": "Investiture of Stone",
    "aka": [],
-   "name": "Investiture of Stone",
+   "name": "Mantle of the Pyramid",
    "creator": "imhotep",
    "request": "wrap me in stone as in a tomb",
    "alt": "Mantle of the Pyramid",
-   "chant": "Builder of the First Stair, lay the stone for me, wrap me in stone as in a tomb, Investiture of Stone.",
+   "chant": "Builder of the First Stair, lay the stone for me, wrap me in stone as in a tomb, Mantle of the Pyramid.",
    "epithet": "The Builder of the First Stair"
   },
   {
    "original": "Passwall",
    "aka": [],
-   "name": "Passwall",
+   "name": "Tomb Door",
    "creator": "imhotep",
    "request": "open a door in the stone and let me through",
    "alt": "Tomb Door",
-   "chant": "Builder of the First Stair, I beckon thee, open a door in the stone and let me through, Passwall.",
+   "chant": "Builder of the First Stair, I beckon thee, open a door in the stone and let me through, Tomb Door.",
    "epithet": "The Builder of the First Stair"
   },
   {
@@ -1675,11 +1675,11 @@
   {
    "original": "Entangle",
    "aka": [],
-   "name": "Entangle",
+   "name": "Grasping Grass",
    "creator": "linnaeus",
    "request": "let the grass remember its name and grip them",
    "alt": "Grasping Grass",
-   "chant": "Namer of Green Things, I beckon thee, let the grass remember its name and grip them, Entangle.",
+   "chant": "Namer of Green Things, I beckon thee, let the grass remember its name and grip them, Grasping Grass.",
    "epithet": "The Namer of Green Things"
   },
   {
@@ -1695,31 +1695,31 @@
   {
    "original": "Barkskin",
    "aka": [],
-   "name": "Barkskin",
+   "name": "Bark Coat",
    "creator": "linnaeus",
    "request": "let the bark of the oak be my skin",
    "alt": "Bark Coat",
-   "chant": "Namer of Green Things, name this garden for me, let the bark of the oak be my skin, Barkskin.",
+   "chant": "Namer of Green Things, name this garden for me, let the bark of the oak be my skin, Bark Coat.",
    "epithet": "The Namer of Green Things"
   },
   {
    "original": "Goodberry",
    "aka": [],
-   "name": "Goodberry",
+   "name": "Gift Berries",
    "creator": "linnaeus",
    "request": "bless these berries and let them feed",
    "alt": "Gift Berries",
-   "chant": "Namer of Green Things, I beckon thee, bless these berries and let them feed, Goodberry.",
+   "chant": "Namer of Green Things, I beckon thee, bless these berries and let them feed, Gift Berries.",
    "epithet": "The Namer of Green Things"
   },
   {
    "original": "Speak with Plants",
    "aka": [],
-   "name": "Speak with Plants",
+   "name": "Name the Weeds",
    "creator": "linnaeus",
    "request": "let the green things answer when I name them",
    "alt": "Name the Weeds",
-   "chant": "Namer of Green Things, hear me, let the green things answer when I name them, Speak with Plants.",
+   "chant": "Namer of Green Things, hear me, let the green things answer when I name them, Name the Weeds.",
    "epithet": "The Namer of Green Things"
   },
   {
@@ -1735,11 +1735,11 @@
   {
    "original": "Awaken",
    "aka": [],
-   "name": "Awaken",
+   "name": "Wake the Tree",
    "creator": "linnaeus",
    "request": "wake this thing and give it a name",
    "alt": "Wake the Tree",
-   "chant": "Namer of Green Things, I beckon thee, wake this thing and give it a name, Awaken.",
+   "chant": "Namer of Green Things, I beckon thee, wake this thing and give it a name, Wake the Tree.",
    "epithet": "The Namer of Green Things"
   },
   {
@@ -1775,11 +1775,11 @@
   {
    "original": "Druidcraft",
    "aka": [],
-   "name": "Druidcraft",
+   "name": "Small Garden",
    "creator": "linnaeus",
    "request": "bid the small things of the garden obey",
    "alt": "Small Garden",
-   "chant": "Namer of Green Things, hear me, bid the small things of the garden obey, Druidcraft.",
+   "chant": "Namer of Green Things, hear me, bid the small things of the garden obey, Small Garden.",
    "epithet": "The Namer of Green Things"
   },
   {
@@ -1845,21 +1845,21 @@
   {
    "original": "Locate Animals or Plants",
    "aka": [],
-   "name": "Locate Animals or Plants",
+   "name": "Find the Species",
    "creator": "linnaeus",
    "request": "tell me where the green and the living are hiding",
    "alt": "Find the Species",
-   "chant": "Namer of Green Things, name this garden for me, tell me where the green and the living are hiding, Locate Animals or Plants.",
+   "chant": "Namer of Green Things, name this garden for me, tell me where the green and the living are hiding, Find the Species.",
    "epithet": "The Namer of Green Things"
   },
   {
    "original": "Conjure Woodland Beings",
    "aka": [],
-   "name": "Conjure Woodland Beings",
+   "name": "Wood Folk",
    "creator": "linnaeus",
    "request": "call the wood folk to my side",
    "alt": "Wood Folk",
-   "chant": "Namer of Green Things, I beckon thee, call the wood folk to my side, Conjure Woodland Beings.",
+   "chant": "Namer of Green Things, I beckon thee, call the wood folk to my side, Wood Folk.",
    "epithet": "The Namer of Green Things"
   },
   {
@@ -1925,21 +1925,21 @@
   {
    "original": "Animal Friendship",
    "aka": [],
-   "name": "Animal Friendship",
+   "name": "Gentle Word",
    "creator": "francis",
    "request": "calm this beast and let it hear me",
    "alt": "Gentle Word",
-   "chant": "Brother of Birds, I beckon thee, calm this beast and let it hear me, Animal Friendship.",
+   "chant": "Brother of Birds, I beckon thee, calm this beast and let it hear me, Gentle Word.",
    "epithet": "The Brother of Birds"
   },
   {
    "original": "Speak with Animals",
    "aka": [],
-   "name": "Speak with Animals",
+   "name": "Talk to the Beasts",
    "creator": "francis",
    "request": "let the beasts answer in their own tongue",
    "alt": "Talk to the Beasts",
-   "chant": "Brother of Birds, hear me, let the beasts answer in their own tongue, Speak with Animals.",
+   "chant": "Brother of Birds, hear me, let the beasts answer in their own tongue, Talk to the Beasts.",
    "epithet": "The Brother of Birds"
   },
   {
@@ -1955,21 +1955,21 @@
   {
    "original": "Animal Messenger",
    "aka": [],
-   "name": "Animal Messenger",
+   "name": "Sparrow Post",
    "creator": "francis",
    "request": "send a sparrow with my word",
    "alt": "Sparrow Post",
-   "chant": "Brother of Birds, I beckon thee, send a sparrow with my word, Animal Messenger.",
+   "chant": "Brother of Birds, I beckon thee, send a sparrow with my word, Sparrow Post.",
    "epithet": "The Brother of Birds"
   },
   {
    "original": "Conjure Animals",
    "aka": [],
-   "name": "Conjure Animals",
+   "name": "Call the Flock",
    "creator": "francis",
    "request": "call the flock and the herd to my side",
    "alt": "Call the Flock",
-   "chant": "Brother of Birds, hear me, call the flock and the herd to my side, Conjure Animals.",
+   "chant": "Brother of Birds, hear me, call the flock and the herd to my side, Call the Flock.",
    "epithet": "The Brother of Birds"
   },
   {
@@ -2045,11 +2045,11 @@
   {
    "original": "Insect Plague",
    "aka": [],
-   "name": "Insect Plague",
+   "name": "Plague of Locusts",
    "creator": "francis",
    "request": "send the plague of the field upon them",
    "alt": "Plague of Locusts",
-   "chant": "Brother of Birds, I beckon thee, send the plague of the field upon them, Insect Plague.",
+   "chant": "Brother of Birds, I beckon thee, send the plague of the field upon them, Plague of Locusts.",
    "epithet": "The Brother of Birds"
   },
   {
@@ -2085,31 +2085,31 @@
   {
    "original": "Animal Shapes",
    "aka": [],
-   "name": "Animal Shapes",
+   "name": "Brother Beasts",
    "creator": "francis",
    "request": "let my people take the shape of the beasts",
    "alt": "Brother Beasts",
-   "chant": "Brother of Birds, hear me, let my people take the shape of the beasts, Animal Shapes.",
+   "chant": "Brother of Birds, hear me, let my people take the shape of the beasts, Brother Beasts.",
    "epithet": "The Brother of Birds"
   },
   {
    "original": "Gust of Wind",
    "aka": [],
-   "name": "Gust of Wind",
+   "name": "Force Two",
    "creator": "beaufort",
    "request": "send a stiff breeze to scatter them",
    "alt": "Force Two",
-   "chant": "Measurer of Winds, I beckon thee, send a stiff breeze to scatter them, Gust of Wind.",
+   "chant": "Measurer of Winds, I beckon thee, send a stiff breeze to scatter them, Force Two.",
    "epithet": "The Measurer of Winds"
   },
   {
    "original": "Fog Cloud",
    "aka": [],
-   "name": "Fog Cloud",
+   "name": "Sea Fret",
    "creator": "beaufort",
    "request": "roll in the fog and hide the fleet",
    "alt": "Sea Fret",
-   "chant": "Measurer of Winds, hear me, roll in the fog and hide the fleet, Fog Cloud.",
+   "chant": "Measurer of Winds, hear me, roll in the fog and hide the fleet, Sea Fret.",
    "epithet": "The Measurer of Winds"
   },
   {
@@ -2125,31 +2125,31 @@
   {
    "original": "Control Weather",
    "aka": [],
-   "name": "Control Weather",
+   "name": "Weather Chart",
    "creator": "beaufort",
    "request": "set the sky to the number I choose",
    "alt": "Weather Chart",
-   "chant": "Measurer of Winds, I beckon thee, set the sky to the number I choose, Control Weather.",
+   "chant": "Measurer of Winds, I beckon thee, set the sky to the number I choose, Weather Chart.",
    "epithet": "The Measurer of Winds"
   },
   {
    "original": "Control Winds",
    "aka": [],
-   "name": "Control Winds",
+   "name": "Weighing the Wind",
    "creator": "beaufort",
    "request": "take the measure of the wind and bid it change",
    "alt": "Weighing the Wind",
-   "chant": "Measurer of Winds, hear me, take the measure of the wind and bid it change, Control Winds.",
+   "chant": "Measurer of Winds, hear me, take the measure of the wind and bid it change, Weighing the Wind.",
    "epithet": "The Measurer of Winds"
   },
   {
    "original": "Storm of Vengeance",
    "aka": [],
-   "name": "Storm of Vengeance",
+   "name": "Force Twelve",
    "creator": "beaufort",
    "request": "let the storm reach its greatest number",
    "alt": "Force Twelve",
-   "chant": "Measurer of Winds, set the scale for me, let the storm reach its greatest number, Storm of Vengeance.",
+   "chant": "Measurer of Winds, set the scale for me, let the storm reach its greatest number, Force Twelve.",
    "epithet": "The Measurer of Winds"
   },
   {
@@ -2175,11 +2175,11 @@
   {
    "original": "Gust",
    "aka": [],
-   "name": "Gust",
+   "name": "Light Air",
    "creator": "beaufort",
    "request": "let a breath stir the small things",
    "alt": "Light Air",
-   "chant": "Measurer of Winds, set the scale for me, let a breath stir the small things, Gust.",
+   "chant": "Measurer of Winds, set the scale for me, let a breath stir the small things, Light Air.",
    "epithet": "The Measurer of Winds"
   },
   {
@@ -2245,71 +2245,71 @@
   {
    "original": "Thunderwave",
    "aka": [],
-   "name": "Thunderwave",
+   "name": "Crashing Chord",
    "creator": "beethoven",
    "request": "strike the chord that throws them from their feet",
    "alt": "Crashing Chord",
-   "chant": "Deaf Maestro, I beckon thee, strike the chord that throws them from their feet, Thunderwave.",
+   "chant": "Deaf Maestro, I beckon thee, strike the chord that throws them from their feet, Crashing Chord.",
    "epithet": "The Deaf Maestro"
   },
   {
    "original": "Thunderclap",
    "aka": [],
-   "name": "Thunderclap",
+   "name": "Cymbal Crash",
    "creator": "beethoven",
    "request": "clap once and shake every ear nearby",
    "alt": "Cymbal Crash",
-   "chant": "Deaf Maestro, hear me, clap once and shake every ear nearby, Thunderclap.",
+   "chant": "Deaf Maestro, hear me, clap once and shake every ear nearby, Cymbal Crash.",
    "epithet": "The Deaf Maestro"
   },
   {
    "original": "Shatter",
    "aka": [],
-   "name": "Shatter",
+   "name": "Breaking Note",
    "creator": "beethoven",
    "request": "sing the note that cracks the glass",
    "alt": "Breaking Note",
-   "chant": "Deaf Maestro, conduct this for me, sing the note that cracks the glass, Shatter.",
+   "chant": "Deaf Maestro, conduct this for me, sing the note that cracks the glass, Breaking Note.",
    "epithet": "The Deaf Maestro"
   },
   {
    "original": "Silence",
    "aka": [],
-   "name": "Silence",
+   "name": "Hush",
    "creator": "beethoven",
    "request": "let the sound drain away and leave only quiet",
    "alt": "Hush",
-   "chant": "Deaf Maestro, I beckon thee, let the sound drain away and leave only quiet, Silence.",
+   "chant": "Deaf Maestro, I beckon thee, let the sound drain away and leave only quiet, Hush.",
    "epithet": "The Deaf Maestro"
   },
   {
    "original": "Dissonant Whispers",
    "aka": [],
-   "name": "Dissonant Whispers",
+   "name": "Clashing Whispers",
    "creator": "beethoven",
    "request": "whisper the discord that drives them to flight",
    "alt": "Clashing Whispers",
-   "chant": "Deaf Maestro, hear me, whisper the discord that drives them to flight, Dissonant Whispers.",
+   "chant": "Deaf Maestro, hear me, whisper the discord that drives them to flight, Clashing Whispers.",
    "epithet": "The Deaf Maestro"
   },
   {
    "original": "Vicious Mockery",
    "aka": [],
-   "name": "Vicious Mockery",
+   "name": "Sharp Insult",
    "creator": "beethoven",
    "request": "sing the verse that stings their pride",
    "alt": "Sharp Insult",
-   "chant": "Deaf Maestro, conduct this for me, sing the verse that stings their pride, Vicious Mockery.",
+   "chant": "Deaf Maestro, conduct this for me, sing the verse that stings their pride, Sharp Insult.",
    "epithet": "The Deaf Maestro"
   },
   {
    "original": "Dancing Lights",
    "aka": [],
-   "name": "Dancing Lights",
+   "name": "Candle Chorus",
    "creator": "beethoven",
    "request": "let the little lights dance to my beat",
    "alt": "Candle Chorus",
-   "chant": "Deaf Maestro, I beckon thee, let the little lights dance to my beat, Dancing Lights.",
+   "chant": "Deaf Maestro, I beckon thee, let the little lights dance to my beat, Candle Chorus.",
    "epithet": "The Deaf Maestro"
   },
   {
@@ -2325,11 +2325,11 @@
   {
    "original": "Magic Mouth",
    "aka": [],
-   "name": "Magic Mouth",
+   "name": "Singing Stone",
    "creator": "beethoven",
    "request": "let this stone sing my message when they pass",
    "alt": "Singing Stone",
-   "chant": "Deaf Maestro, conduct this for me, let this stone sing my message when they pass, Magic Mouth.",
+   "chant": "Deaf Maestro, conduct this for me, let this stone sing my message when they pass, Singing Stone.",
    "epithet": "The Deaf Maestro"
   },
   {
@@ -2347,11 +2347,11 @@
    "aka": [
     "Otto's Irresistible Dance"
    ],
-   "name": "Irresistible Dance",
+   "name": "Compelled Waltz",
    "creator": "beethoven",
    "request": "strike up the waltz they cannot refuse",
    "alt": "Compelled Waltz",
-   "chant": "Deaf Maestro, hear me, strike up the waltz they cannot refuse, Irresistible Dance.",
+   "chant": "Deaf Maestro, hear me, strike up the waltz they cannot refuse, Compelled Waltz.",
    "epithet": "The Deaf Maestro"
   },
   {
@@ -2399,21 +2399,21 @@
   {
    "original": "Resistance",
    "aka": [],
-   "name": "Resistance",
+   "name": "Steady Beat",
    "creator": "beethoven",
    "request": "keep the beat steady against the next blow",
    "alt": "Steady Beat",
-   "chant": "Deaf Maestro, I beckon thee, keep the beat steady against the next blow, Resistance.",
+   "chant": "Deaf Maestro, I beckon thee, keep the beat steady against the next blow, Steady Beat.",
    "epithet": "The Deaf Maestro"
   },
   {
    "original": "Guidance",
    "aka": [],
-   "name": "Guidance",
+   "name": "Counting the Bars",
    "creator": "beethoven",
    "request": "count the bars and tell me when to come in",
    "alt": "Counting the Bars",
-   "chant": "Deaf Maestro, hear me, count the bars and tell me when to come in, Guidance.",
+   "chant": "Deaf Maestro, hear me, count the bars and tell me when to come in, Counting the Bars.",
    "epithet": "The Deaf Maestro"
   },
   {
@@ -2459,21 +2459,21 @@
   {
    "original": "Wish",
    "aka": [],
-   "name": "Wish",
+   "name": "Open Circuit",
    "creator": "tesla",
    "request": "close the circuit and let the wish run through",
    "alt": "Open Circuit",
-   "chant": "Prophet of the Current, hear me, close the circuit and let the wish run through, Wish.",
+   "chant": "Prophet of the Current, hear me, close the circuit and let the wish run through, Open Circuit.",
    "epithet": "The Prophet of the Current"
   },
   {
    "original": "Sorcerous Burst",
    "aka": [],
-   "name": "Sorcerous Burst",
+   "name": "Raw Current",
    "creator": "tesla",
    "request": "let the raw current leap from my hand",
    "alt": "Raw Current",
-   "chant": "Prophet of the Current, open the line for me, let the raw current leap from my hand, Sorcerous Burst.",
+   "chant": "Prophet of the Current, open the line for me, let the raw current leap from my hand, Raw Current.",
    "epithet": "The Prophet of the Current"
   },
   {
@@ -2489,31 +2489,31 @@
   {
    "original": "Eldritch Blast",
    "aka": [],
-   "name": "Eldritch Blast",
+   "name": "Coil Blast",
    "creator": "tesla",
    "request": "let the coil discharge in a single beam",
    "alt": "Coil Blast",
-   "chant": "Prophet of the Current, hear me, let the coil discharge in a single beam, Eldritch Blast.",
+   "chant": "Prophet of the Current, hear me, let the coil discharge in a single beam, Coil Blast.",
    "epithet": "The Prophet of the Current"
   },
   {
    "original": "Synaptic Static",
    "aka": [],
-   "name": "Synaptic Static",
+   "name": "Nerve Static",
    "creator": "tesla",
    "request": "let the static fill their minds",
    "alt": "Nerve Static",
-   "chant": "Prophet of the Current, open the line for me, let the static fill their minds, Synaptic Static.",
+   "chant": "Prophet of the Current, open the line for me, let the static fill their minds, Nerve Static.",
    "epithet": "The Prophet of the Current"
   },
   {
    "original": "Counterspell",
    "aka": [],
-   "name": "Counterspell",
+   "name": "Cut the Line",
    "creator": "tesla",
    "request": "cut the line and let the spell fall dead",
    "alt": "Cut the Line",
-   "chant": "Prophet of the Current, I beckon thee, cut the line and let the spell fall dead, Counterspell.",
+   "chant": "Prophet of the Current, I beckon thee, cut the line and let the spell fall dead, Cut the Line.",
    "epithet": "The Prophet of the Current"
   },
   {
@@ -2529,61 +2529,61 @@
   {
    "original": "Antimagic Field",
    "aka": [],
-   "name": "Antimagic Field",
+   "name": "Dead Zone",
    "creator": "tesla",
    "request": "open a field where no current will run",
    "alt": "Dead Zone",
-   "chant": "Prophet of the Current, open the line for me, open a field where no current will run, Antimagic Field.",
+   "chant": "Prophet of the Current, open the line for me, open a field where no current will run, Dead Zone.",
    "epithet": "The Prophet of the Current"
   },
   {
    "original": "Globe of Invulnerability",
    "aka": [],
-   "name": "Globe of Invulnerability",
+   "name": "Faraday Sphere",
    "creator": "tesla",
    "request": "close a cage about me that no current can cross",
    "alt": "Faraday Sphere",
-   "chant": "Prophet of the Current, I beckon thee, close a cage about me that no current can cross, Globe of Invulnerability.",
+   "chant": "Prophet of the Current, I beckon thee, close a cage about me that no current can cross, Faraday Sphere.",
    "epithet": "The Prophet of the Current"
   },
   {
    "original": "Magic Missile",
    "aka": [],
-   "name": "Magic Missile",
+   "name": "Falling Stars",
    "creator": "newton",
    "request": "let three small stars fall where I look",
    "alt": "Falling Stars",
-   "chant": "Weigher of Worlds, I beckon thee, let three small stars fall where I look, Magic Missile.",
+   "chant": "Weigher of Worlds, I beckon thee, let three small stars fall where I look, Falling Stars.",
    "epithet": "The Weigher of Worlds"
   },
   {
    "original": "Telekinesis",
    "aka": [],
-   "name": "Telekinesis",
+   "name": "Unseen Pull",
    "creator": "newton",
    "request": "move what I will with the pull of my mind",
    "alt": "Unseen Pull",
-   "chant": "Weigher of Worlds, hear me, move what I will with the pull of my mind, Telekinesis.",
+   "chant": "Weigher of Worlds, hear me, move what I will with the pull of my mind, Unseen Pull.",
    "epithet": "The Weigher of Worlds"
   },
   {
    "original": "Reverse Gravity",
    "aka": [],
-   "name": "Reverse Gravity",
+   "name": "Fall Upward",
    "creator": "newton",
    "request": "let the world fall the other way",
    "alt": "Fall Upward",
-   "chant": "Weigher of Worlds, set the weights for me, let the world fall the other way, Reverse Gravity.",
+   "chant": "Weigher of Worlds, set the weights for me, let the world fall the other way, Fall Upward.",
    "epithet": "The Weigher of Worlds"
   },
   {
    "original": "Gravity Sinkhole",
    "aka": [],
-   "name": "Gravity Sinkhole",
+   "name": "Heavy Well",
    "creator": "newton",
    "request": "open the well and let everything fall into it",
    "alt": "Heavy Well",
-   "chant": "Weigher of Worlds, I beckon thee, open the well and let everything fall into it, Gravity Sinkhole.",
+   "chant": "Weigher of Worlds, I beckon thee, open the well and let everything fall into it, Heavy Well.",
    "epithet": "The Weigher of Worlds"
   },
   {
@@ -2599,11 +2599,11 @@
   {
    "original": "Levitate",
    "aka": [],
-   "name": "Levitate",
+   "name": "Float",
    "creator": "newton",
    "request": "take the weight from me and let me rise",
    "alt": "Float",
-   "chant": "Weigher of Worlds, set the weights for me, take the weight from me and let me rise, Levitate.",
+   "chant": "Weigher of Worlds, set the weights for me, take the weight from me and let me rise, Float.",
    "epithet": "The Weigher of Worlds"
   },
   {
@@ -2665,21 +2665,21 @@
    "aka": [
     "Bigby's Hand"
    ],
-   "name": "Arcane Hand",
+   "name": "Giant Hand",
    "creator": "newton",
    "request": "raise a hand of force and let it push",
    "alt": "Giant Hand",
-   "chant": "Weigher of Worlds, set the weights for me, raise a hand of force and let it push, Arcane Hand.",
+   "chant": "Weigher of Worlds, set the weights for me, raise a hand of force and let it push, Giant Hand.",
    "epithet": "The Weigher of Worlds"
   },
   {
    "original": "Slow",
    "aka": [],
-   "name": "Slow",
+   "name": "Drag of Weight",
    "creator": "newton",
    "request": "add weight to every limb until they crawl",
    "alt": "Drag of Weight",
-   "chant": "Weigher of Worlds, I beckon thee, add weight to every limb until they crawl, Slow.",
+   "chant": "Weigher of Worlds, I beckon thee, add weight to every limb until they crawl, Drag of Weight.",
    "epithet": "The Weigher of Worlds"
   },
   {
@@ -2707,41 +2707,41 @@
   {
    "original": "Fly",
    "aka": [],
-   "name": "Fly",
+   "name": "Winged Machine",
    "creator": "davinci",
    "request": "give me the wings that I drew",
    "alt": "Winged Machine",
-   "chant": "Winged Polymath, I beckon thee, give me the wings that I drew, Fly.",
+   "chant": "Winged Polymath, I beckon thee, give me the wings that I drew, Winged Machine.",
    "epithet": "The Winged Polymath"
   },
   {
    "original": "Feather Fall",
    "aka": [],
-   "name": "Feather Fall",
+   "name": "Soft Landing",
    "creator": "davinci",
    "request": "let me fall as a feather falls",
    "alt": "Soft Landing",
-   "chant": "Winged Polymath, hear me, let me fall as a feather falls, Feather Fall.",
+   "chant": "Winged Polymath, hear me, let me fall as a feather falls, Soft Landing.",
    "epithet": "The Winged Polymath"
   },
   {
    "original": "Jump",
    "aka": [],
-   "name": "Jump",
+   "name": "Spring Heel",
    "creator": "davinci",
    "request": "let my legs be the springs of thy machine",
    "alt": "Spring Heel",
-   "chant": "Winged Polymath, lend me thy wings, let my legs be the springs of thy machine, Jump.",
+   "chant": "Winged Polymath, lend me thy wings, let my legs be the springs of thy machine, Spring Heel.",
    "epithet": "The Winged Polymath"
   },
   {
    "original": "Spider Climb",
    "aka": [],
-   "name": "Spider Climb",
+   "name": "Wall Climber",
    "creator": "davinci",
    "request": "let me climb the wall as thy machine does",
    "alt": "Wall Climber",
-   "chant": "Winged Polymath, I beckon thee, let me climb the wall as thy machine does, Spider Climb.",
+   "chant": "Winged Polymath, I beckon thee, let me climb the wall as thy machine does, Wall Climber.",
    "epithet": "The Winged Polymath"
   },
   {
@@ -2767,21 +2767,21 @@
   {
    "original": "Haste",
    "aka": [],
-   "name": "Haste",
+   "name": "Machine Speed",
    "creator": "davinci",
    "request": "set my gears to a faster turn",
    "alt": "Machine Speed",
-   "chant": "Winged Polymath, I beckon thee, set my gears to a faster turn, Haste.",
+   "chant": "Winged Polymath, I beckon thee, set my gears to a faster turn, Machine Speed.",
    "epithet": "The Winged Polymath"
   },
   {
    "original": "Animate Objects",
    "aka": [],
-   "name": "Animate Objects",
+   "name": "Clockwork Army",
    "creator": "davinci",
    "request": "wake the gears and let them walk",
    "alt": "Clockwork Army",
-   "chant": "Winged Polymath, hear me, wake the gears and let them walk, Animate Objects.",
+   "chant": "Winged Polymath, hear me, wake the gears and let them walk, Clockwork Army.",
    "epithet": "The Winged Polymath"
   },
   {
@@ -2789,21 +2789,21 @@
    "aka": [
     "Tenser's Floating Disk"
    ],
-   "name": "Floating Disk",
+   "name": "Carrying Plate",
    "creator": "davinci",
    "request": "let the plate float and carry the load",
    "alt": "Carrying Plate",
-   "chant": "Winged Polymath, lend me thy wings, let the plate float and carry the load, Floating Disk.",
+   "chant": "Winged Polymath, lend me thy wings, let the plate float and carry the load, Carrying Plate.",
    "epithet": "The Winged Polymath"
   },
   {
    "original": "Unseen Servant",
    "aka": [],
-   "name": "Unseen Servant",
+   "name": "Silent Automaton",
    "creator": "davinci",
    "request": "let a servant that cannot be seen do my chores",
    "alt": "Silent Automaton",
-   "chant": "Winged Polymath, I beckon thee, let a servant that cannot be seen do my chores, Unseen Servant.",
+   "chant": "Winged Polymath, I beckon thee, let a servant that cannot be seen do my chores, Silent Automaton.",
    "epithet": "The Winged Polymath"
   },
   {
@@ -2829,11 +2829,11 @@
   {
    "original": "Summon Construct",
    "aka": [],
-   "name": "Summon Construct",
+   "name": "Clockwork Guard",
    "creator": "davinci",
    "request": "build a guard and bid it stand",
    "alt": "Clockwork Guard",
-   "chant": "Winged Polymath, I beckon thee, build a guard and bid it stand, Summon Construct.",
+   "chant": "Winged Polymath, I beckon thee, build a guard and bid it stand, Clockwork Guard.",
    "epithet": "The Winged Polymath"
   },
   {
@@ -2849,11 +2849,11 @@
   {
    "original": "Mending",
    "aka": [],
-   "name": "Mending",
+   "name": "Repair",
    "creator": "davinci",
    "request": "mend this break and make it whole",
    "alt": "Repair",
-   "chant": "Winged Polymath, lend me thy wings, mend this break and make it whole, Mending.",
+   "chant": "Winged Polymath, lend me thy wings, mend this break and make it whole, Repair.",
    "epithet": "The Winged Polymath"
   },
   {
@@ -2889,71 +2889,71 @@
   {
    "original": "Starry Wisp",
    "aka": [],
-   "name": "Starry Wisp",
+   "name": "Lens Flare",
    "creator": "galileo",
    "request": "send a spark of starlight where I look",
    "alt": "Lens Flare",
-   "chant": "Starward Eye, I beckon thee, send a spark of starlight where I look, Starry Wisp.",
+   "chant": "Starward Eye, I beckon thee, send a spark of starlight where I look, Lens Flare.",
    "epithet": "The Starward Eye"
   },
   {
    "original": "Clairvoyance",
    "aka": [],
-   "name": "Clairvoyance",
+   "name": "Distant Glass",
    "creator": "galileo",
    "request": "turn thy glass and let me see that place",
    "alt": "Distant Glass",
-   "chant": "Starward Eye, hear me, turn thy glass and let me see that place, Clairvoyance.",
+   "chant": "Starward Eye, hear me, turn thy glass and let me see that place, Distant Glass.",
    "epithet": "The Starward Eye"
   },
   {
    "original": "Scrying",
    "aka": [],
-   "name": "Scrying",
+   "name": "Far Mirror",
    "creator": "galileo",
    "request": "turn the mirror to the one I name",
    "alt": "Far Mirror",
-   "chant": "Starward Eye, turn thy glass for me, turn the mirror to the one I name, Scrying.",
+   "chant": "Starward Eye, turn thy glass for me, turn the mirror to the one I name, Far Mirror.",
    "epithet": "The Starward Eye"
   },
   {
    "original": "Arcane Eye",
    "aka": [],
-   "name": "Arcane Eye",
+   "name": "Floating Glass",
    "creator": "galileo",
    "request": "send an eye to look where I cannot",
    "alt": "Floating Glass",
-   "chant": "Starward Eye, I beckon thee, send an eye to look where I cannot, Arcane Eye.",
+   "chant": "Starward Eye, I beckon thee, send an eye to look where I cannot, Floating Glass.",
    "epithet": "The Starward Eye"
   },
   {
    "original": "Darkvision",
    "aka": [],
-   "name": "Darkvision",
+   "name": "Night Glass",
    "creator": "galileo",
    "request": "give me the glass that sees in the dark",
    "alt": "Night Glass",
-   "chant": "Starward Eye, hear me, give me the glass that sees in the dark, Darkvision.",
+   "chant": "Starward Eye, hear me, give me the glass that sees in the dark, Night Glass.",
    "epithet": "The Starward Eye"
   },
   {
    "original": "See Invisibility",
    "aka": [],
-   "name": "See Invisibility",
+   "name": "Clear Lens",
    "creator": "galileo",
    "request": "polish the lens until nothing hides from it",
    "alt": "Clear Lens",
-   "chant": "Starward Eye, turn thy glass for me, polish the lens until nothing hides from it, See Invisibility.",
+   "chant": "Starward Eye, turn thy glass for me, polish the lens until nothing hides from it, Clear Lens.",
    "epithet": "The Starward Eye"
   },
   {
    "original": "True Seeing",
    "aka": [],
-   "name": "True Seeing",
+   "name": "True Glass",
    "creator": "galileo",
    "request": "let nothing escape the lens",
    "alt": "True Glass",
-   "chant": "Starward Eye, I beckon thee, let nothing escape the lens, True Seeing.",
+   "chant": "Starward Eye, I beckon thee, let nothing escape the lens, True Glass.",
    "epithet": "The Starward Eye"
   },
   {
@@ -2961,11 +2961,11 @@
    "aka": [
     "Melf's Minute Meteors"
    ],
-   "name": "Minute Meteors",
+   "name": "Tiny Comets",
    "creator": "galileo",
    "request": "scatter small comets about me",
    "alt": "Tiny Comets",
-   "chant": "Starward Eye, hear me, scatter small comets about me, Minute Meteors.",
+   "chant": "Starward Eye, hear me, scatter small comets about me, Tiny Comets.",
    "epithet": "The Starward Eye"
   },
   {
@@ -2991,11 +2991,11 @@
   {
    "original": "Dark Star",
    "aka": [],
-   "name": "Dark Star",
+   "name": "Black Sun",
    "creator": "galileo",
    "request": "open a black star and let it swallow them",
    "alt": "Black Sun",
-   "chant": "Starward Eye, hear me, open a black star and let it swallow them, Dark Star.",
+   "chant": "Starward Eye, hear me, open a black star and let it swallow them, Black Sun.",
    "epithet": "The Starward Eye"
   },
   {
@@ -3011,61 +3011,61 @@
   {
    "original": "Augury",
    "aka": [],
-   "name": "Augury",
+   "name": "Read the Omen",
    "creator": "nostradamus",
    "request": "read the omen and tell me what will come",
    "alt": "Read the Omen",
-   "chant": "Seer of Salon, I beckon thee, read the omen and tell me what will come, Augury.",
+   "chant": "Seer of Salon, I beckon thee, read the omen and tell me what will come, Read the Omen.",
    "epithet": "The Seer of Salon"
   },
   {
    "original": "Divination",
    "aka": [],
-   "name": "Divination",
+   "name": "True Quatrain",
    "creator": "nostradamus",
    "request": "read the quatrain and give me a true answer",
    "alt": "True Quatrain",
-   "chant": "Seer of Salon, hear me, read the quatrain and give me a true answer, Divination.",
+   "chant": "Seer of Salon, hear me, read the quatrain and give me a true answer, True Quatrain.",
    "epithet": "The Seer of Salon"
   },
   {
    "original": "Commune",
    "aka": [],
-   "name": "Commune",
+   "name": "Ask the Heavens",
    "creator": "nostradamus",
    "request": "ask the heavens and let them answer me",
    "alt": "Ask the Heavens",
-   "chant": "Seer of Salon, read the verse for me, ask the heavens and let them answer me, Commune.",
+   "chant": "Seer of Salon, read the verse for me, ask the heavens and let them answer me, Ask the Heavens.",
    "epithet": "The Seer of Salon"
   },
   {
    "original": "Contact Other Plane",
    "aka": [],
-   "name": "Contact Other Plane",
+   "name": "Ask Beyond",
    "creator": "nostradamus",
    "request": "ask the one beyond the veil and bear the cost",
    "alt": "Ask Beyond",
-   "chant": "Seer of Salon, I beckon thee, ask the one beyond the veil and bear the cost, Contact Other Plane.",
+   "chant": "Seer of Salon, I beckon thee, ask the one beyond the veil and bear the cost, Ask Beyond.",
    "epithet": "The Seer of Salon"
   },
   {
    "original": "Foresight",
    "aka": [],
-   "name": "Foresight",
+   "name": "Seen Before",
    "creator": "nostradamus",
    "request": "let me see what comes before it comes",
    "alt": "Seen Before",
-   "chant": "Seer of Salon, hear me, let me see what comes before it comes, Foresight.",
+   "chant": "Seer of Salon, hear me, let me see what comes before it comes, Seen Before.",
    "epithet": "The Seer of Salon"
   },
   {
    "original": "Legend Lore",
    "aka": [],
-   "name": "Legend Lore",
+   "name": "Verse of Legends",
    "creator": "nostradamus",
    "request": "read me the verse that tells their legend",
    "alt": "Verse of Legends",
-   "chant": "Seer of Salon, read the verse for me, read me the verse that tells their legend, Legend Lore.",
+   "chant": "Seer of Salon, read the verse for me, read me the verse that tells their legend, Verse of Legends.",
    "epithet": "The Seer of Salon"
   },
   {
@@ -3131,11 +3131,11 @@
   {
    "original": "Weird",
    "aka": [],
-   "name": "Weird",
+   "name": "Their Worst Fear",
    "creator": "nostradamus",
    "request": "show them the thing they fear most",
    "alt": "Their Worst Fear",
-   "chant": "Seer of Salon, I beckon thee, show them the thing they fear most, Weird.",
+   "chant": "Seer of Salon, I beckon thee, show them the thing they fear most, Their Worst Fear.",
    "epithet": "The Seer of Salon"
   },
   {
@@ -3163,21 +3163,21 @@
   {
    "original": "Heroism",
    "aka": [],
-   "name": "Heroism",
+   "name": "Steady Resolve",
    "creator": "suntzu",
    "request": "steady the hearts of my soldiers",
    "alt": "Steady Resolve",
-   "chant": "Unseen General, I beckon thee, steady the hearts of my soldiers, Heroism.",
+   "chant": "Unseen General, I beckon thee, steady the hearts of my soldiers, Steady Resolve.",
    "epithet": "The Unseen General"
   },
   {
    "original": "Compelled Duel",
    "aka": [],
-   "name": "Compelled Duel",
+   "name": "Forced Duel",
    "creator": "suntzu",
    "request": "bind this foe to fight only me",
    "alt": "Forced Duel",
-   "chant": "Unseen General, hear me, bind this foe to fight only me, Compelled Duel.",
+   "chant": "Unseen General, hear me, bind this foe to fight only me, Forced Duel.",
    "epithet": "The Unseen General"
   },
   {
@@ -3213,11 +3213,11 @@
   {
    "original": "Mass Suggestion",
    "aka": [],
-   "name": "Mass Suggestion",
+   "name": "Order of March",
    "creator": "suntzu",
    "request": "order them as one to march",
    "alt": "Order of March",
-   "chant": "Unseen General, set the line for me, order them as one to march, Mass Suggestion.",
+   "chant": "Unseen General, set the line for me, order them as one to march, Order of March.",
    "epithet": "The Unseen General"
   },
   {
@@ -3233,51 +3233,51 @@
   {
    "original": "Warding Bond",
    "aka": [],
-   "name": "Warding Bond",
+   "name": "Sworn Bond",
    "creator": "suntzu",
    "request": "bind our fates so that I may bear your wounds",
    "alt": "Sworn Bond",
-   "chant": "Unseen General, hear me, bind our fates so that I may bear your wounds, Warding Bond.",
+   "chant": "Unseen General, hear me, bind our fates so that I may bear your wounds, Sworn Bond.",
    "epithet": "The Unseen General"
   },
   {
    "original": "Zone of Truth",
    "aka": [],
-   "name": "Zone of Truth",
+   "name": "Parley Ground",
    "creator": "suntzu",
    "request": "make this ground one where no lie can be told",
    "alt": "Parley Ground",
-   "chant": "Unseen General, set the line for me, make this ground one where no lie can be told, Zone of Truth.",
+   "chant": "Unseen General, set the line for me, make this ground one where no lie can be told, Parley Ground.",
    "epithet": "The Unseen General"
   },
   {
    "original": "Blur",
    "aka": [],
-   "name": "Blur",
+   "name": "Smoke Line",
    "creator": "suntzu",
    "request": "blur the line until none can tell where it ends",
    "alt": "Smoke Line",
-   "chant": "Unseen General, I beckon thee, blur the line until none can tell where it ends, Blur.",
+   "chant": "Unseen General, I beckon thee, blur the line until none can tell where it ends, Smoke Line.",
    "epithet": "The Unseen General"
   },
   {
    "original": "Alarm",
    "aka": [],
-   "name": "Alarm",
+   "name": "Sentry Cord",
    "creator": "suntzu",
    "request": "set the cord and ring when it is crossed",
    "alt": "Sentry Cord",
-   "chant": "Unseen General, hear me, set the cord and ring when it is crossed, Alarm.",
+   "chant": "Unseen General, hear me, set the cord and ring when it is crossed, Sentry Cord.",
    "epithet": "The Unseen General"
   },
   {
    "original": "Beacon of Hope",
    "aka": [],
-   "name": "Beacon of Hope",
+   "name": "Rally Cry",
    "creator": "suntzu",
    "request": "rally my people when hope has failed",
    "alt": "Rally Cry",
-   "chant": "Unseen General, set the line for me, rally my people when hope has failed, Beacon of Hope.",
+   "chant": "Unseen General, set the line for me, rally my people when hope has failed, Rally Cry.",
    "epithet": "The Unseen General"
   },
   {
@@ -3293,21 +3293,21 @@
   {
    "original": "Fast Friends",
    "aka": [],
-   "name": "Fast Friends",
+   "name": "Quick Allies",
    "creator": "suntzu",
    "request": "win allies in a single hour",
    "alt": "Quick Allies",
-   "chant": "Unseen General, hear me, win allies in a single hour, Fast Friends.",
+   "chant": "Unseen General, hear me, win allies in a single hour, Quick Allies.",
    "epithet": "The Unseen General"
   },
   {
    "original": "Charm Person",
    "aka": [],
-   "name": "Charm Person",
+   "name": "Honeyed Smile",
    "creator": "cleopatra",
    "request": "let them think me their friend",
    "alt": "Honeyed Smile",
-   "chant": "Serpent Queen, I beckon thee, let them think me their friend, Charm Person.",
+   "chant": "Serpent Queen, I beckon thee, let them think me their friend, Honeyed Smile.",
    "epithet": "The Serpent Queen"
   },
   {
@@ -3333,11 +3333,11 @@
   {
    "original": "Dominate Person",
    "aka": [],
-   "name": "Dominate Person",
+   "name": "Queen's Hold",
    "creator": "cleopatra",
    "request": "let them kneel as to a queen",
    "alt": "Queen's Hold",
-   "chant": "Serpent Queen, I beckon thee, let them kneel as to a queen, Dominate Person.",
+   "chant": "Serpent Queen, I beckon thee, let them kneel as to a queen, Queen's Hold.",
    "epithet": "The Serpent Queen"
   },
   {
@@ -3383,41 +3383,41 @@
   {
    "original": "Crown of Madness",
    "aka": [],
-   "name": "Crown of Madness",
+   "name": "Crown of Asps",
    "creator": "cleopatra",
    "request": "set a crown of asps upon them",
    "alt": "Crown of Asps",
-   "chant": "Serpent Queen, whisper through me, set a crown of asps upon them, Crown of Madness.",
+   "chant": "Serpent Queen, whisper through me, set a crown of asps upon them, Crown of Asps.",
    "epithet": "The Serpent Queen"
   },
   {
    "original": "Poison Spray",
    "aka": [],
-   "name": "Poison Spray",
+   "name": "Asp's Kiss",
    "creator": "cleopatra",
    "request": "let a puff of poison find their face",
    "alt": "Asp's Kiss",
-   "chant": "Serpent Queen, I beckon thee, let a puff of poison find their face, Poison Spray.",
+   "chant": "Serpent Queen, I beckon thee, let a puff of poison find their face, Asp's Kiss.",
    "epithet": "The Serpent Queen"
   },
   {
    "original": "Protection from Poison",
    "aka": [],
-   "name": "Protection from Poison",
+   "name": "Taste First",
    "creator": "cleopatra",
    "request": "let no cup do me harm",
    "alt": "Taste First",
-   "chant": "Serpent Queen, hear me, let no cup do me harm, Protection from Poison.",
+   "chant": "Serpent Queen, hear me, let no cup do me harm, Taste First.",
    "epithet": "The Serpent Queen"
   },
   {
    "original": "Detect Poison and Disease",
    "aka": [],
-   "name": "Detect Poison and Disease",
+   "name": "Cupbearer's Eye",
    "creator": "cleopatra",
    "request": "let me tell the poisoned cup from the clean",
    "alt": "Cupbearer's Eye",
-   "chant": "Serpent Queen, whisper through me, let me tell the poisoned cup from the clean, Detect Poison and Disease.",
+   "chant": "Serpent Queen, whisper through me, let me tell the poisoned cup from the clean, Cupbearer's Eye.",
    "epithet": "The Serpent Queen"
   },
   {
@@ -3433,21 +3433,21 @@
   {
    "original": "Seeming",
    "aka": [],
-   "name": "Seeming",
+   "name": "Queen's Mask",
    "creator": "cleopatra",
    "request": "give each of my people the face of another",
    "alt": "Queen's Mask",
-   "chant": "Serpent Queen, hear me, give each of my people the face of another, Seeming.",
+   "chant": "Serpent Queen, hear me, give each of my people the face of another, Queen's Mask.",
    "epithet": "The Serpent Queen"
   },
   {
    "original": "Hold Person",
    "aka": [],
-   "name": "Hold Person",
+   "name": "Asp's Stillness",
    "creator": "cleopatra",
    "request": "let the venom still their limbs",
    "alt": "Asp's Stillness",
-   "chant": "Serpent Queen, whisper through me, let the venom still their limbs, Hold Person.",
+   "chant": "Serpent Queen, whisper through me, let the venom still their limbs, Asp's Stillness.",
    "epithet": "The Serpent Queen"
   },
   {
@@ -3463,31 +3463,31 @@
   {
    "original": "Sleep",
    "aka": [],
-   "name": "Sleep",
+   "name": "Gentle Trance",
    "creator": "mesmer",
    "request": "let them slip into the gentle trance",
    "alt": "Gentle Trance",
-   "chant": "Magnetizer, I beckon thee, let them slip into the gentle trance, Sleep.",
+   "chant": "Magnetizer, I beckon thee, let them slip into the gentle trance, Gentle Trance.",
    "epithet": "The Magnetizer"
   },
   {
    "original": "Hypnotic Pattern",
    "aka": [],
-   "name": "Hypnotic Pattern",
+   "name": "Swinging Light",
    "creator": "mesmer",
    "request": "set the light swinging and let them watch it",
    "alt": "Swinging Light",
-   "chant": "Magnetizer, hear me, set the light swinging and let them watch it, Hypnotic Pattern.",
+   "chant": "Magnetizer, hear me, set the light swinging and let them watch it, Swinging Light.",
    "epithet": "The Magnetizer"
   },
   {
    "original": "Mind Sliver",
    "aka": [],
-   "name": "Mind Sliver",
+   "name": "Needle Thought",
    "creator": "mesmer",
    "request": "drive a sliver of thought into their mind",
    "alt": "Needle Thought",
-   "chant": "Magnetizer, draw their eyes to mine, drive a sliver of thought into their mind, Mind Sliver.",
+   "chant": "Magnetizer, draw their eyes to mine, drive a sliver of thought into their mind, Needle Thought.",
    "epithet": "The Magnetizer"
   },
   {
@@ -3515,21 +3515,21 @@
   {
    "original": "Modify Memory",
    "aka": [],
-   "name": "Modify Memory",
+   "name": "Rewritten Memory",
    "creator": "mesmer",
    "request": "rewrite what they remember",
    "alt": "Rewritten Memory",
-   "chant": "Magnetizer, draw their eyes to mine, rewrite what they remember, Modify Memory.",
+   "chant": "Magnetizer, draw their eyes to mine, rewrite what they remember, Rewritten Memory.",
    "epithet": "The Magnetizer"
   },
   {
    "original": "Detect Thoughts",
    "aka": [],
-   "name": "Detect Thoughts",
+   "name": "Reading the Magnet",
    "creator": "mesmer",
    "request": "feel the thoughts that drift off them",
    "alt": "Reading the Magnet",
-   "chant": "Magnetizer, I beckon thee, feel the thoughts that drift off them, Detect Thoughts.",
+   "chant": "Magnetizer, I beckon thee, feel the thoughts that drift off them, Reading the Magnet.",
    "epithet": "The Magnetizer"
   },
   {
@@ -3565,11 +3565,11 @@
   {
    "original": "Catnap",
    "aka": [],
-   "name": "Catnap",
+   "name": "Short Trance",
    "creator": "mesmer",
    "request": "let us all sleep a short sleep and wake restored",
    "alt": "Short Trance",
-   "chant": "Magnetizer, hear me, let us all sleep a short sleep and wake restored, Catnap.",
+   "chant": "Magnetizer, hear me, let us all sleep a short sleep and wake restored, Short Trance.",
    "epithet": "The Magnetizer"
   },
   {
@@ -3605,21 +3605,21 @@
   {
    "original": "Dream",
    "aka": [],
-   "name": "Dream",
+   "name": "Walk the Dream",
    "creator": "freud",
    "request": "let me walk into their dream",
    "alt": "Walk the Dream",
-   "chant": "Interpreter of Dreams, I beckon thee, let me walk into their dream, Dream.",
+   "chant": "Interpreter of Dreams, I beckon thee, let me walk into their dream, Walk the Dream.",
    "epithet": "The Interpreter of Dreams"
   },
   {
    "original": "Phantasmal Killer",
    "aka": [],
-   "name": "Phantasmal Killer",
+   "name": "Waking Nightmare",
    "creator": "freud",
    "request": "let their own fear strike them down",
    "alt": "Waking Nightmare",
-   "chant": "Interpreter of Dreams, hear me, let their own fear strike them down, Phantasmal Killer.",
+   "chant": "Interpreter of Dreams, hear me, let their own fear strike them down, Waking Nightmare.",
    "epithet": "The Interpreter of Dreams"
   },
   {
@@ -3645,11 +3645,11 @@
   {
    "original": "Fear",
    "aka": [],
-   "name": "Fear",
+   "name": "Terror's Hour",
    "creator": "freud",
    "request": "let the worst of their dreams walk beside them",
    "alt": "Terror's Hour",
-   "chant": "Interpreter of Dreams, hear me, let the worst of their dreams walk beside them, Fear.",
+   "chant": "Interpreter of Dreams, hear me, let the worst of their dreams walk beside them, Terror's Hour.",
    "epithet": "The Interpreter of Dreams"
   },
   {
@@ -3695,21 +3695,21 @@
   {
    "original": "Programmed Illusion",
    "aka": [],
-   "name": "Programmed Illusion",
+   "name": "Waiting Dream",
    "creator": "freud",
    "request": "set a dream to play when they pass",
    "alt": "Waiting Dream",
-   "chant": "Interpreter of Dreams, I beckon thee, set a dream to play when they pass, Programmed Illusion.",
+   "chant": "Interpreter of Dreams, I beckon thee, set a dream to play when they pass, Waiting Dream.",
    "epithet": "The Interpreter of Dreams"
   },
   {
    "original": "Project Image",
    "aka": [],
-   "name": "Project Image",
+   "name": "Dream Double",
    "creator": "freud",
    "request": "send my double to speak where I cannot",
    "alt": "Dream Double",
-   "chant": "Interpreter of Dreams, hear me, send my double to speak where I cannot, Project Image.",
+   "chant": "Interpreter of Dreams, hear me, send my double to speak where I cannot, Dream Double.",
    "epithet": "The Interpreter of Dreams"
   },
   {
@@ -3745,31 +3745,31 @@
   {
    "original": "Color Spray",
    "aka": [],
-   "name": "Color Spray",
+   "name": "Rainbow Flash",
    "creator": "barnum",
    "request": "fling the colors that dazzle the crowd",
    "alt": "Rainbow Flash",
-   "chant": "Prince of Humbug, I beckon thee, fling the colors that dazzle the crowd, Color Spray.",
+   "chant": "Prince of Humbug, I beckon thee, fling the colors that dazzle the crowd, Rainbow Flash.",
    "epithet": "The Prince of Humbug"
   },
   {
    "original": "Prestidigitation",
    "aka": [],
-   "name": "Prestidigitation",
+   "name": "Sleight of Hand",
    "creator": "barnum",
    "request": "let the small tricks begin",
    "alt": "Sleight of Hand",
-   "chant": "Prince of Humbug, hear me, let the small tricks begin, Prestidigitation.",
+   "chant": "Prince of Humbug, hear me, let the small tricks begin, Sleight of Hand.",
    "epithet": "The Prince of Humbug"
   },
   {
    "original": "Thaumaturgy",
    "aka": [],
-   "name": "Thaumaturgy",
+   "name": "Wonder Show",
    "creator": "barnum",
    "request": "let the small wonders amaze",
    "alt": "Wonder Show",
-   "chant": "Prince of Humbug, raise the curtain for me, let the small wonders amaze, Thaumaturgy.",
+   "chant": "Prince of Humbug, raise the curtain for me, let the small wonders amaze, Wonder Show.",
    "epithet": "The Prince of Humbug"
   },
   {
@@ -3797,11 +3797,11 @@
   {
    "original": "Simulacrum",
    "aka": [],
-   "name": "Simulacrum",
+   "name": "Wax Double",
    "creator": "barnum",
    "request": "shape a double that moves as I do",
    "alt": "Wax Double",
-   "chant": "Prince of Humbug, raise the curtain for me, shape a double that moves as I do, Simulacrum.",
+   "chant": "Prince of Humbug, raise the curtain for me, shape a double that moves as I do, Wax Double.",
    "epithet": "The Prince of Humbug"
   },
   {
@@ -3829,21 +3829,21 @@
   {
    "original": "Darkness",
    "aka": [],
-   "name": "Darkness",
+   "name": "Midnight Dread",
    "creator": "poe",
    "request": "let the midnight fall upon them",
    "alt": "Midnight Dread",
-   "chant": "Raven of Midnight, I beckon thee, let the midnight fall upon them, Darkness.",
+   "chant": "Raven of Midnight, I beckon thee, let the midnight fall upon them, Midnight Dread.",
    "epithet": "The Raven of Midnight"
   },
   {
    "original": "Maddening Darkness",
    "aka": [],
-   "name": "Maddening Darkness",
+   "name": "Madness of Midnight",
    "creator": "poe",
    "request": "let the dark whisper until they break",
    "alt": "Madness of Midnight",
-   "chant": "Raven of Midnight, hear me, let the dark whisper until they break, Maddening Darkness.",
+   "chant": "Raven of Midnight, hear me, let the dark whisper until they break, Madness of Midnight.",
    "epithet": "The Raven of Midnight"
   },
   {
@@ -3859,11 +3859,11 @@
   {
    "original": "Summon Shadowspawn",
    "aka": [],
-   "name": "Summon Shadowspawn",
+   "name": "Raven Spawn",
    "creator": "poe",
    "request": "call the ravens of the dark",
    "alt": "Raven Spawn",
-   "chant": "Raven of Midnight, I beckon thee, call the ravens of the dark, Summon Shadowspawn.",
+   "chant": "Raven of Midnight, I beckon thee, call the ravens of the dark, Raven Spawn.",
    "epithet": "The Raven of Midnight"
   },
   {
@@ -3889,21 +3889,21 @@
   {
    "original": "Hunger of Hadar",
    "aka": [],
-   "name": "Hunger of Hadar",
+   "name": "Dark Hunger",
    "creator": "poe",
    "request": "open the void and let it feed",
    "alt": "Dark Hunger",
-   "chant": "Raven of Midnight, I beckon thee, open the void and let it feed, Hunger of Hadar.",
+   "chant": "Raven of Midnight, I beckon thee, open the void and let it feed, Dark Hunger.",
    "epithet": "The Raven of Midnight"
   },
   {
    "original": "Eyebite",
    "aka": [],
-   "name": "Eyebite",
+   "name": "Evil Eye",
    "creator": "poe",
    "request": "let my gaze fall on them",
    "alt": "Evil Eye",
-   "chant": "Raven of Midnight, hear me, let my gaze fall on them, Eyebite.",
+   "chant": "Raven of Midnight, hear me, let my gaze fall on them, Evil Eye.",
    "epithet": "The Raven of Midnight"
   },
   {
@@ -3921,11 +3921,11 @@
   {
    "original": "Toll the Dead",
    "aka": [],
-   "name": "Toll the Dead",
+   "name": "Tolling Bell",
    "creator": "poe",
    "request": "toll the bell for the one who is hurt",
    "alt": "Tolling Bell",
-   "chant": "Raven of Midnight, I beckon thee, toll the bell for the one who is hurt, Toll the Dead.",
+   "chant": "Raven of Midnight, I beckon thee, toll the bell for the one who is hurt, Tolling Bell.",
    "epithet": "The Raven of Midnight"
   },
   {
@@ -3951,11 +3951,11 @@
   {
    "original": "Vampiric Touch",
    "aka": [],
-   "name": "Vampiric Touch",
+   "name": "Hungering Hand",
    "creator": "poe",
    "request": "feed my hand on their life",
    "alt": "Hungering Hand",
-   "chant": "Raven of Midnight, I beckon thee, feed my hand on their life, Vampiric Touch.",
+   "chant": "Raven of Midnight, I beckon thee, feed my hand on their life, Hungering Hand.",
    "epithet": "The Raven of Midnight"
   },
   {
@@ -3971,41 +3971,41 @@
   {
    "original": "Bestow Curse",
    "aka": [],
-   "name": "Bestow Curse",
+   "name": "Raven's Curse",
    "creator": "poe",
    "request": "lay the raven's curse on them",
    "alt": "Raven's Curse",
-   "chant": "Raven of Midnight, lend me thy dark wings, lay the raven's curse on them, Bestow Curse.",
+   "chant": "Raven of Midnight, lend me thy dark wings, lay the raven's curse on them, Raven's Curse.",
    "epithet": "The Raven of Midnight"
   },
   {
    "original": "Danse Macabre",
    "aka": [],
-   "name": "Danse Macabre",
+   "name": "Dance of the Dead",
    "creator": "poe",
    "request": "wake the dead and let them dance",
    "alt": "Dance of the Dead",
-   "chant": "Raven of Midnight, I beckon thee, wake the dead and let them dance, Danse Macabre.",
+   "chant": "Raven of Midnight, I beckon thee, wake the dead and let them dance, Dance of the Dead.",
    "epithet": "The Raven of Midnight"
   },
   {
    "original": "Animate Dead",
    "aka": [],
-   "name": "Animate Dead",
+   "name": "Rise from the Circle",
    "creator": "dante",
    "request": "let the dead rise from their circle",
    "alt": "Rise from the Circle",
-   "chant": "Pilgrim of the Nine Circles, I beckon thee, let the dead rise from their circle, Animate Dead.",
+   "chant": "Pilgrim of the Nine Circles, I beckon thee, let the dead rise from their circle, Rise from the Circle.",
    "epithet": "The Pilgrim of the Nine Circles"
   },
   {
    "original": "Speak with Dead",
    "aka": [],
-   "name": "Speak with Dead",
+   "name": "Ask the Shade",
    "creator": "dante",
    "request": "let the shade answer what I ask",
    "alt": "Ask the Shade",
-   "chant": "Pilgrim of the Nine Circles, hear me, let the shade answer what I ask, Speak with Dead.",
+   "chant": "Pilgrim of the Nine Circles, hear me, let the shade answer what I ask, Ask the Shade.",
    "epithet": "The Pilgrim of the Nine Circles"
   },
   {
@@ -4021,21 +4021,21 @@
   {
    "original": "Raise Dead",
    "aka": [],
-   "name": "Raise Dead",
+   "name": "Return from the Dark",
    "creator": "dante",
    "request": "call this soul back from its circle",
    "alt": "Return from the Dark",
-   "chant": "Pilgrim of the Nine Circles, I beckon thee, call this soul back from its circle, Raise Dead.",
+   "chant": "Pilgrim of the Nine Circles, I beckon thee, call this soul back from its circle, Return from the Dark.",
    "epithet": "The Pilgrim of the Nine Circles"
   },
   {
    "original": "Resurrection",
    "aka": [],
-   "name": "Resurrection",
+   "name": "Climb from Hell",
    "creator": "dante",
    "request": "let this soul climb out of the pit",
    "alt": "Climb from Hell",
-   "chant": "Pilgrim of the Nine Circles, hear me, let this soul climb out of the pit, Resurrection.",
+   "chant": "Pilgrim of the Nine Circles, hear me, let this soul climb out of the pit, Climb from Hell.",
    "epithet": "The Pilgrim of the Nine Circles"
   },
   {
@@ -4071,31 +4071,31 @@
   {
    "original": "Circle of Death",
    "aka": [],
-   "name": "Circle of Death",
+   "name": "Ninth Circle",
    "creator": "dante",
    "request": "open the ninth circle and let it fall on them",
    "alt": "Ninth Circle",
-   "chant": "Pilgrim of the Nine Circles, guide me down, open the ninth circle and let it fall on them, Circle of Death.",
+   "chant": "Pilgrim of the Nine Circles, guide me down, open the ninth circle and let it fall on them, Ninth Circle.",
    "epithet": "The Pilgrim of the Nine Circles"
   },
   {
    "original": "Finger of Death",
    "aka": [],
-   "name": "Finger of Death",
+   "name": "Hand of the Pit",
    "creator": "dante",
    "request": "point the finger of the pit",
    "alt": "Hand of the Pit",
-   "chant": "Pilgrim of the Nine Circles, I beckon thee, point the finger of the pit, Finger of Death.",
+   "chant": "Pilgrim of the Nine Circles, I beckon thee, point the finger of the pit, Hand of the Pit.",
    "epithet": "The Pilgrim of the Nine Circles"
   },
   {
    "original": "Soul Cage",
    "aka": [],
-   "name": "Soul Cage",
+   "name": "Soul in the Jar",
    "creator": "dante",
    "request": "hold this soul in a cage",
    "alt": "Soul in the Jar",
-   "chant": "Pilgrim of the Nine Circles, hear me, hold this soul in a cage, Soul Cage.",
+   "chant": "Pilgrim of the Nine Circles, hear me, hold this soul in a cage, Soul in the Jar.",
    "epithet": "The Pilgrim of the Nine Circles"
   },
   {
@@ -4111,11 +4111,11 @@
   {
    "original": "Summon Greater Demon",
    "aka": [],
-   "name": "Summon Greater Demon",
+   "name": "Call the Demon",
    "creator": "dante",
    "request": "summon a demon from the ninth circle",
    "alt": "Call the Demon",
-   "chant": "Pilgrim of the Nine Circles, I beckon thee, summon a demon from the ninth circle, Summon Greater Demon.",
+   "chant": "Pilgrim of the Nine Circles, I beckon thee, summon a demon from the ninth circle, Call the Demon.",
    "epithet": "The Pilgrim of the Nine Circles"
   },
   {
@@ -4201,71 +4201,71 @@
   {
    "original": "Time Stop",
    "aka": [],
-   "name": "Time Stop",
+   "name": "Stopped Hour",
    "creator": "wells",
    "request": "stop the world for one breath more than it can bear",
    "alt": "Stopped Hour",
-   "chant": "Time Voyager, I beckon thee, stop the world for one breath more than it can bear, Time Stop.",
+   "chant": "Time Voyager, I beckon thee, stop the world for one breath more than it can bear, Stopped Hour.",
    "epithet": "The Time Voyager"
   },
   {
    "original": "Teleport",
    "aka": [],
-   "name": "Teleport",
+   "name": "Time Jump",
    "creator": "wells",
    "request": "set the dial and let me arrive",
    "alt": "Time Jump",
-   "chant": "Time Voyager, hear me, set the dial and let me arrive, Teleport.",
+   "chant": "Time Voyager, hear me, set the dial and let me arrive, Time Jump.",
    "epithet": "The Time Voyager"
   },
   {
    "original": "Teleportation Circle",
    "aka": [],
-   "name": "Teleportation Circle",
+   "name": "Time Ring",
    "creator": "wells",
    "request": "draw a ring and let it open to another",
    "alt": "Time Ring",
-   "chant": "Time Voyager, set the dial for me, draw a ring and let it open to another, Teleportation Circle.",
+   "chant": "Time Voyager, set the dial for me, draw a ring and let it open to another, Time Ring.",
    "epithet": "The Time Voyager"
   },
   {
    "original": "Word of Recall",
    "aka": [],
-   "name": "Word of Recall",
+   "name": "Return Dial",
    "creator": "wells",
    "request": "set the dial back to my home",
    "alt": "Return Dial",
-   "chant": "Time Voyager, I beckon thee, set the dial back to my home, Word of Recall.",
+   "chant": "Time Voyager, I beckon thee, set the dial back to my home, Return Dial.",
    "epithet": "The Time Voyager"
   },
   {
    "original": "Plane Shift",
    "aka": [],
-   "name": "Plane Shift",
+   "name": "Dial the Plane",
    "creator": "wells",
    "request": "turn the dial to another plane",
    "alt": "Dial the Plane",
-   "chant": "Time Voyager, hear me, turn the dial to another plane, Plane Shift.",
+   "chant": "Time Voyager, hear me, turn the dial to another plane, Dial the Plane.",
    "epithet": "The Time Voyager"
   },
   {
    "original": "Gate",
    "aka": [],
-   "name": "Gate",
+   "name": "Time Gate",
    "creator": "wells",
    "request": "open a gate between two worlds",
    "alt": "Time Gate",
-   "chant": "Time Voyager, set the dial for me, open a gate between two worlds, Gate.",
+   "chant": "Time Voyager, set the dial for me, open a gate between two worlds, Time Gate.",
    "epithet": "The Time Voyager"
   },
   {
    "original": "Astral Projection",
    "aka": [],
-   "name": "Astral Projection",
+   "name": "Voyager's Shell",
    "creator": "wells",
    "request": "let the body rest while the voyager roams",
    "alt": "Voyager's Shell",
-   "chant": "Time Voyager, I beckon thee, let the body rest while the voyager roams, Astral Projection.",
+   "chant": "Time Voyager, I beckon thee, let the body rest while the voyager roams, Voyager's Shell.",
    "epithet": "The Time Voyager"
   },
   {
@@ -4291,11 +4291,11 @@
   {
    "original": "Demiplane",
    "aka": [],
-   "name": "Demiplane",
+   "name": "Pocket Hour",
    "creator": "wells",
    "request": "fold an hour into a room",
    "alt": "Pocket Hour",
-   "chant": "Time Voyager, I beckon thee, fold an hour into a room, Demiplane.",
+   "chant": "Time Voyager, I beckon thee, fold an hour into a room, Pocket Hour.",
    "epithet": "The Time Voyager"
   },
   {
@@ -4311,11 +4311,11 @@
   {
    "original": "Contingency",
    "aka": [],
-   "name": "Contingency",
+   "name": "Waiting Hour",
    "creator": "wells",
    "request": "set a spell to wait for its hour",
    "alt": "Waiting Hour",
-   "chant": "Time Voyager, set the dial for me, set a spell to wait for its hour, Contingency.",
+   "chant": "Time Voyager, set the dial for me, set a spell to wait for its hour, Waiting Hour.",
    "epithet": "The Time Voyager"
   },
   {
@@ -4351,11 +4351,11 @@
   {
    "original": "Shield",
    "aka": [],
-   "name": "Shield",
+   "name": "Shield Wall",
    "creator": "hadrian",
    "request": "raise the shield and let the blow fall on it",
    "alt": "Shield Wall",
-   "chant": "Builder of the Wall, I beckon thee, raise the shield and let the blow fall on it, Shield.",
+   "chant": "Builder of the Wall, I beckon thee, raise the shield and let the blow fall on it, Shield Wall.",
    "epithet": "The Builder of the Wall"
   },
   {
@@ -4371,11 +4371,11 @@
   {
    "original": "Magic Circle",
    "aka": [],
-   "name": "Magic Circle",
+   "name": "Ring of Stones",
    "creator": "hadrian",
    "request": "ring us with stone that none may cross",
    "alt": "Ring of Stones",
-   "chant": "Builder of the Wall, set the stone for me, ring us with stone that none may cross, Magic Circle.",
+   "chant": "Builder of the Wall, set the stone for me, ring us with stone that none may cross, Ring of Stones.",
    "epithet": "The Builder of the Wall"
   },
   {
@@ -4393,11 +4393,11 @@
    "aka": [
     "Mordenkainen's Private Sanctum"
    ],
-   "name": "Private Sanctum",
+   "name": "Closed Garrison",
    "creator": "hadrian",
    "request": "close the garrison to every eye and ear",
    "alt": "Closed Garrison",
-   "chant": "Builder of the Wall, hear me, close the garrison to every eye and ear, Private Sanctum.",
+   "chant": "Builder of the Wall, hear me, close the garrison to every eye and ear, Closed Garrison.",
    "epithet": "The Builder of the Wall"
   },
   {
@@ -4405,61 +4405,61 @@
    "aka": [
     "Mordenkainen's Faithful Hound"
    ],
-   "name": "Faithful Hound",
+   "name": "Wall Hound",
    "creator": "hadrian",
    "request": "set a hound to guard the post",
    "alt": "Wall Hound",
-   "chant": "Builder of the Wall, set the stone for me, set a hound to guard the post, Faithful Hound.",
+   "chant": "Builder of the Wall, set the stone for me, set a hound to guard the post, Wall Hound.",
    "epithet": "The Builder of the Wall"
   },
   {
    "original": "Glyph of Warding",
    "aka": [],
-   "name": "Glyph of Warding",
+   "name": "Boundary Stone",
    "creator": "hadrian",
    "request": "set a stone that strikes when crossed",
    "alt": "Boundary Stone",
-   "chant": "Builder of the Wall, I beckon thee, set a stone that strikes when crossed, Glyph of Warding.",
+   "chant": "Builder of the Wall, I beckon thee, set a stone that strikes when crossed, Boundary Stone.",
    "epithet": "The Builder of the Wall"
   },
   {
    "original": "Forbiddance",
    "aka": [],
-   "name": "Forbiddance",
+   "name": "Closed Border",
    "creator": "hadrian",
    "request": "close the border to all who are not mine",
    "alt": "Closed Border",
-   "chant": "Builder of the Wall, hear me, close the border to all who are not mine, Forbiddance.",
+   "chant": "Builder of the Wall, hear me, close the border to all who are not mine, Closed Border.",
    "epithet": "The Builder of the Wall"
   },
   {
    "original": "Guards and Wards",
    "aka": [],
-   "name": "Guards and Wards",
+   "name": "Fortress Wards",
    "creator": "hadrian",
    "request": "ward every inch of this fortress",
    "alt": "Fortress Wards",
-   "chant": "Builder of the Wall, set the stone for me, ward every inch of this fortress, Guards and Wards.",
+   "chant": "Builder of the Wall, set the stone for me, ward every inch of this fortress, Fortress Wards.",
    "epithet": "The Builder of the Wall"
   },
   {
    "original": "Antilife Shell",
    "aka": [],
-   "name": "Antilife Shell",
+   "name": "Wall of the Living",
    "creator": "hadrian",
    "request": "raise a wall that no dead thing can cross",
    "alt": "Wall of the Living",
-   "chant": "Builder of the Wall, I beckon thee, raise a wall that no dead thing can cross, Antilife Shell.",
+   "chant": "Builder of the Wall, I beckon thee, raise a wall that no dead thing can cross, Wall of the Living.",
    "epithet": "The Builder of the Wall"
   },
   {
    "original": "Blade Barrier",
    "aka": [],
-   "name": "Blade Barrier",
+   "name": "Wall of Blades",
    "creator": "hadrian",
    "request": "raise a wall of spinning blades",
    "alt": "Wall of Blades",
-   "chant": "Builder of the Wall, hear me, raise a wall of spinning blades, Blade Barrier.",
+   "chant": "Builder of the Wall, hear me, raise a wall of spinning blades, Wall of Blades.",
    "epithet": "The Builder of the Wall"
   },
   {
@@ -4467,21 +4467,21 @@
    "aka": [
     "Leomund's Tiny Hut"
    ],
-   "name": "Tiny Hut",
+   "name": "Sentry Hut",
    "creator": "hadrian",
    "request": "raise a hut that is a wall to all who would enter",
    "alt": "Sentry Hut",
-   "chant": "Builder of the Wall, set the stone for me, raise a hut that is a wall to all who would enter, Tiny Hut.",
+   "chant": "Builder of the Wall, set the stone for me, raise a hut that is a wall to all who would enter, Sentry Hut.",
    "epithet": "The Builder of the Wall"
   },
   {
    "original": "Circle of Power",
    "aka": [],
-   "name": "Circle of Power",
+   "name": "Ring of the Legion",
    "creator": "hadrian",
    "request": "ring us with the legion's power",
    "alt": "Ring of the Legion",
-   "chant": "Builder of the Wall, I beckon thee, ring us with the legion's power, Circle of Power.",
+   "chant": "Builder of the Wall, I beckon thee, ring us with the legion's power, Ring of the Legion.",
    "epithet": "The Builder of the Wall"
   },
   {
@@ -4529,11 +4529,11 @@
    "aka": [
     "Mordenkainen's Magnificent Mansion"
    ],
-   "name": "Magnificent Mansion",
+   "name": "Hidden Fort",
    "creator": "hadrian",
    "request": "raise a fort that no one finds but those I let",
    "alt": "Hidden Fort",
-   "chant": "Builder of the Wall, set the stone for me, raise a fort that no one finds but those I let, Magnificent Mansion.",
+   "chant": "Builder of the Wall, set the stone for me, raise a fort that no one finds but those I let, Hidden Fort.",
    "epithet": "The Builder of the Wall"
   },
   {
@@ -4549,11 +4549,11 @@
   {
    "original": "Prismatic Wall",
    "aka": [],
-   "name": "Prismatic Wall",
+   "name": "Wall of Colors",
    "creator": "hadrian",
    "request": "raise a wall of seven colors",
    "alt": "Wall of Colors",
-   "chant": "Builder of the Wall, hear me, raise a wall of seven colors, Prismatic Wall.",
+   "chant": "Builder of the Wall, hear me, raise a wall of seven colors, Wall of Colors.",
    "epithet": "The Builder of the Wall"
   },
   {
@@ -4569,21 +4569,21 @@
   {
    "original": "Imprisonment",
    "aka": [],
-   "name": "Imprisonment",
+   "name": "Walled Away",
    "creator": "hadrian",
    "request": "wall them away where nothing reaches them",
    "alt": "Walled Away",
-   "chant": "Builder of the Wall, I beckon thee, wall them away where nothing reaches them, Imprisonment.",
+   "chant": "Builder of the Wall, I beckon thee, wall them away where nothing reaches them, Walled Away.",
    "epithet": "The Builder of the Wall"
   },
   {
    "original": "Maze",
    "aka": [],
-   "name": "Maze",
+   "name": "Labyrinth Wall",
    "creator": "hadrian",
    "request": "send them into the labyrinth of my walls",
    "alt": "Labyrinth Wall",
-   "chant": "Builder of the Wall, hear me, send them into the labyrinth of my walls, Maze.",
+   "chant": "Builder of the Wall, hear me, send them into the labyrinth of my walls, Labyrinth Wall.",
    "epithet": "The Builder of the Wall"
   },
   {
@@ -4669,31 +4669,31 @@
   {
    "original": "Booming Blade",
    "aka": [],
-   "name": "Booming Blade",
+   "name": "Ringing Edge",
    "creator": "musashi",
    "request": "let the blade ring and punish the step",
    "alt": "Ringing Edge",
-   "chant": "Sword Saint, I beckon thee, let the blade ring and punish the step, Booming Blade.",
+   "chant": "Sword Saint, I beckon thee, let the blade ring and punish the step, Ringing Edge.",
    "epithet": "The Sword Saint"
   },
   {
    "original": "Green-Flame Blade",
    "aka": [],
-   "name": "Green-Flame Blade",
+   "name": "Green Edge",
    "creator": "musashi",
    "request": "let the flame leap from blade to blade",
    "alt": "Green Edge",
-   "chant": "Sword Saint, hear me, let the flame leap from blade to blade, Green-Flame Blade.",
+   "chant": "Sword Saint, hear me, let the flame leap from blade to blade, Green Edge.",
    "epithet": "The Sword Saint"
   },
   {
    "original": "Blade Ward",
    "aka": [],
-   "name": "Blade Ward",
+   "name": "Parry the Blow",
    "creator": "musashi",
    "request": "let my guard turn the blow",
    "alt": "Parry the Blow",
-   "chant": "Sword Saint, guide my blade, let my guard turn the blow, Blade Ward.",
+   "chant": "Sword Saint, guide my blade, let my guard turn the blow, Parry the Blow.",
    "epithet": "The Sword Saint"
   },
   {
@@ -4709,21 +4709,21 @@
   {
    "original": "Comprehend Languages",
    "aka": [],
-   "name": "Comprehend Languages",
+   "name": "Read the Stone",
    "creator": "champollion",
    "request": "let me read what is written here",
    "alt": "Read the Stone",
-   "chant": "Decipherer, I beckon thee, let me read what is written here, Comprehend Languages.",
+   "chant": "Decipherer, I beckon thee, let me read what is written here, Read the Stone.",
    "epithet": "The Decipherer"
   },
   {
    "original": "Tongues",
    "aka": [],
-   "name": "Tongues",
+   "name": "Many Tongues",
    "creator": "champollion",
    "request": "let me speak and be understood by all",
    "alt": "Many Tongues",
-   "chant": "Decipherer, hear me, let me speak and be understood by all, Tongues.",
+   "chant": "Decipherer, hear me, let me speak and be understood by all, Many Tongues.",
    "epithet": "The Decipherer"
   },
   {
@@ -4769,11 +4769,11 @@
   {
    "original": "Conjure Elemental",
    "aka": [],
-   "name": "Conjure Elemental",
+   "name": "Call the Elemental",
    "creator": "dee",
    "request": "call the element and let it stand",
    "alt": "Call the Elemental",
-   "chant": "Queen's Conjurer, I beckon thee, call the element and let it stand, Conjure Elemental.",
+   "chant": "Queen's Conjurer, I beckon thee, call the element and let it stand, Call the Elemental.",
    "epithet": "The Queen's Conjurer"
   },
   {
@@ -4799,11 +4799,11 @@
   {
    "original": "Conjure Fey",
    "aka": [],
-   "name": "Conjure Fey",
+   "name": "Call the Court",
    "creator": "dee",
    "request": "call a lord of the fey court",
    "alt": "Call the Court",
-   "chant": "Queen's Conjurer, I beckon thee, call a lord of the fey court, Conjure Fey.",
+   "chant": "Queen's Conjurer, I beckon thee, call a lord of the fey court, Call the Court.",
    "epithet": "The Queen's Conjurer"
   },
   {
@@ -4819,11 +4819,11 @@
   {
    "original": "Summon Aberration",
    "aka": [],
-   "name": "Summon Aberration",
+   "name": "Call the Deep Thing",
    "creator": "dee",
    "request": "call a thing from beyond the stars",
    "alt": "Call the Deep Thing",
-   "chant": "Queen's Conjurer, open the crystal, call a thing from beyond the stars, Summon Aberration.",
+   "chant": "Queen's Conjurer, open the crystal, call a thing from beyond the stars, Call the Deep Thing.",
    "epithet": "The Queen's Conjurer"
   },
   {
@@ -4839,41 +4839,41 @@
   {
    "original": "Conjure Celestial",
    "aka": [],
-   "name": "Conjure Celestial",
+   "name": "Call the Host",
    "creator": "dee",
    "request": "call a celestial to stand beside me",
    "alt": "Call the Host",
-   "chant": "Queen's Conjurer, hear me, call a celestial to stand beside me, Conjure Celestial.",
+   "chant": "Queen's Conjurer, hear me, call a celestial to stand beside me, Call the Host.",
    "epithet": "The Queen's Conjurer"
   },
   {
    "original": "Magic Jar",
    "aka": [],
-   "name": "Magic Jar",
+   "name": "Crystal Jar",
    "creator": "dee",
    "request": "let my soul rest in the crystal while my body waits",
    "alt": "Crystal Jar",
-   "chant": "Queen's Conjurer, open the crystal, let my soul rest in the crystal while my body waits, Magic Jar.",
+   "chant": "Queen's Conjurer, open the crystal, let my soul rest in the crystal while my body waits, Crystal Jar.",
    "epithet": "The Queen's Conjurer"
   },
   {
    "original": "Dispel Evil and Good",
    "aka": [],
-   "name": "Dispel Evil and Good",
+   "name": "Cast Out",
    "creator": "hildegard",
    "request": "cast out what does not belong",
    "alt": "Cast Out",
-   "chant": "Sibyl of the Rhine, I beckon thee, cast out what does not belong, Dispel Evil and Good.",
+   "chant": "Sibyl of the Rhine, I beckon thee, cast out what does not belong, Cast Out.",
    "epithet": "The Sibyl of the Rhine"
   },
   {
    "original": "Remove Curse",
    "aka": [],
-   "name": "Remove Curse",
+   "name": "Lift the Curse",
    "creator": "hildegard",
    "request": "lift the weight laid on this one",
    "alt": "Lift the Curse",
-   "chant": "Sibyl of the Rhine, hear me, lift the weight laid on this one, Remove Curse.",
+   "chant": "Sibyl of the Rhine, hear me, lift the weight laid on this one, Lift the Curse.",
    "epithet": "The Sibyl of the Rhine"
   },
   {
@@ -4899,21 +4899,21 @@
   {
    "original": "Heroes' Feast",
    "aka": [],
-   "name": "Heroes' Feast",
+   "name": "Table of Plenty",
    "creator": "hildegard",
    "request": "spread the table and let all who eat be filled",
    "alt": "Table of Plenty",
-   "chant": "Sibyl of the Rhine, hear me, spread the table and let all who eat be filled, Heroes' Feast.",
+   "chant": "Sibyl of the Rhine, hear me, spread the table and let all who eat be filled, Table of Plenty.",
    "epithet": "The Sibyl of the Rhine"
   },
   {
    "original": "Create Food and Water",
    "aka": [],
-   "name": "Create Food and Water",
+   "name": "Daily Bread",
    "creator": "hildegard",
    "request": "let the bread and water be enough",
    "alt": "Daily Bread",
-   "chant": "Sibyl of the Rhine, sing through me, let the bread and water be enough, Create Food and Water.",
+   "chant": "Sibyl of the Rhine, sing through me, let the bread and water be enough, Daily Bread.",
    "epithet": "The Sibyl of the Rhine"
   },
   {
@@ -4929,51 +4929,51 @@
   {
    "original": "Divine Word",
    "aka": [],
-   "name": "Divine Word",
+   "name": "Voice of Heaven",
    "creator": "hildegard",
    "request": "speak the word that carries heaven's weight",
    "alt": "Voice of Heaven",
-   "chant": "Sibyl of the Rhine, hear me, speak the word that carries heaven's weight, Divine Word.",
+   "chant": "Sibyl of the Rhine, hear me, speak the word that carries heaven's weight, Voice of Heaven.",
    "epithet": "The Sibyl of the Rhine"
   },
   {
    "original": "Pass without Trace",
    "aka": [],
-   "name": "Pass without Trace",
+   "name": "Hidden Road",
    "creator": "tubman",
    "request": "let no one follow where we pass",
    "alt": "Hidden Road",
-   "chant": "Conductor of the Hidden Road, I beckon thee, let no one follow where we pass, Pass without Trace.",
+   "chant": "Conductor of the Hidden Road, I beckon thee, let no one follow where we pass, Hidden Road.",
    "epithet": "The Conductor of the Hidden Road"
   },
   {
    "original": "Find the Path",
    "aka": [],
-   "name": "Find the Path",
+   "name": "Follow the Star",
    "creator": "tubman",
    "request": "show me the way through the dark",
    "alt": "Follow the Star",
-   "chant": "Conductor of the Hidden Road, hear me, show me the way through the dark, Find the Path.",
+   "chant": "Conductor of the Hidden Road, hear me, show me the way through the dark, Follow the Star.",
    "epithet": "The Conductor of the Hidden Road"
   },
   {
    "original": "Symbol",
    "aka": [],
-   "name": "Symbol",
+   "name": "Written Sign",
    "creator": "lovelace",
    "request": "write the sign that strikes when it is read",
    "alt": "Written Sign",
-   "chant": "Enchantress of Number, I beckon thee, write the sign that strikes when it is read, Symbol.",
+   "chant": "Enchantress of Number, I beckon thee, write the sign that strikes when it is read, Written Sign.",
    "epithet": "The Enchantress of Number"
   },
   {
    "original": "Enlarge/Reduce",
    "aka": [],
-   "name": "Enlarge/Reduce",
+   "name": "Grow and Shrink",
    "creator": "milo",
    "request": "let me grow with the calf",
    "alt": "Grow and Shrink",
-   "chant": "Calf-Bearer, I beckon thee, let me grow with the calf, Enlarge/Reduce.",
+   "chant": "Calf-Bearer, I beckon thee, let me grow with the calf, Grow and Shrink.",
    "epithet": "The Calf-Bearer"
   },
   {
@@ -4989,11 +4989,11 @@
   {
    "original": "False Life",
    "aka": [],
-   "name": "False Life",
+   "name": "Borrowed Blood",
    "creator": "bathory",
    "request": "borrow a little blood and keep me standing",
    "alt": "Borrowed Blood",
-   "chant": "Blood Countess, I beckon thee, borrow a little blood and keep me standing, False Life.",
+   "chant": "Blood Countess, I beckon thee, borrow a little blood and keep me standing, Borrowed Blood.",
    "epithet": "The Blood Countess"
   },
   {
@@ -5009,11 +5009,11 @@
   {
    "original": "Contagion",
    "aka": [],
-   "name": "Contagion",
+   "name": "Blood Plague",
    "creator": "bathory",
    "request": "give them the sickness of the blood",
    "alt": "Blood Plague",
-   "chant": "Blood Countess, wake the blood in me, give them the sickness of the blood, Contagion.",
+   "chant": "Blood Countess, wake the blood in me, give them the sickness of the blood, Blood Plague.",
    "epithet": "The Blood Countess"
   },
   {
@@ -5029,61 +5029,61 @@
   {
    "original": "Regenerate",
    "aka": [],
-   "name": "Regenerate",
+   "name": "Blood Renewed",
    "creator": "bathory",
    "request": "let the blood heal what was lost",
    "alt": "Blood Renewed",
-   "chant": "Blood Countess, hear me, let the blood heal what was lost, Regenerate.",
+   "chant": "Blood Countess, hear me, let the blood heal what was lost, Blood Renewed.",
    "epithet": "The Blood Countess"
   },
   {
    "original": "Polymorph",
    "aka": [],
-   "name": "Polymorph",
+   "name": "Change the Form",
    "creator": "darwin",
    "request": "change this one into another form",
    "alt": "Change the Form",
-   "chant": "Voyager of the Beagle, I beckon thee, change this one into another form, Polymorph.",
+   "chant": "Voyager of the Beagle, I beckon thee, change this one into another form, Change the Form.",
    "epithet": "The Voyager of the Beagle"
   },
   {
    "original": "True Polymorph",
    "aka": [],
-   "name": "True Polymorph",
+   "name": "True Change",
    "creator": "darwin",
    "request": "change this one so that it stays changed",
    "alt": "True Change",
-   "chant": "Voyager of the Beagle, hear me, change this one so that it stays changed, True Polymorph.",
+   "chant": "Voyager of the Beagle, hear me, change this one so that it stays changed, True Change.",
    "epithet": "The Voyager of the Beagle"
   },
   {
    "original": "Mass Polymorph",
    "aka": [],
-   "name": "Mass Polymorph",
+   "name": "Many Changes",
    "creator": "darwin",
    "request": "change a company at once",
    "alt": "Many Changes",
-   "chant": "Voyager of the Beagle, show me what I may become, change a company at once, Mass Polymorph.",
+   "chant": "Voyager of the Beagle, show me what I may become, change a company at once, Many Changes.",
    "epithet": "The Voyager of the Beagle"
   },
   {
    "original": "Shapechange",
    "aka": [],
-   "name": "Shapechange",
+   "name": "My Own Change",
    "creator": "darwin",
    "request": "take the shape of any I have seen",
    "alt": "My Own Change",
-   "chant": "Voyager of the Beagle, I beckon thee, take the shape of any I have seen, Shapechange.",
+   "chant": "Voyager of the Beagle, I beckon thee, take the shape of any I have seen, My Own Change.",
    "epithet": "The Voyager of the Beagle"
   },
   {
    "original": "Alter Self",
    "aka": [],
-   "name": "Alter Self",
+   "name": "Alter Shape",
    "creator": "darwin",
    "request": "change my own shape to suit the place",
    "alt": "Alter Shape",
-   "chant": "Voyager of the Beagle, hear me, change my own shape to suit the place, Alter Self.",
+   "chant": "Voyager of the Beagle, hear me, change my own shape to suit the place, Alter Shape.",
    "epithet": "The Voyager of the Beagle"
   },
   {
@@ -5099,21 +5099,21 @@
   {
    "original": "Stinking Cloud",
    "aka": [],
-   "name": "Stinking Cloud",
+   "name": "Foul Vapor",
    "creator": "pasteur",
    "request": "let the foul vapor fall on them",
    "alt": "Foul Vapor",
-   "chant": "Slayer of Unseen Things, I beckon thee, let the foul vapor fall on them, Stinking Cloud.",
+   "chant": "Slayer of Unseen Things, I beckon thee, let the foul vapor fall on them, Foul Vapor.",
    "epithet": "The Slayer of Unseen Things"
   },
   {
    "original": "Cloudkill",
    "aka": [],
-   "name": "Cloudkill",
+   "name": "Deadly Vapor",
    "creator": "pasteur",
    "request": "let the deadly vapor settle on them",
    "alt": "Deadly Vapor",
-   "chant": "Slayer of Unseen Things, hear me, let the deadly vapor settle on them, Cloudkill.",
+   "chant": "Slayer of Unseen Things, hear me, let the deadly vapor settle on them, Deadly Vapor.",
    "epithet": "The Slayer of Unseen Things"
   },
   {
@@ -5121,11 +5121,11 @@
    "aka": [
     "Tasha's Caustic Brew"
    ],
-   "name": "Caustic Brew",
+   "name": "Flask of Acid",
    "creator": "pasteur",
    "request": "pour the flask and let the acid run",
    "alt": "Flask of Acid",
-   "chant": "Slayer of Unseen Things, boil the flask, pour the flask and let the acid run, Caustic Brew.",
+   "chant": "Slayer of Unseen Things, boil the flask, pour the flask and let the acid run, Flask of Acid.",
    "epithet": "The Slayer of Unseen Things"
   },
   {
@@ -5133,11 +5133,11 @@
    "aka": [
     "Melf's Acid Arrow"
    ],
-   "name": "Acid Arrow",
+   "name": "Etched Arrow",
    "creator": "pasteur",
    "request": "etch their armor with acid",
    "alt": "Etched Arrow",
-   "chant": "Slayer of Unseen Things, I beckon thee, etch their armor with acid, Acid Arrow.",
+   "chant": "Slayer of Unseen Things, I beckon thee, etch their armor with acid, Etched Arrow.",
    "epithet": "The Slayer of Unseen Things"
   },
   {
@@ -5153,31 +5153,31 @@
   {
    "original": "Confusion",
    "aka": [],
-   "name": "Confusion",
+   "name": "Endless Question",
    "creator": "socrates",
    "request": "ask the question that has no answer",
    "alt": "Endless Question",
-   "chant": "Gadfly of Athens, I beckon thee, ask the question that has no answer, Confusion.",
+   "chant": "Gadfly of Athens, I beckon thee, ask the question that has no answer, Endless Question.",
    "epithet": "The Gadfly of Athens"
   },
   {
    "original": "Mind Blank",
    "aka": [],
-   "name": "Mind Blank",
+   "name": "Know Nothing",
    "creator": "socrates",
    "request": "let me know only that I know nothing",
    "alt": "Know Nothing",
-   "chant": "Gadfly of Athens, hear me, let me know only that I know nothing, Mind Blank.",
+   "chant": "Gadfly of Athens, hear me, let me know only that I know nothing, Know Nothing.",
    "epithet": "The Gadfly of Athens"
   },
   {
    "original": "Blindness/Deafness",
    "aka": [],
-   "name": "Blindness/Deafness",
+   "name": "Blind to Truth",
    "creator": "socrates",
    "request": "let them be blind and deaf to what is plain",
    "alt": "Blind to Truth",
-   "chant": "Gadfly of Athens, ask the question for me, let them be blind and deaf to what is plain, Blindness/Deafness.",
+   "chant": "Gadfly of Athens, ask the question for me, let them be blind and deaf to what is plain, Blind to Truth.",
    "epithet": "The Gadfly of Athens"
   },
   {
@@ -5195,71 +5195,71 @@
    "aka": [
     "Drawmij's Instant Summons"
    ],
-   "name": "Instant Summons",
+   "name": "Merchant's Recall",
    "creator": "marcopolo",
    "request": "call the one thing I traded away back to my hand",
    "alt": "Merchant's Recall",
-   "chant": "Wanderer of Cathay, I beckon thee, call the one thing I traded away back to my hand, Instant Summons.",
+   "chant": "Wanderer of Cathay, I beckon thee, call the one thing I traded away back to my hand, Merchant's Recall.",
    "epithet": "The Wanderer of Cathay"
   },
   {
    "original": "Gaseous Form",
    "aka": [],
-   "name": "Gaseous Form",
+   "name": "Desert Mirage",
    "creator": "marcopolo",
    "request": "let me drift as the mirage drifts",
    "alt": "Desert Mirage",
-   "chant": "Wanderer of Cathay, hear me, let me drift as the mirage drifts, Gaseous Form.",
+   "chant": "Wanderer of Cathay, hear me, let me drift as the mirage drifts, Desert Mirage.",
    "epithet": "The Wanderer of Cathay"
   },
   {
    "original": "Grease",
    "aka": [],
-   "name": "Grease",
+   "name": "Butter the Floor",
    "creator": "escoffier",
    "request": "let the floor be slick as butter in the pan",
    "alt": "Butter the Floor",
-   "chant": "King of Chefs, I beckon thee, let the floor be slick as butter in the pan, Grease.",
+   "chant": "King of Chefs, I beckon thee, let the floor be slick as butter in the pan, Butter the Floor.",
    "epithet": "The King of Chefs"
   },
   {
    "original": "Elementalism",
    "aka": [],
-   "name": "Elementalism",
+   "name": "Kitchen Elements",
    "creator": "escoffier",
    "request": "let the small elements serve my stove",
    "alt": "Kitchen Elements",
-   "chant": "King of Chefs, hear me, let the small elements serve my stove, Elementalism.",
+   "chant": "King of Chefs, hear me, let the small elements serve my stove, Kitchen Elements.",
    "epithet": "The King of Chefs"
   },
   {
    "original": "Dragon's Breath",
    "aka": [],
-   "name": "Dragon's Breath",
+   "name": "Flambé Breath",
    "creator": "escoffier",
    "request": "let my breath be the flame that finishes the dish",
    "alt": "Flambé Breath",
-   "chant": "King of Chefs, set the table for me, let my breath be the flame that finishes the dish, Dragon's Breath.",
+   "chant": "King of Chefs, set the table for me, let my breath be the flame that finishes the dish, Flambé Breath.",
    "epithet": "The King of Chefs"
   },
   {
    "original": "Disintegrate",
    "aka": [],
-   "name": "Disintegrate",
+   "name": "Short Circuit",
    "creator": "edison",
    "request": "overload the circuit until nothing remains",
    "alt": "Short Circuit",
-   "chant": "Wizard of Menlo Park, I beckon thee, overload the circuit until nothing remains, Disintegrate.",
+   "chant": "Wizard of Menlo Park, I beckon thee, overload the circuit until nothing remains, Short Circuit.",
    "epithet": "The Wizard of Menlo Park"
   },
   {
    "original": "Invulnerability",
    "aka": [],
-   "name": "Invulnerability",
+   "name": "Insulated Life",
    "creator": "edison",
    "request": "wrap me in the insulation no current can cross",
    "alt": "Insulated Life",
-   "chant": "Wizard of Menlo Park, hear me, wrap me in the insulation no current can cross, Invulnerability.",
+   "chant": "Wizard of Menlo Park, hear me, wrap me in the insulation no current can cross, Insulated Life.",
    "epithet": "The Wizard of Menlo Park"
   },
   {
@@ -5275,31 +5275,31 @@
   {
    "original": "Blade of Disaster",
    "aka": [],
-   "name": "Blade of Disaster",
+   "name": "Arc Blade",
    "creator": "edison",
    "request": "draw the arcing blade that cuts through anything",
    "alt": "Arc Blade",
-   "chant": "Wizard of Menlo Park, I beckon thee, draw the arcing blade that cuts through anything, Blade of Disaster.",
+   "chant": "Wizard of Menlo Park, I beckon thee, draw the arcing blade that cuts through anything, Arc Blade.",
    "epithet": "The Wizard of Menlo Park"
   },
   {
    "original": "Web",
    "aka": [],
-   "name": "Web",
+   "name": "Woven Loom",
    "creator": "lovelace",
    "request": "weave the threads of the loom into a web",
    "alt": "Woven Loom",
-   "chant": "Enchantress of Number, hear me, weave the threads of the loom into a web, Web.",
+   "chant": "Enchantress of Number, hear me, weave the threads of the loom into a web, Woven Loom.",
    "epithet": "The Enchantress of Number"
   },
   {
    "original": "Flesh to Stone",
    "aka": [],
-   "name": "Flesh to Stone",
+   "name": "Heavy as Stone",
    "creator": "milo",
    "request": "make the body heavy as the stone",
    "alt": "Heavy as Stone",
-   "chant": "Calf-Bearer, lend me thy strength, make the body heavy as the stone, Flesh to Stone.",
+   "chant": "Calf-Bearer, lend me thy strength, make the body heavy as the stone, Heavy as Stone.",
    "epithet": "The Calf-Bearer"
   },
   {
@@ -5315,21 +5315,21 @@
   {
    "original": "Cloud of Daggers",
    "aka": [],
-   "name": "Cloud of Daggers",
+   "name": "Falling Blossom Blades",
    "creator": "musashi",
    "request": "let the knives fall like blossoms",
    "alt": "Falling Blossom Blades",
-   "chant": "Sword Saint, hear me, let the knives fall like blossoms, Cloud of Daggers.",
+   "chant": "Sword Saint, hear me, let the knives fall like blossoms, Falling Blossom Blades.",
    "epithet": "The Sword Saint"
   },
   {
    "original": "Horrid Wilting",
    "aka": [],
-   "name": "Horrid Wilting",
+   "name": "Dry the Blood",
    "creator": "bathory",
    "request": "wring the blood from them",
    "alt": "Dry the Blood",
-   "chant": "Blood Countess, wake the blood in me, wring the blood from them, Horrid Wilting.",
+   "chant": "Blood Countess, wake the blood in me, wring the blood from them, Dry the Blood.",
    "epithet": "The Blood Countess"
   }
  ]
