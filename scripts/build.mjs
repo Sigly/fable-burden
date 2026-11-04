@@ -106,7 +106,7 @@ export function buildFable(f) {
   const rarity = RARITY_KEY[f.tier] ?? "common";
   const allowed = globalThis.CONFIG?.DND5E?.itemRarity ?? {};
   const rarityKey = (Object.keys(allowed).length && !(rarity in allowed)) ? "legendary" : rarity;
-  const header = `<p><strong>${esc(f.tier)} Fable.</strong> Holder: ${esc(f.holder)}. Idol: ${esc(f.idol)}. Burden ${f.burden}, minimum level ${esc(f.level)}. Clan: ${esc(f.clan)}.</p>`;
+  const header = `<p><strong>${esc(f.tier)} Fable.</strong> Holder: ${esc(f.holder)}. Idol: ${esc(f.idol)}. Burden ${f.burden}, minimum level ${esc(f.level)}.${f.clan ? ` Clan: ${esc(f.clan)}.` : ""}</p>`;
   const system = {
     description: { value: header + mdToHtml(body) },
     type: { value: "trinket", baseItem: "" }, rarity: rarityKey, equipped: true, quantity: 1, weight: { value: 0, units: "lb" },
