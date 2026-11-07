@@ -60,7 +60,7 @@ function activityData(def) {
   if ( def.kind === "save" ) {
     return { ...base, type: "save",
       save: { ability: [def.save ?? "con"], dc: { calculation: "", formula: "8 + @prof" } },
-      damage: { onSave: "none", parts: def.template ? [part(def.template.replace("{die}", "d6"))] : [] } };
+      damage: { onSave: "none", parts: def.template ? [part(def.template.replace("{die}", "d6").replace("{mod}", "0"))] : [] } };
   }
   if ( def.kind === "heal" ) {
     return { ...base, type: "heal",

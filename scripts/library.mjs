@@ -17,7 +17,7 @@ export async function loadFables() {
 /** All catalog entries: { key, category, name, sub }. */
 export async function catalog() {
   const fables = await loadFables();
-  const entries = POWERS.map(p => ({ key: p.key, category: p.category, name: p.name, sub: "" }));
+  const entries = POWERS.map(p => ({ key: p.key, category: p.category, name: p.name, sub: p.sub ?? "" }));
   for ( const s of seidrSpellList() ) {
     entries.push({ key: `seidr-spell:${s.name}:${s.level}`, category: "seidr", name: s.name, sub: s.level ? `Level ${s.level}` : "Cantrip" });
   }
